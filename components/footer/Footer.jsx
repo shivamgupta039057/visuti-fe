@@ -8,9 +8,9 @@ const Footer = () => {
       {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6">
         {/* Logo */}
-        <div className="text-2xl font-bold text-white">
-          {/* <img src="/Logo.png" alt=""> */}
-          logo
+        <div className="flex items-center gap-2">
+          <img src="/logo-white.png" alt="" />
+          {/* logo */}
         </div>
         {/* Menu */}
         <ul className="flex flex-wrap sm:gap-6 gap-2 text-sm mt-4 md:mt-0">
