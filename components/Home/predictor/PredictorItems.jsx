@@ -30,9 +30,7 @@ const PredictorItems = () => {
                     </h3>
                     {/* Description */}
                     <p className="md:text-sm text-xs   text-black mt-1 leading-relaxed">
-                      Get personalized college predictors, state-wise reports,
-                      and round-wise cut-off trends to secure the best MBBS
-                      seat.
+                      Access personalized college predictions, state-wise reports, and round-wise cutoff trends to secure your best MBBS seat.
                     </p>
                     {/* Button */}
                     <div className="mt-5">
@@ -59,9 +57,7 @@ const PredictorItems = () => {
                     </h3>
                     {/* Description */}
                     <p className="md:text-sm text-xs   text-black mt-1 leading-relaxed">
-                      Get personalized college predictors, state-wise reports,
-                      and round-wise cut-off trends to secure the best MBBS
-                      seat.
+                      Get accurate college predictions, state-wise insights, and round-wise cutoff updates for your ideal MD/MS seat.
                     </p>
                     {/* Button */}
                     <div className="mt-5">
@@ -88,9 +84,7 @@ const PredictorItems = () => {
                     </h3>
                     {/* Description */}
                     <p className="md:text-sm text-xs   text-black mt-1 leading-relaxed">
-                      Get personalized college predictors, state-wise reports,
-                      and round-wise cut-off trends to secure the best MBBS
-                      seat.
+                      Plan your IIT journey with tailored college predictions, state-wise data, and round-wise cutoff trends.
                     </p>
                     {/* Button */}
                     <div className="mt-5">
@@ -104,11 +98,10 @@ const PredictorItems = () => {
             </div>
             <div className="max-md:bg-[#20B486] p-4">
               <div className="text-white lg:text-[48px] md:text-4xl sm:text-3xl text-2xl/5 leading-snug font-semibold">
-                Your Gateway to NEET <br /> &amp; IIT Admissions
+                Your Gateway to NEET  <br /> & IIT Admissions
               </div>
               <div className="lg:text-lg md:text-base sm:text-sm text-xs font-medium text-white max-w-md mt-4">
-                Get smart tools, accurate reports, and expert insights to crack
-                NEET UG, NEET PG, and IIT exams with confidence.
+                Access smart tools, accurate reports, and expert guidance to excel in NEET UG, NEET PG, and IIT exams with confidence.
               </div>
               <div className="py-14">
                 <img src="/chart.png" alt="" />

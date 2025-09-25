@@ -12,13 +12,14 @@ const CtaSection = () => {
   </div>
   <div className="max-w-5xl ms-auto lg:px-6 px-4 z-10 relative text-end flex items-center justify-end lg:flex-row flex-col gap-5">
     <div className="lg:text-4xl md:text-3xl sm:text-2xl text-lg font-bold text white leading-normal">
-      Talk to Our <span className="font-extrabold text-[#263830]">Experts</span>{" "}
+      Consult Our <span className="font-extrabold text-[#263830]">Experts</span>{" "}
       for <br />{" "}
       <span className="bg-white sm:p-2 p-1 rounded-lg font-extrabold text-[#263830]">
-        Smarter
+        for Smarter 
       </span>{" "}
-      Career Choices
+      Career Decisions
     </div>
+      
     <button className="flex items-center justify-start gap-2 bg-white rounded-lg p-2 mx-auto">
       <div className="shrink-0">
         <img

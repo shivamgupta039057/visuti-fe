@@ -7,13 +7,12 @@ const WhyChoose = () => {
         <div className="max-w-7xl mx-auto lg:px-6 px-4 z-10">
           {/* Heading */}
           <div className="text-[#2B2B3D] font-semibold lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-center capitalize capitalize">
-            why you choose{" "}
-            <span className="font-bold text-[#20B486]"> visuti career</span>
+            Why Choose {" "}
+            <span className="font-bold text-[#20B486]"> Visuti Career</span>
           </div>
           {/* Paragraph */}
           <div className="md:font-medium md:text-base sm:text-sm text-xs text-[#9A98A9] text-center md:mt-4 mt-2 max-w-2xl mx-auto leading-relaxed">
-            Hear from students who turned their dreams into reality with our
-            expert guidance.
+            Discover how our expert guidance has helped students turn their dreams into reality.
           </div>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-10 sm:gap-8 gap-4 md:my-10 my-5">
             <div className="border border-[#20B486] rounded-xl p-5">
@@ -22,11 +21,10 @@ const WhyChoose = () => {
                   <img src="/GraduationCapgreen.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  Govt. &amp; ISO Certified Company
+                  Govt. & ISO Certified Company
                 </p>
                 <p className="text-xs mt-2 text-[#9A98A9] font-medium">
-                  Hear from students who turned their dreams into reality with
-                  our expert guidance.
+                  Providing trusted guidance and verified services to help students achieve academic success.
                 </p>
               </div>
             </div>
@@ -40,8 +38,7 @@ const WhyChoose = () => {
                   AI-Based NEET Predictor
                 </p>
                 <p className="text-xs mt-2 text-[#9A98A9] font-medium">
-                  Hear from students who turned their dreams into reality with
-                  our expert guidance.
+                  Predict your NEET rank accurately with smart AI tools and expert guidance.
                 </p>
               </div>
             </div>
@@ -51,10 +48,10 @@ const WhyChoose = () => {
                   <img src="/GraduationCap.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  10+ Years of Expertise in Career Counse
+                  10+ Years of Expertise in Career Counselling
                 </p>
                 <p className="text-xs mt-2 text-[#9A98A9] font-medium">
-                  Hear from students who turned their dreams into reality.
+                  Guiding students successfully for over a decade with trusted career advice.
                 </p>
               </div>
             </div>
@@ -64,11 +61,10 @@ const WhyChoose = () => {
                   <img src="/VideoCamera.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  Comprehensive Guidance AIQ/ State/ deemed
+                  Comprehensive Guidance AIQ/State/Deemed
                 </p>
                 <p className="text-xs mt-2 text-[#9A98A9] font-medium">
-                  Hear from students who turned their dreams into reality with
-                  our expert guidance.
+                  Get complete counseling for AIQ, State, and Deemed college admissions confidently.
                 </p>
               </div>
             </div>
@@ -81,8 +77,7 @@ const WhyChoose = () => {
                   100% Success Ratio for Selection
                 </p>
                 <p className="text-xs mt-2 text-[#9A98A9] font-medium">
-                  Hear from students who turned their dreams into reality with
-                  our expert guidance.
+                  Achieve guaranteed admission success with our expert guidance and proven counseling strategies.
                 </p>
               </div>
             </div>
@@ -95,8 +90,7 @@ const WhyChoose = () => {
                   Documents Builder Support
                 </p>
                 <p className="text-xs mt-2 text-[#9A98A9] font-medium">
-                  Hear from students who turned their dreams into reality with
-                  our expert guidance.
+                  Easily prepare and manage all your admission documents with expert guidance support.
                 </p>
               </div>
             </div>
@@ -106,10 +100,11 @@ const WhyChoose = () => {
                   <img src="/GraduationCapgreen.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  10+ Years of Expertise in Career Counse
+                  Proven Track Record of Student Satisfaction
+
                 </p>
                 <p className="text-xs mt-2 text-[#9A98A9] font-medium">
-                  Hear from students who turned their dreams into reality.
+                  Hundreds of students successfully achieving top colleges with our expert guidance support.
                 </p>
               </div>
             </div>
@@ -119,11 +114,10 @@ const WhyChoose = () => {
                   <img src="/handshake.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  1-1 counseling
+                  1-1 Counseling
                 </p>
                 <p className="text-xs mt-2 text-[#9A98A9] font-medium">
-                  Hear from students who turned their dreams into reality with
-                  our expert guidance.
+                  Personalized one-on-one guidance to help students make the right career decisions.
                 </p>
               </div>
             </div>

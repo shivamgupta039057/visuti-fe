@@ -26,9 +26,7 @@ const ChoiceFillingMaker = () => {
           </div>
           {/* Paragraph */}
           <div className="md:font-medium md:text-base sm:text-sm text-xs text-[#9A98A9] text-center sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut etiam
-            maecenas posuere ultricies dis tempus magna mi id. Morbi a eu erat
-            fringilla.
+            Simplify your NEET or IIT counseling with smart, AI-powered choice filling guidance for the best college selections.
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5 md:mt-10 mt-5">
             <div className="sm:size-[500px]">
@@ -45,14 +43,13 @@ const ChoiceFillingMaker = () => {
                     />
                   </div>
                   <div className="md:text-3xl sm:text-2xl text-xl font-bold text-black capitalize">
-                    state quota
+                    State Quota
                   </div>
                   <div className="text-[10px] text-[#3C3C3C]">
                     NEET UG/ NEET PG
                   </div>
                   <div className="text-base text-black mt-3">
-                    Explore state-wise NEET counseling rules, reservations, seat
-                    distribution, and State Quota procedures.
+                    Explore detailed state-wise NEET counseling rules, seat reservations, distribution, and State Quota admission procedures.
                   </div>
                   <button className="bg-[#20B486] text-xs font-semibold text-white mt-4 px-5 py-2.5 rounded-xl ">
                     Check Eligibility &amp; Seats
@@ -73,8 +70,7 @@ const ChoiceFillingMaker = () => {
                     NEET UG/ NEET PG
                   </div>
                   <div className="text-base text-black mt-3">
-                    Explore state-wise NEET counseling rules, reservations, seat
-                    distribution, and State Quota procedures.
+                    Explore All India Quota counseling rules, seat reservations, distribution, and admission procedures for NEET UG and PG.
                   </div>
                   <button className="bg-[#20B486] text-xs font-semibold text-white mt-4 px-5 py-2.5 rounded-xl ">
                     Check Eligibility &amp; Seats
@@ -91,7 +87,7 @@ const ChoiceFillingMaker = () => {
                     />
                   </span>
                   <span className="md:text-base sm:text-sm text-xs font-medium text-black">
-                    100% Verified AIQ &amp; State Quota
+                    100% Verified AIQ & State Quota
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -103,7 +99,7 @@ const ChoiceFillingMaker = () => {
                     />
                   </span>
                   <span className="md:text-base sm:text-sm text-xs font-medium text-black">
-                    Round-wise Choice Filling
+                    Round-wise Choice Filling Guidance
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -127,7 +123,7 @@ const ChoiceFillingMaker = () => {
                     />
                   </span>
                   <span className="md:text-base sm:text-sm text-xs font-medium text-black">
-                    Accurate Cutoffs &amp; Fees
+                    Accurate Cutoffs & Fee Details
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -139,7 +135,7 @@ const ChoiceFillingMaker = () => {
                     />
                   </span>
                   <span className="md:text-base sm:text-sm text-xs font-medium text-black">
-                    Complete Academic &amp; Bond Info
+                    Complete Academic & Bond Information
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -151,7 +147,7 @@ const ChoiceFillingMaker = () => {
                     />
                   </span>
                   <span className="md:text-base sm:text-sm text-xs font-medium text-black">
-                    100% Verified AIQ &amp; State Quota
+                    Expert Guidance for Top College Selection
                   </span>
                 </div>
               </div>

@@ -45,7 +45,7 @@ const PredictorFeature = () => {
                     college level accuracy
                   </span>
                   <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                    Plan smarter with reliable admission predictions for every college.{" "}
                   </span>
                 </div>
               </div>
@@ -58,7 +58,7 @@ const PredictorFeature = () => {
                     State + AIQ Predictor
                   </span>
                   <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                    One predictor for both State and AIQ counseling seats.{" "}
                   </span>
                 </div>
               </div>
@@ -68,10 +68,10 @@ const PredictorFeature = () => {
                 </div>
                 <div className="flex flex-col ">
                   <span className="capitalizing md:text-base text-sm font-medium">
-                    AI+ human expertise
+                    AI + Human Expertise
                   </span>
                   <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                    Plan your career smartly with expert guidance.{" "}
                   </span>
                 </div>
               </div>
@@ -81,10 +81,10 @@ const PredictorFeature = () => {
                 </div>
                 <div className="flex flex-col ">
                   <span className="capitalizing md:text-base text-sm font-medium">
-                    Trusted &amp; Verified data
+                    Trusted & Verified Data
                   </span>
                   <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                    Accurate predictions based on official cutoff trends.{" "}
                   </span>
                 </div>
               </div>
@@ -94,10 +94,10 @@ const PredictorFeature = () => {
                 </div>
                 <div className="flex flex-col ">
                   <span className="capitalizing md:text-base text-sm font-medium">
-                    latest year cutoffs
+                    Latest Year Cutoffs
                   </span>
                   <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                    Explore college options using current year cutoffs.{" "}
                   </span>
                 </div>
               </div>
@@ -107,10 +107,10 @@ const PredictorFeature = () => {
                 </div>
                 <div className="flex flex-col ">
                   <span className="capitalizing md:text-base text-sm font-medium">
-                    secure &amp; private
+                    Secure & Private
                   </span>
                   <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                    Trusted platform keeping all your details secure.{" "}
                   </span>
                 </div>
               </div>

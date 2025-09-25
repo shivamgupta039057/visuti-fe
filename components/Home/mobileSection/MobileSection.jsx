@@ -48,9 +48,7 @@ const MobileSection = () => {
             Your Gateway to the Right Campus
           </div>
           <div className="lg:text-xl md:text-lg sm:text-base text-sm text-[#FAFAFA] mt-5">
-            With College View, explore detailed profiles of top government and
-            private colleges across India. From courses, fees, and facilities to
-            placement records and student reviews.
+            Explore detailed profiles of top government and private colleges across India, including courses, fees, facilities, placements, and student reviews.
           </div>
           <button className="bg-white px-5 py-3 rounded-2xl font-medium md:text-lg text-sm flex items-center gap-3 sm:mt-10 mt-5 max-sm:mx-auto">
             Explore Colleges{" "}

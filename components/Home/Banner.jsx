@@ -43,9 +43,7 @@ const Banner = () => {
                     </button>
                   </div>
                   <p className="text-sm text-black max-w-md italic">
-                    Plan your future with expert guidance in NEET UG, NEET PG,
-                    and IIT admissions. Get clarity on the right path, right
-                    college, and right opportunities.
+                    Get expert guidance for NEET UG, NEET PG, and IIT admissions. Choose the right career path, best college, and best opportunities for your future success.
                   </p>
                 </div>
 
@@ -100,9 +98,7 @@ const Banner = () => {
                     </button>
                   </div>
                   <p className="text-sm text-black max-w-md italic">
-                    Plan your future with expert guidance in NEET UG, NEET PG,
-                    and IIT admissions. Get clarity on the right path, right
-                    college, and right opportunities.
+                     Get expert guidance for NEET UG, NEET PG, and IIT admissions. Choose the right career path, best college, and best opportunities for your future success.
                   </p>
                 </div>
 

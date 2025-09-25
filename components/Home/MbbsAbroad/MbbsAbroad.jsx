@@ -18,8 +18,7 @@ const MbbsAbroad = () => {
           </div>
           {/* Paragraph */}
           <div className="md:font-medium md:text-base sm:text-sm text-xs text-[#9A98A9] text-center sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
-            Expert counselling for affordable and globally recognized MBBS
-            programs abroad
+            Get expert guidance for affordable and globally recognized MBBS programs overseas.
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 md:my-10 my-5 ">
             <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg bg-white p-4 flex items-center justify-center flex-col md:gap-3">

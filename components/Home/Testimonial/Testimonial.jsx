@@ -37,12 +37,12 @@ const Testimonial = () => {
     <section className="py-10 bg-[#f5f8ff]">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#2B2B3D]">
-          See what <span className="text-[#20B486]">our students</span> are saying
+          See What <span className="text-[#20B486]">Our Students</span> Are Saying
         </h2>
         <p className="text-[#9A98A9] mt-4 max-w-2xl mx-auto">
-          Hear from students who turned their dreams into reality with our expert guidance.
+          Hear from students who achieved their dreams with our expert guidance.
         </p>
-
+  
         <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ clickable: true }}

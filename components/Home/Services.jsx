@@ -17,7 +17,7 @@ const Services = () => {
             <span className="font-bold text-[#20B486]"> Services</span>
           </div>
           <div className="md:font-medium md:text-base sm:text-sm text-xs text-[#9A98A9] sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Personalized guidance and services to help you achieve your goals.
           </div>
         </div>
 

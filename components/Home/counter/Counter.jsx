@@ -23,7 +23,7 @@ const Counter = () => {
               10+
             </div>
             <div className="md:text-2xl sm:text-xl text-sm font-medium text-white text-center md:mt-3 mt-2">
-              years of experience
+              Years Of Experience
             </div>
           </SwiperSlide>
 
@@ -32,7 +32,7 @@ const Counter = () => {
               790+
             </div>
             <div className="md:text-2xl sm:text-xl text-sm font-medium text-white text-center md:mt-3 mt-2">
-              universities tie ups
+              Universities Tie Ups
             </div>
           </SwiperSlide>
 
@@ -41,7 +41,7 @@ const Counter = () => {
               100%
             </div>
             <div className="md:text-2xl sm:text-xl text-sm font-medium text-white text-center md:mt-3 mt-2">
-              AI App accuracy
+              AI App Accuracy
             </div>
           </SwiperSlide>
 
@@ -50,7 +50,7 @@ const Counter = () => {
               12340+
             </div>
             <div className="md:text-2xl sm:text-xl text-sm font-medium text-white text-center md:mt-3 mt-2">
-              success stories
+              Success Stories
             </div>
           </SwiperSlide>
         </Swiper>

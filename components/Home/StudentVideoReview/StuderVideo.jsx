@@ -14,12 +14,11 @@ const StuderVideo = () => {
           {/* Left Text Section */}
           <div className="lg:col-span-3 col-span-12">
             <div className="text-[#2B2B3D] font-semibold lg:text-[40px] md:text-4xl text-3xl capitalize">
-              Our Counseling Tailored Says{" "}
-              <span className="font-bold text-[#20B486]"> Our Story</span>
+              Your Success, {" "}
+              <span className="font-bold text-[#20B486]"> Our Guidance</span>
             </div>
             <div className="font-medium lg:text-base md:text-base sm:text-sm text-xs text text-[#9A98A9] mt-4 leading-relaxed text-left">
-              Expert counselling for affordable and globally recognized MBBS
-              programs abroad
+              Affordable and globally recognized MBBS programs with expert counseling.
             </div>
             <button className="bg-[#20B486] rounded-xl px-3.5 py-2.5 text-white text-sm underline lg:mt-12 md:mt-10 sm:mt-8 mt-5 flex items-center gap-3 capitalize">
               more story
