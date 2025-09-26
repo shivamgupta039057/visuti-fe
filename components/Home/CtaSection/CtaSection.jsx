@@ -11,7 +11,7 @@ const CtaSection = () => {
     />
   </div>
   <div className="max-w-5xl ms-auto lg:px-6 px-4 z-10 relative text-end flex items-center justify-end lg:flex-row flex-col gap-5">
-    <div className="lg:text-4xl md:text-3xl sm:text-2xl text-lg font-bold text white leading-normal">
+    <div className="lg:text-4xl md:text-3xl sm:text-2xl text-lg font-bold text-white leading-normal">
       Talk to Our <span className="font-extrabold text-[#263830]">Experts</span>{" "}
       for <br />{" "}
       <span className="bg-white sm:p-2 p-1 rounded-lg font-extrabold text-[#263830]">
@@ -19,12 +19,12 @@ const CtaSection = () => {
       </span>{" "}
       Career Choices
     </div>
-    <button className="flex items-center justify-start gap-2 bg-white rounded-lg p-2 mx-auto">
+    <button className="flex items-center justify-start text-left gap-2 bg-white rounded-lg p-2 mx-auto">
       <div className="shrink-0">
         <img
           alt=""
           src="/phone.png"
-          className="size-10 p-2 bg-white rounded-full"
+          className="size-10 bg-white rounded-full"
         />
       </div>
       <div className="flex-1 flex-col truncate ">

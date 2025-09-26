@@ -2,11 +2,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #20b486; /* Green shade */
-  --color-secondary: #06241b; /* Dark Green */
-  --color-accent: #2a4a45; /* Teal */
-  --color-muted: #666666; /* Gray text */
-  --color-danger: #ff0000; /* Red */
+  --color-primary: #20B486; /* Green shade */
+  --color-secondary: #2B2B3D; /* Dark Green */
+  --color-accent: #000000; /* black */
+  --color-muted: #9A98A9; /* Gray text */
 }
 
 body {
@@ -26,9 +25,11 @@ body {
     color: white;
   }
   50% {
-    color: red;
+    color: var(--color-accent) ;
   }
 }
+
+
 
 .sprinkle-text {
   animation: sprinkle 1.2s infinite ease-in-out;
@@ -57,4 +58,33 @@ body {
 }
 .ripple::after {
   animation-delay: 1s; /* second wave */
+}
+
+
+
+
+@keyframes scrollNews {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+
+.blink-text {
+  color: #FF0000;        /* Red text */
+  font-weight: bold;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;          /* Visible */
+  }
+  100% {
+    opacity: 0;          /* Hidden */
+  }
 }
