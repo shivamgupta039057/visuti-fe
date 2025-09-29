@@ -9,11 +9,11 @@ import "swiper/css/pagination";
 
 const Banner = () => {
   return (
-    <section>
+    <section className="max-md:pt-[73px]">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        navigation
-        pagination={{ clickable: true }}
+        // navigation
+        // pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         loop={true}
         className="myHeroSwiper"
@@ -38,7 +38,7 @@ const Banner = () => {
                     Neet Expert Counselor For Government &amp; Private College
                   </p>
                   <div className="md:mb-12 md:mt-10 my-7">
-                    <button className="bg-[#2E4D3E] text-white font-semibold sm:px-7 px-5 py-3 rounded-full md:text-xl sm:text-lg text-sm">
+                    <button className="bg-primary text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
                       Book Your Seat
                     </button>
                   </div>
@@ -93,7 +93,7 @@ const Banner = () => {
                     Neet Expert Counselor For Government &amp; Private College
                   </p>
                   <div className="md:mb-12 md:mt-10 my-7">
-                    <button className="bg-[#2E4D3E] text-white font-semibold sm:px-7 px-5 py-3 rounded-full md:text-xl sm:text-lg text-sm">
+                    <button className="bg-primary text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
                       Book Your Seat
                     </button>
                   </div>

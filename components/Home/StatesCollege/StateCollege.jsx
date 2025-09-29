@@ -12,13 +12,14 @@ const StateCollege = () => {
       </div>
       <div className="max-w-7xl mx-auto lg:px-6 px-4 z-10 relative">
         {/* Heading */}
-        <div className="text-[#2B2B3D] font-semibold lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-center capitalize">
-          Find Your <span className="font-bold text-[#20B486]"> College</span>{" "}
-          by<span className="font-bold text-[#20B486]"> State</span>
+        <div className="text-secondary font-semibold  md:text-5xl sm:text-4xl text-3xl text-center capitalize">
+          find <span className="font-bold text-primary"> college</span>{" "}
+          listing by <span className="font-bold text-primary"> states</span>
         </div>
         {/* Paragraph */}
-        <div className="md:font-medium md:text-base sm:text-sm text-xs text-[#9A98A9] text-center sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
-          Discover affordable, globally recognized MBBS programs with expert guidance.
+        <div className="md:font-medium md:text-base sm:text-sm text-xs text-muted text-center sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
+          Expert counselling for affordable and globally recognized MBBS
+          programs abroad
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 md:my-10 my-5 ">
           <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg bg-white p-4 flex items-center justify-center flex-col md:gap-3">
@@ -101,12 +102,12 @@ const StateCollege = () => {
           </div>
         </div>
         <div>
-          <div className="capitalize text-2xl font-semibold text-[#2B2B3D]">
+          <div className="capitalize text-2xl font-semibold text-secondary">
             explore universities and colleges in{" "}
             <span className="text-[#2D814A]">india</span>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-5 gap-3 my-5">
-            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-[#20B486] flex items-center cursor-pointer">
+            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-primary flex items-center cursor-pointer">
               {/* Left Content */}
               <div className="flex-1">
                 <div className="text-black md:text-xl sm:text-lg text-sm font-medium flex items-center gap-3 uppercase">
@@ -117,7 +118,7 @@ const StateCollege = () => {
                 </div>
               </div>
               {/* Right Arrow */}
-              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-[#20B486]">
+              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-primary">
                 <img
                   src="/ArrowUpRight.png"
                   alt="arrow"
@@ -125,7 +126,7 @@ const StateCollege = () => {
                 />
               </div>
             </div>
-            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-[#20B486] flex items-center cursor-pointer">
+            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-primary flex items-center cursor-pointer">
               {/* Left Content */}
               <div className="flex-1">
                 <div className="text-black md:text-xl sm:text-lg text-sm font-medium flex items-center gap-3 uppercase">
@@ -136,7 +137,7 @@ const StateCollege = () => {
                 </div>
               </div>
               {/* Right Arrow */}
-              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-[#20B486]">
+              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-primary">
                 <img
                   src="/ArrowUpRight.png"
                   alt="arrow"
@@ -144,7 +145,7 @@ const StateCollege = () => {
                 />
               </div>
             </div>
-            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-[#20B486] flex items-center cursor-pointer">
+            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-primary flex items-center cursor-pointer">
               {/* Left Content */}
               <div className="flex-1">
                 <div className="text-black md:text-xl sm:text-lg text-sm font-medium flex items-center gap-3 uppercase">
@@ -155,7 +156,7 @@ const StateCollege = () => {
                 </div>
               </div>
               {/* Right Arrow */}
-              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-[#20B486]">
+              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-primary">
                 <img
                   src="/ArrowUpRight.png"
                   alt="arrow"
@@ -163,7 +164,7 @@ const StateCollege = () => {
                 />
               </div>
             </div>
-            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-[#20B486] flex items-center cursor-pointer">
+            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-primary flex items-center cursor-pointer">
               {/* Left Content */}
               <div className="flex-1">
                 <div className="text-black md:text-xl sm:text-lg text-sm font-medium flex items-center gap-3 uppercase">
@@ -174,7 +175,7 @@ const StateCollege = () => {
                 </div>
               </div>
               {/* Right Arrow */}
-              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-[#20B486]">
+              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-primary">
                 <img
                   src="/ArrowUpRight.png"
                   alt="arrow"
@@ -182,7 +183,7 @@ const StateCollege = () => {
                 />
               </div>
             </div>
-            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-[#20B486] flex items-center cursor-pointer">
+            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-primary flex items-center cursor-pointer">
               {/* Left Content */}
               <div className="flex-1">
                 <div className="text-black md:text-xl sm:text-lg text-sm font-medium flex items-center gap-3 uppercase">
@@ -193,7 +194,7 @@ const StateCollege = () => {
                 </div>
               </div>
               {/* Right Arrow */}
-              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-[#20B486]">
+              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-primary">
                 <img
                   src="/ArrowUpRight.png"
                   alt="arrow"
@@ -201,7 +202,7 @@ const StateCollege = () => {
                 />
               </div>
             </div>
-            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-[#20B486] flex items-center cursor-pointer">
+            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-primary flex items-center cursor-pointer">
               {/* Left Content */}
               <div className="flex-1">
                 <div className="text-black md:text-xl sm:text-lg text-sm font-medium flex items-center gap-3 uppercase">
@@ -212,7 +213,7 @@ const StateCollege = () => {
                 </div>
               </div>
               {/* Right Arrow */}
-              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-[#20B486]">
+              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-primary">
                 <img
                   src="/ArrowUpRight.png"
                   alt="arrow"
@@ -220,7 +221,7 @@ const StateCollege = () => {
                 />
               </div>
             </div>
-            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-[#20B486] flex items-center cursor-pointer">
+            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-primary flex items-center cursor-pointer">
               {/* Left Content */}
               <div className="flex-1">
                 <div className="text-black md:text-xl sm:text-lg text-sm font-medium flex items-center gap-3 uppercase">
@@ -231,7 +232,7 @@ const StateCollege = () => {
                 </div>
               </div>
               {/* Right Arrow */}
-              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-[#20B486]">
+              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-primary">
                 <img
                   src="/ArrowUpRight.png"
                   alt="arrow"
@@ -239,7 +240,7 @@ const StateCollege = () => {
                 />
               </div>
             </div>
-            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-[#20B486] flex items-center cursor-pointer">
+            <div className="md:px-5 px-3 md:py-4 py-1.5 rounded-lg border border-[#DDDDDD] bg-white [box-shadow:0px_3px_12px_0px_#4B4B4B14] transition group/neet hover:border-primary flex items-center cursor-pointer">
               {/* Left Content */}
               <div className="flex-1">
                 <div className="text-black md:text-xl sm:text-lg text-sm font-medium flex items-center gap-3 uppercase">
@@ -250,7 +251,7 @@ const StateCollege = () => {
                 </div>
               </div>
               {/* Right Arrow */}
-              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-[#20B486]">
+              <div className="shrink-0 bg-white [box-shadow:-4px_4px_20px_0px_#20B4861F] md:size-10 size-8 rounded-lg flex items-center justify-center transition group-hover/neet:bg-primary">
                 <img
                   src="/ArrowUpRight.png"
                   alt="arrow"

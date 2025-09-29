@@ -2,7 +2,7 @@ import React from "react";
 
 const PredictorFeature = () => {
   return (
-    <section className="relative lg:py-16 md:py-12 py-10 md:pb-24 max-sm:pt-6 ">
+    <section className="relative lg:py-16 md:py-12 py-10 md:pb-32 max-sm:pt-6 ">
       <div className="absolute inset-0 -z-10">
         <img
           src="/neetadminstion-banner.png"
@@ -10,22 +10,22 @@ const PredictorFeature = () => {
           className="h-full w-full object-cover overflow-hidden"
         />
       </div>
-      <div className="absolute md:-bottom-3 -bottom-10 md:left-[35%]  -z-10">
+      <div className="absolute md:-bottom-3 -bottom-10 md:left-[40%]  -z-10">
         <img
           src="/criclearrow.png"
           alt="hero-banner"
-          className="md:h-44 h-36 overflow-hidden"
+          className=" h-32 overflow-hidden"
         />
       </div>
       <div className="max-w-7xl mx-auto lg:px-6 px-4 z-10">
         {/* Heading */}
-        <div className="text-[#2B2B3D] font-semibold lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-center capitalize">
+        <div className="text-secondary font-semibold  md:text-5xl sm:text-4xl text-3xl text-center capitalize">
           Predict Your{" "}
-          <span className="font-bold text-[#20B486]"> NEET Admission</span>{" "}
+          <span className="font-bold text-primary"> NEET Admission</span>{" "}
           Chances
         </div>
         {/* Paragraph */}
-        <div className="md:font-medium md:text-base sm:text-sm text-xs text-[#9A98A9] text-center sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
+        <div className="md:font-medium md:text-base sm:text-sm text-xs text-muted text-center sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut etiam
           maecenas posuere ultricies dis tempus magna mi id. Morbi a eu erat
           fringilla.

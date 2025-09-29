@@ -17,8 +17,8 @@ import LatestandNotifications from './LatestandNotifications/LatestandNotificati
 const HomePage = () => {
   return (
    <>
-   <Banner />
-   <Certified />
+   <Banner /> 
+    <Certified />
    <Services />
    <LatestandNotifications />
    <Predictor />
@@ -26,7 +26,7 @@ const HomePage = () => {
    <ChoiceFillingMaker />
    <StateCollege />
    <CtaSection />
-   <StuderVideo />
+   <StuderVideo /> 
    <Testimonial />
    <Counter />
    <WhyChoose />

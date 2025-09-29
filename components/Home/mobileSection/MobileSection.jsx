@@ -42,7 +42,7 @@ const MobileSection = () => {
         </div>
         <div className="relative z-10 max-sm:text-center">
           <div className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-semibold text-white">
-            <span className="text-[#05FFFB] font-extrabold">
+            <span className="text-[#FFFB00] font-extrabold">
               College View -{" "}
             </span>{" "}
             Your Gateway to the Right Campus

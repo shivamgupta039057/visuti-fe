@@ -4,7 +4,7 @@ const Certified = () => {
   return (
     <>
       <section className="max-w-7xl mx-auto lg:px-6 px-4 -mt-12 relative z-20">
-        <div className="bg-white rounded-xl [box-shadow:0px_0px_14px_0px_#00000026] md:p-6 sm:p-4 p-3 flex flex-col lg:flex-row items-center justify-between md:gap-8 gap-5">
+        <div className="bg-white rounded-[10px] [box-shadow:0px_0px_14px_0px_#00000026] md:p-6 sm:p-4 p-3 flex flex-col lg:flex-row items-center justify-between md:gap-8 gap-5">
           {/* Left Logos */}
           <div className="flex flex-col items-center lg:items-start gap-3">
             <h3 className="text-black font-bold text-lg">Certified By :-</h3>
