@@ -109,78 +109,192 @@
         <a href="#" class="text-green-600 font-medium hover:underline">Sign in</a>
       </p>
 
-      <form class="space-y-4">
-      <!-- Name + Email -->
-      <div class="grid grid-cols-2 gap-4">
-        <div class="relative">
-          <label class="block text-sm font-medium text-gray-600 mb-1">Name</label>
-          <i class="ri-user-line absolute left-3 top-11 text-gray-400 text-lg"></i>
-          <input type="text" placeholder="Saloni Mangal" class="w-full border border-gray-300 rounded-lg p-3 pl-10 focus:ring-2 focus:ring-green-500 outline-none" />
-        </div>
-        <div class="relative">
-          <label class="block text-sm font-medium text-gray-600 mb-1">E-mail</label>
-          <i class="ri-mail-line absolute left-3 top-11 text-gray-400 text-lg"></i>
-          <input type="email" placeholder="example@gmail.com" class="w-full border border-gray-300 rounded-lg p-3 pl-10 focus:ring-2 focus:ring-green-500 outline-none" />
-        </div>
-      </div>
+        <form class="space-y-4">
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label class="block text-base font-medium text-[#666666] mb-2">Name</label>
+              <div class="relative flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                <span class="text-slate-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 20.25a7.5 7.5 0 0 1 15 0" />
+                  </svg>
+                </span>
+                <input type="text" placeholder="Saloni Mangal" class="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-base font-medium text-[#666666] mb-2">E-mail</label>
+              <div class="relative flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                <span class="text-slate-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25v13.5A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75V5.25Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m3 7.5 7.89 5.26a2.25 2.25 0 0 0 2.22 0L21 7.5" />
+                  </svg>
+                </span>
+                <input type="email" placeholder="example@gmail.com" class="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" />
+              </div>
+            </div>
+          </div>
 
-      <!-- Mobile -->
-      <div class="relative">
-        <label class="block text-sm font-medium text-gray-600 mb-1">Mobile No.</label>
-        <i class="ri-phone-line absolute left-3 top-11 text-gray-400 text-lg"></i>
-        <input type="text" placeholder="+1 1234567890" class="w-full border border-gray-300 rounded-lg p-3 pl-10 focus:ring-2 focus:ring-green-500 outline-none" />
-      </div>
+         <div class="w-full">
+              <label class="block text-base font-medium text-[#666666] mb-2">Mobile No.</label>
+              
+              <div class="flex items-center border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg shadow-sm relative">
+                <!-- Country Button -->
+                <button id="countryBtn" type="button" class="flex items-center gap-2 pl-4 pr-3 py-3 text-sm font-medium text-slate-700 border-r border-slate-200">
+                  <img id="selectedFlag" src="https://flagcdn.com/us.svg" alt="Flag" class="w-6 h-6 rounded-full object-cover" />
+                  <span id="selectedCode" class="text-slate-600">+1</span>
+                  <i class="ri-arrow-down-s-line text-slate-500"></i>
+                </button>
 
-      <!-- Courses + States -->
-      <div class="grid grid-cols-2 gap-4">
-        <div class="relative">
-          <label class="block text-sm font-medium text-gray-600 mb-1">Courses</label>
-          <i class="ri-book-open-line absolute left-3 top-11 text-gray-400 text-lg"></i>
-          <select class="w-full border border-gray-300 rounded-lg p-3 pl-10 text-gray-500 focus:ring-2 focus:ring-green-500 outline-none">
-            <option>Select course</option>
-          </select>
-        </div>
-        <div class="relative">
-          <label class="block text-sm font-medium text-gray-600 mb-1">States</label>
-          <i class="ri-map-pin-line absolute left-3 top-11 text-gray-400 text-lg"></i>
-          <select class="w-full border border-gray-300 rounded-lg p-3 pl-10 text-gray-500 focus:ring-2 focus:ring-green-500 outline-none">
-            <option>Select state</option>
-          </select>
-        </div>
-      </div>
+                <!-- Input -->
+                <input type="tel" placeholder="1234567890" class="flex-1 px-4 py-3 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" />
 
-      <!-- Password + Confirm -->
-      <div class="grid grid-cols-2 gap-4">
-        <div class="relative">
-          <label class="block text-sm font-medium text-gray-600 mb-1">Password</label>
-          <i class="ri-lock-line absolute left-3 top-11 text-gray-400 text-lg"></i>
-          <i class="ri-eye-line absolute right-3 top-11 text-gray-400 text-lg cursor-pointer"></i>
-          <input type="password" placeholder="••••••" class="w-full border border-gray-300 rounded-lg p-3 pl-10 pr-10 focus:ring-2 focus:ring-green-500 outline-none" />
-        </div>
-        <div class="relative">
-          <label class="block text-sm font-medium text-gray-600 mb-1">Confirm Password</label>
-          <i class="ri-lock-line absolute left-3 top-11 text-gray-400 text-lg"></i>
-          <i class="ri-eye-line absolute right-3 top-11 text-gray-400 text-lg cursor-pointer"></i>
-          <input type="password" placeholder="••••••" class="w-full border border-gray-300 rounded-lg p-3 pl-10 pr-10 focus:ring-2 focus:ring-green-500 outline-none" />
-        </div>
-      </div>
+                <!-- Dropdown -->
+                <div id="countryList" class="absolute top-full left-0 bg-white border border-slate-200 shadow-md w-44 rounded-md mt-1 hidden z-10">
+                  <ul>
+                    <li data-flag="https://flagcdn.com/us.svg" data-code="+1" class="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer">
+                      <img src="https://flagcdn.com/us.svg" class="w-6 h-6 rounded-full" /> United States (+1)
+                    </li>
+                    <li data-flag="https://flagcdn.com/in.svg" data-code="+91" class="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer">
+                      <img src="https://flagcdn.com/in.svg" class="w-6 h-6 rounded-full" /> India (+91)
+                    </li>
+                    <li data-flag="https://flagcdn.com/gb.svg" data-code="+44" class="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer">
+                      <img src="https://flagcdn.com/gb.svg" class="w-6 h-6 rounded-full" /> UK (+44)
+                    </li>
+                    <li data-flag="https://flagcdn.com/ca.svg" data-code="+1" class="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer">
+                      <img src="https://flagcdn.com/ca.svg" class="w-6 h-6 rounded-full" /> Canada (+1)
+                    </li>
+                    <li data-flag="https://flagcdn.com/au.svg" data-code="+61" class="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer">
+                      <img src="https://flagcdn.com/au.svg" class="w-6 h-6 rounded-full" /> Australia (+61)
+                    </li>
+                    <li data-flag="https://flagcdn.com/de.svg" data-code="+49" class="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer">
+                      <img src="https://flagcdn.com/de.svg" class="w-6 h-6 rounded-full" /> Germany (+49)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-      <!-- Checkbox -->
-      <div class="flex items-start gap-2 mt-4">
-        <input type="checkbox" class="mt-1" />
-        <p class="text-sm text-gray-600">
-          By submitting this form, you accept and agree to our
-          <a href="#" class="text-green-600 font-medium">Terms of Use</a>.
-        </p>
-      </div>
+          <div class="grid gap-6 md:grid-cols-2">
+            <div class="relative">
+              <label class="block text-base font-medium text-[#666666] mb-2">Courses</label>
+              <div class="relative flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                <span class="text-slate-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m12 6.75 7.5 3-7.5 3-7.5-3 7.5-3Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5V15c0 2.485 3.357 4.5 7.5 4.5s7.5-2.015 7.5-4.5v-4.5" />
+                  </svg>
+                </span>
+                <select class="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 appearance-none outline-none pr-6">
+                  <option value="">Select course</option>
+                </select>
+                <span class="pointer-events-none text-slate-400 absolute right-6 top-1/2 -translate-y-1/2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="relative">
+              <label class="block text-base font-medium text-[#666666] mb-2">States</label>
+              <div class="relative flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                <span class="text-slate-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.05-7.5 11.25-7.5 11.25S4.5 17.55 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>
+                </span>
+                <select class="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 appearance-none outline-none pr-6">
+                  <option value="">Select state</option>
+                </select>
+                <span class="pointer-events-none text-slate-400 absolute right-6 top-1/2 -translate-y-1/2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
 
-      <!-- Button -->
-      <button type="submit" class="w-full bg-green-600 text-white font-medium rounded-lg py-3 hover:bg-green-700 transition">
-        Create Account
-      </button>
-    </form>
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label class="block text-base font-medium text-[#666666] mb-2">Password</label>
+              <div class="flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                <span class="text-slate-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V7.125a4.5 4.5 0 0 0-9 0V10.5" />
+                    <rect width="15" height="11" x="4.5" y="10.5" rx="2" ry="2" fill="none" />
+                  </svg>
+                </span>
+                <input type="password" placeholder="••••••" class="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" />
+                <button type="button" class="text-slate-400 hover:text-slate-500">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12s3.6-7.5 9-7.5S21 12 21 12s-3.6 7.5-9 7.5S3 12 3 12Z" />
+                    <circle cx="12" cy="12" r="2.25" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-base font-medium text-[#666666] mb-2">Confirm Password</label>
+              <div class="flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                <span class="text-slate-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V7.125a4.5 4.5 0 0 0-9 0V10.5" />
+                    <rect width="15" height="11" x="4.5" y="10.5" rx="2" ry="2" fill="none" />
+                  </svg>
+                </span>
+                <input type="password" placeholder="••••••" class="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" />
+                <button type="button" class="text-slate-400 hover:text-slate-500">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12s3.6-7.5 9-7.5S21 12 21 12s-3.6 7.5-9 7.5S3 12 3 12Z" />
+                    <circle cx="12" cy="12" r="2.25" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <input type="checkbox" id="terms" class="mt-1 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" />
+            <label for="terms" class="text-sm text-slate-500">
+              By submitting this form, you accept and agree to our
+              <a href="#" class="text-emerald-600 font-medium hover:underline">Terms of Use</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="w-full rounded-[10px] bg-[#20B486] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-emerald-500/30 focus:outline-none">
+            Create Account
+          </button>
+        </form>
     </div>
   </div>
+
+<script>
+  const btn = document.getElementById("countryBtn");
+  const list = document.getElementById("countryList");
+  const flag = document.getElementById("selectedFlag");
+  const code = document.getElementById("selectedCode");
+
+  btn.addEventListener("click", () => list.classList.toggle("hidden"));
+
+  list.querySelectorAll("li").forEach(item => {
+    item.addEventListener("click", () => {
+      flag.src = item.dataset.flag;
+      code.textContent = item.dataset.code;
+      list.classList.add("hidden");
+    });
+  });
+
+  // Click outside to close dropdown
+  document.addEventListener("click", (e) => {
+    if (!btn.contains(e.target) && !list.contains(e.target)) {
+      list.classList.add("hidden");
+    }
+  });
+</script>
 
 </body>
 </html>
