@@ -22,7 +22,7 @@ const WhyChoose = () => {
                   <img src="/GraduationCapgreen.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  Govt. &amp; ISO Certified Company
+                  Govt. & ISO Certified Company
                 </p>
                 <p className="text-xs mt-2 text-muted font-medium">
                   Hear from students who turned their dreams into reality with
@@ -51,7 +51,7 @@ const WhyChoose = () => {
                   <img src="/GraduationCap.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  10+ Years of Expertise in Career Counse
+                  10+ Years of Expertise in Career Counselling
                 </p>
                 <p className="text-xs mt-2 text-muted font-medium">
                   Hear from students who turned their dreams into reality.
@@ -64,7 +64,7 @@ const WhyChoose = () => {
                   <img src="/VideoCamera.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  Comprehensive Guidance AIQ/ State/ deemed
+                  Comprehensive Guidance AIQ/State/Deemed
                 </p>
                 <p className="text-xs mt-2 text-muted font-medium">
                   Hear from students who turned their dreams into reality with
@@ -106,7 +106,8 @@ const WhyChoose = () => {
                   <img src="/GraduationCapgreen.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  10+ Years of Expertise in Career Counse
+                  Proven Track Record of Student Satisfaction
+
                 </p>
                 <p className="text-xs mt-2 text-muted font-medium">
                   Hear from students who turned their dreams into reality.
@@ -119,7 +120,7 @@ const WhyChoose = () => {
                   <img src="/handshake.png" alt="" />
                 </div>
                 <p className="text-base font-semibold text-[#1E3636] mt-3">
-                  1-1 counseling
+                  1-1 Counseling
                 </p>
                 <p className="text-xs mt-2 text-muted font-medium">
                   Hear from students who turned their dreams into reality with

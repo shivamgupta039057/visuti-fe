@@ -15,9 +15,9 @@ const CtaSection = () => {
       Talk to Our <span className="font-extrabold text-[#263830]">Experts</span>{" "}
       for <br />{" "}
       <span className="bg-white sm:p-2 p-1 rounded-lg font-extrabold text-[#263830]">
-        Smarter
+        for Smarter 
       </span>{" "}
-      Career Choices
+      Career Decisions
     </div>
     <button className="flex items-center justify-start text-left gap-2 bg-white rounded-lg p-2 mx-auto">
       <div className="shrink-0">
