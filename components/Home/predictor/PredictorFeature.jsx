@@ -35,82 +35,82 @@ const PredictorFeature = () => {
             <img src="/NEET-Admission-Chances" alt="neet" />
           </div>
           <div>
-            <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
-              <div className="flex items-center justify-start gap-4 bg-white p-2 border border-[#E1E1E1] rounded-lg transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
-                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10 rounded-full bg-[#8FFFC9] p-3">
-                  <img alt="" src="/college.png" />
+            <div className="grid md:grid-cols-2 grid-cols-1  gap-5">
+              <div className="flex flex-col gap-1 bg-white p-3 border border-[#F3F4F6] rounded-[16px] [box-shadow:0px_2px_2px_-4px_#0000001A,0px_4px_6px_-3px_#0000001A] transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
+                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10 ">
+                  <img alt="" src="/Accuracy.png" />
                 </div>
                 <div className="flex flex-col ">
-                  <span className="capitalizing md:text-base text-sm font-medium">
+                  <span className="capitalize md:text-base text-sm font-medium text-[#0A0A0A] mb-1">
                     college level accuracy
                   </span>
-                  <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  <span className="md:text-xs text-[10px] font-normal text-[#717182] ">
+                    Plan smarter with reliable admission predictions for every college.{" "}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-start gap-4 bg-white p-2 border border-[#E1E1E1] rounded-lg transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
-                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10 rounded-full bg-[#FFA04C] p-3">
-                  <img alt="" src="/Prediction.png" />
+              <div className="flex flex-col gap-1 bg-white p-3 border border-[#F3F4F6] rounded-[16px] [box-shadow:0px_2px_2px_-4px_#0000001A,0px_4px_6px_-3px_#0000001A] transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
+                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10">
+                  <img alt="" src="/Predictor.png" />
                 </div>
                 <div className="flex flex-col ">
-                  <span className="capitalizing md:text-base text-sm font-medium">
+                  <span className="capitalize md:text-base text-sm font-medium text-[#0A0A0A] mb-1">
                     State + AIQ Predictor
                   </span>
-                  <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  <span className="md:text-xs text-[10px] font-normal text-[#717182]">
+                    One predictor for both State and AIQ counseling seats.{" "}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-start gap-4 bg-white p-2 border border-[#E1E1E1] rounded-lg transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
-                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10 rounded-full bg-[#5DECEC] p-3">
-                  <img alt="" src="/Robot.png" />
+              <div className="flex flex-col gap-1 bg-white p-3 border border-[#F3F4F6] rounded-[16px] [box-shadow:0px_2px_2px_-4px_#0000001A,0px_4px_6px_-3px_#0000001A] transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
+                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10">
+                  <img alt="" src="/aihuman.png" />
                 </div>
-                <div className="flex flex-col ">
-                  <span className="capitalizing md:text-base text-sm font-medium">
-                    AI+ human expertise
+                <div className="flex flex-col">
+                  <span className="capitalize md:text-base text-sm font-medium text-[#0A0A0A] mb-1">
+                    AI + Human Expertise
                   </span>
-                  <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center justify-start gap-4 bg-white p-2 border border-[#E1E1E1] rounded-lg transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
-                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10 rounded-full bg-[#EA85E5] p-3">
-                  <img alt="" src="/shield.png" />
-                </div>
-                <div className="flex flex-col ">
-                  <span className="capitalizing md:text-base text-sm font-medium">
-                    Trusted &amp; Verified data
-                  </span>
-                  <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  <span className="md:text-xs text-[10px] font-normal text-[#717182]">
+                    Plan your career smartly with expert guidance.{" "}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-start gap-4 bg-white p-2 border border-[#E1E1E1] rounded-lg transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
-                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10 rounded-full bg-[#F4DB7B] p-3">
-                  <img alt="" src="/exampreparation.png" />
+              <div className="flex flex-col gap-1 bg-white p-3 border border-[#F3F4F6] rounded-[16px] [box-shadow:0px_2px_2px_-4px_#0000001A,0px_4px_6px_-3px_#0000001A] transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
+                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10 ">
+                  <img alt="" src="/Trusted.png" />
                 </div>
                 <div className="flex flex-col ">
-                  <span className="capitalizing md:text-base text-sm font-medium">
-                    latest year cutoffs
+                  <span className="capitalize md:text-base text-sm font-medium text-[#0A0A0A] mb-1">
+                    Trusted & Verified Data
                   </span>
-                  <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  <span className="md:text-xs text-[10px] font-normal text-[#717182]">
+                    Accurate predictions based on official cutoff trends.{" "}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-start gap-4 bg-white p-2 border border-[#E1E1E1] rounded-lg transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
-                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10 rounded-full bg-[#FFA9A9] p-3">
-                  <img alt="" src="/lockandkey.png" />
+              <div className="flex flex-col gap-1 bg-white p-3 border border-[#F3F4F6] rounded-[16px] [box-shadow:0px_2px_2px_-4px_#0000001A,0px_4px_6px_-3px_#0000001A] transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
+                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10">
+                  <img alt="" src="/Cutoffs.png" />
                 </div>
                 <div className="flex flex-col ">
-                  <span className="capitalizing md:text-base text-sm font-medium">
-                    secure &amp; private
+                  <span className="capitalize md:text-base text-sm font-medium text-[#0A0A0A] mb-1">
+                    Latest Year Cutoffs
                   </span>
-                  <span className="md:text-xs text-[10px] font-normal text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  <span className="md:text-xs text-[10px] font-normal text-[#717182]">
+                    Explore college options using current year cutoffs.{" "}
+                  </span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-1 bg-white p-3 border border-[#F3F4F6] rounded-[16px] [box-shadow:0px_2px_2px_-4px_#0000001A,0px_4px_6px_-3px_#0000001A] transition hover:[box-shadow:0px_1px_16px_0px_#0000001A]">
+                <div className="shrink-0 md:w-14 w-10 md:h-14 h-10">
+                  <img alt="" src="/Secure.png" />
+                </div>
+                <div className="flex flex-col ">
+                  <span className="capitalize md:text-base text-sm font-medium text-[#0A0A0A] mb-1">
+                    Secure & Private
+                  </span>
+                  <span className="md:text-xs text-[10px] font-normal text-[#717182]">
+                    Trusted platform keeping all your details secure.{" "}
                   </span>
                 </div>
               </div>

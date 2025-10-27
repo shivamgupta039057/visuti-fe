@@ -1,4 +1,5 @@
 import React from "react";
+import StateSection from "../StateSection/StateSection";
 
 const StateCollege = () => {
   return (
@@ -21,7 +22,7 @@ const StateCollege = () => {
           Expert counselling for affordable and globally recognized MBBS
           programs abroad
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 md:my-10 my-5 ">
+        {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 md:my-10 my-5 ">
           <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg bg-white p-4 flex items-center justify-center flex-col md:gap-3">
             <img
               src="/rajasthan.png"
@@ -100,7 +101,8 @@ const StateCollege = () => {
               7+ universities
             </div>
           </div>
-        </div>
+        </div> */}
+        <StateSection/>
         <div>
           <div className="capitalize text-2xl font-semibold text-secondary">
             explore universities and colleges in{" "}

@@ -3,7 +3,7 @@ import React from "react";
 const WhyChoose = () => {
   return (
     <>
-      <section className="relative md:pt-12 max-sm:pt-10 max-sm:pb-5">
+      <section className="relative md:py-12 max-sm:py-5 bg-[#D0FAE54D]">
         <div className="max-w-7xl mx-auto lg:px-6 px-4 z-10">
           {/* Heading */}
           <div className="text-secondary font-medium  md:text-5xl sm:text-4xl text-3xl text-center capitalize capitalize">
@@ -16,7 +16,7 @@ const WhyChoose = () => {
             expert guidance.
           </div>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-10 sm:gap-8 gap-4 md:my-10 my-5">
-            <div className="border border-primary rounded-xl p-5">
+            <div className="bg-white border border-primary rounded-xl p-5">
               <div className="flex flex-col">
                 <div className="w-10 h-10 flex items-center justify-center border border-[#AED2C6] bg-[#E9F8F3] text-primary rounded-xl mb-2 p-2">
                   <img src="/GraduationCapgreen.png" alt="" />
@@ -30,7 +30,7 @@ const WhyChoose = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-primary rounded-xl p-5">
+            <div className="bg-white border border-primary rounded-xl p-5">
               <div className="flex flex-col">
                 <div className="w-10 h-10 flex items-center justify-center border border-[#D8EAFE] bg-[#F0F7FF] text-primary rounded-xl mb-2 p-2">
                   <img src="/Robot.png" alt="" />
@@ -45,7 +45,7 @@ const WhyChoose = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-primary rounded-xl p-5">
+            <div className="bg-white border border-primary rounded-xl p-5">
               <div className="flex flex-col">
                 <div className="w-10 h-10 flex items-center justify-center border border-[#F6C5CB] bg-[#FFEEF0] text-primary rounded-xl mb-2 p-2">
                   <img src="/GraduationCap.png" alt="" />
@@ -58,7 +58,7 @@ const WhyChoose = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-primary rounded-xl p-5">
+            <div className="bg-white border border-primary rounded-xl p-5">
               <div className="flex flex-col">
                 <div className="w-10 h-10 flex items-center justify-center border border-[#EDE4DB] bg-[#FFFAF5] text-primary rounded-xl mb-2 p-2">
                   <img src="/VideoCamera.png" alt="" />
@@ -72,7 +72,7 @@ const WhyChoose = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-primary rounded-xl p-5">
+            <div className="bg-white border border-primary rounded-xl p-5">
               <div className="flex flex-col">
                 <div className="w-10 h-10 flex items-center justify-center border border-[#AED2C6] bg-[#E9F8F3] text-primary rounded-xl mb-2 p-2">
                   <img src="/notificationgreen.png" alt="" />
@@ -86,7 +86,7 @@ const WhyChoose = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-primary rounded-xl p-5">
+            <div className="bg-white border border-primary rounded-xl p-5">
               <div className="flex flex-col">
                 <div className="w-10 h-10 flex items-center justify-center border border-[#D8EAFE] bg-[#F0F7FF] text-primary rounded-xl mb-2 p-2">
                   <img src="/fileblue.png" alt="" />
@@ -100,7 +100,7 @@ const WhyChoose = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-primary rounded-xl p-5">
+            <div className="bg-white border border-primary rounded-xl p-5">
               <div className="flex flex-col">
                 <div className="w-10 h-10 flex items-center justify-center border border-[#F6C5CB] bg-[#FFEEF0] text-primary rounded-xl mb-2 p-2">
                   <img src="/GraduationCapgreen.png" alt="" />
@@ -113,7 +113,7 @@ const WhyChoose = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-primary rounded-xl p-5">
+            <div className="bg-white border border-primary rounded-xl p-5">
               <div className="flex flex-col">
                 <div className="w-10 h-10 flex items-center justify-center border border-[#EDE4DB] bg-[#FFFAF5] text-primary rounded-xl mb-2 p-2">
                   <img src="/handshake.png" alt="" />

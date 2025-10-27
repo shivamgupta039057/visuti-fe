@@ -149,12 +149,12 @@ const StuderVideo = () => {
               <div className="swiper-button-prev group after:content-none h-7 w-7 rounded-full p-2 bg-[#034941] shadow-[ -4px_4px_20px_0px_#20B4861F ] [&.swiper-button-disabled]:bg-[#034941]/90">
                 <img src="/CaretRight.png" alt="left" className="w-5 h-5 rotate-180" />
 
-                <svg class="swiper-navigation-icon hidden"></svg>
+                <svg className="swiper-navigation-icon hidden"></svg>
               </div>
               <div className="swiper-button-next group after:content-none h-7 w-7 rounded-full p-2 bg-[#034941] shadow-[ -4px_4px_20px_0px_#20B4861F ] [&.swiper-button-disabled]:bg-[#034941]/90">
                 <img src="/CaretRight.png" alt="right" className="w-5 h-5" />
 
-                <svg class="swiper-navigation-icon hidden"></svg>
+                <svg className="swiper-navigation-icon hidden"></svg>
               </div>
             </div>
           </div>

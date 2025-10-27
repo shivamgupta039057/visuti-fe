@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -503,12 +504,12 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              href="/neetpredictor"
               className="sm:text-sm text-xs text-white transtion hover:text-white/80"
             >
               Neet Predictor
-            </a>
+            </Link>
           </li>
           <li>
             <a
