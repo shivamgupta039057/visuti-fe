@@ -1,4 +1,5 @@
 import React from "react";
+import LogoSlider from "./LogoSlider";
 
 const Certified = () => {
   return (
@@ -7,8 +8,8 @@ const Certified = () => {
         <div className="bg-white rounded-[10px] [box-shadow:0px_0px_14px_0px_#00000026] md:p-6 sm:p-4 p-3 flex flex-col lg:flex-row items-center justify-between md:gap-8 gap-5">
           {/* Left Logos */}
           <div className="flex flex-col items-center lg:items-start gap-3">
-            <h3 className="text-black font-bold text-lg">Certified By :-</h3>
-            <div className="flex items-center md:gap-6 gap-4">
+            <h3 className="text-black font-bold text-lg text-center mx-auto">Certified By :-</h3>
+            {/* <div className="flex items-center md:gap-6 gap-4">
               <img
                 src="/iso.png"
                 alt="ISO"
@@ -24,7 +25,8 @@ const Certified = () => {
                 alt="Startup India"
                 className="md:h-16 h-12"
               />
-            </div>
+            </div> */}
+            <LogoSlider/>
           </div>
           {/* Divider */}
           <div className="w-[200px] lg:w-[1px] h-[1px] lg:h-[100px] bg-gray-100/10  border border-gray-100" />

@@ -29,7 +29,7 @@ const LatestandNotifications = () => {
       <div className="max-w-7xl mx-auto lg:px-6 px-4 z-15 relative">
         <div className="grid md:grid-cols-2 grid-cols-1">
           {/* LEFT NEWS */}
-          <div className="h-full flex flex-col bg-primary p-5">
+          <div className="h-full flex flex-col bg-primary p-5 mr-12">
             <div className="mb-6 md:pt-10 pt-5">
               <h2 className="md:text-3xl text-2xl font-semibold text-center text-white">
                 Latest News &amp; Notifications
@@ -37,7 +37,7 @@ const LatestandNotifications = () => {
             </div>
 
             {/* Auto-scroll container */}
-            <div className="flex-1 relative w-full md:pr-20 overflow-hidden">
+            <div className="flex-1 relative w-full  overflow-hidden bg-white rounded-[10px] p-2">
               <div
                 className="space-y-4 animate-scrollNews"
                 style={{
@@ -48,7 +48,7 @@ const LatestandNotifications = () => {
                 {[1, 2, 3,].map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-4 md:p-4 p-2 bg-white rounded-xl"
+                    className="flex items-center gap-4 md:p-4 p-2 bg-[#FBFBFB] border border-[#F1F1F1] rounded-xl w-full"
                   >
                     <div className="shrink-0">
                       <img
@@ -58,21 +58,22 @@ const LatestandNotifications = () => {
                       />
                     </div>
                     <div className="flex-1 flex-col truncate">
-                      <div className="text-sm/6 font-medium text-black flex gap-2 line-clamp-1">
+                      <div className="text-sm/6 font-medium text-black flex gap-2 line-clamp-2">
                         <span className="text-[#FF0000] underline sprinkle-text blink-text">Live</span>
                         Google Ads Training 2021: Profit with Pay
                       </div>
-                      <span className="truncate text-xs text-[#666666]">
-                        Lorem Ipsum is simply dummy text of the printing
+                      <span className="truncate text-xs text-[#666666] line-clamp-2">
+                        Lorem Ipsum is simply dummy text of the printingLorem Ipsum is simply dummy text of the printing
                       </span>
-                      <span className="font-medium text-xs text-[#168B67] mt-5">
+                      <div className="font-medium text-xs text-[#168B67] mt-5">
                         15 April, 2025
-                      </span>
+                      </div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
+            <div className="p-2 text-black font-semibold mx-auto lg:mt-20 mt-10 lg:mb-10 mb-5 capitalize bg-white rounded-[10px]">view all notifications</div>
           </div>
 
           {/* RIGHT FORM */}
@@ -134,6 +135,24 @@ const LatestandNotifications = () => {
                       </p>
                     )}
                   </div>
+                  {/* Enter OTP */}
+                  <div className="mt-4">
+                    <label className="block text-black md:text-lg text-sm font-medium mb-2">
+                      Enter OTP
+                    </label>
+
+                    <div className="flex justify-between max-w-sm">
+                      {[...Array(6)].map((_, i) => (
+                        <input
+                          key={i}
+                          type="text"
+                          maxLength={1}
+                          className="w-12 h-12 text-center border border-gray-300 rounded-md focus:outline-none focus:border-primary text-lg bg-gray-50"
+                        />
+                      ))}
+                    </div>
+                  </div>
+
                   {/* Query */}
                   <div>
                     <label className="block text-black md:text-lg text-sm font-medium mb-1">

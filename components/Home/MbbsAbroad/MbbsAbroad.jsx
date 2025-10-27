@@ -1,4 +1,5 @@
 import React from "react";
+import CountrySection from "../CountrySection/CountrySection";
 
 const MbbsAbroad = () => {
   return (
@@ -21,8 +22,8 @@ const MbbsAbroad = () => {
             Expert counselling for affordable and globally recognized MBBS
             programs abroad
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 md:my-10 my-5 ">
-            <div className="md:border-2 border-[1px] border-dotted  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
+          {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 md:my-10 my-5 ">
+            <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
               <img
                 src="/Russia.png"
                 alt="russia"
@@ -35,7 +36,7 @@ const MbbsAbroad = () => {
                 7+ universities
               </div>
             </div>
-            <div className="md:border-2 border-[1px] border-dotted  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
+            <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
               <img
                 src="/nepal.png"
                 alt="nepal"
@@ -48,7 +49,7 @@ const MbbsAbroad = () => {
                 7+ universities
               </div>
             </div>
-            <div className="md:border-2 border-[1px] border-dotted  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
+            <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
               <img
                 src="/georgia.png"
                 alt="georgia"
@@ -61,7 +62,7 @@ const MbbsAbroad = () => {
                 7+ universities
               </div>
             </div>
-            <div className="md:border-2 border-[1px] border-dotted  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
+            <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
               <img
                 src="/kyrgyzstan.png"
                 alt="kyrgyzstan"
@@ -74,7 +75,7 @@ const MbbsAbroad = () => {
                 7+ universities
               </div>
             </div>
-            <div className="md:border-2 border-[1px] border-dotted  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
+            <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
               <img
                 src="/kazakhstan.png"
                 alt="kazakhstan"
@@ -87,7 +88,7 @@ const MbbsAbroad = () => {
                 7+ universities
               </div>
             </div>
-            <div className="md:border-2 border-[1px] border-dotted  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
+            <div className="md:border-2 border-[1px] border-dashed  border-black/50 bg-white rounded-lg    p-4 flex items-center justify-center flex-col md:gap-3">
               <img
                 src="/tajikistan.png"
                 alt="tajikistan"
@@ -100,7 +101,8 @@ const MbbsAbroad = () => {
                 7+ universities
               </div>
             </div>
-          </div>
+          </div> */}
+          <CountrySection/>
           <div>
             <div className="capitalize text-2xl font-semibold text-secondary">
               explore universities and colleges in{" "}
@@ -294,7 +296,7 @@ const MbbsAbroad = () => {
               </div>
             </div>
           </div>
-          <button className="flex items-center justify-start gap-4 bg-primary rounded-[10px] p-2 mx-auto sm:mt-10 mt-7">
+          <button className="flex items-center justify-start gap-4 bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] rounded-[10px] p-2 mx-auto sm:mt-10 mt-7">
             <div className="shrink-0">
               <img
                 alt=""

@@ -1,4 +1,5 @@
 import HomePage from "@/components/Home/HomePage";
+import Predictor from "@/components/Home/predictor/Predictor";
 
 export const metadata = {
   title: "Top NEET Admission Consultant in India – Visuti Career",
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <>
           <HomePage />
+          {/* <Predictor/> */}
     </>
   );
 }

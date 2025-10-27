@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify Phone Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<!-- Open Button -->
+<button
+  onclick="document.getElementById('verifyModal').classList.remove('hidden')"
+  class="bg-[#20B486] text-white font-medium px-5 py-2.5 rounded-lg transition"
+>
+  Open Verify Phone Modal
+</button>
+
+<!-- Open Button -->
+<button
+  onclick="document.getElementById('signinModal').classList.remove('hidden')"
+  class="bg-[#20B486] text-white font-medium px-5 py-2.5 rounded-lg transition"
+>
+  Open Sign In Modal
+</button>
+<!-- Verify Phone Modal -->
+<div
+  id="verifyModal"
+  class="fixed inset-0 hidden flex items-center justify-center bg-black/50 z-50"
+>
+  <div
+    class="bg-white rounded-[20px] shadow-lg w-[90%] max-w-lg p-10 relative"
+  >
+    <!-- Close Button -->
+    <button
+      onclick="document.getElementById('verifyModal').classList.add('hidden')"
+      class="absolute size-10 top-4 right-4 text-gray-500 bg-[#ECECEC] rounded-full p-2 hover:bg-gray-300 transition"
+      aria-label="Close modal"
+    >
+      ✕
+    </button>
+
+    <!-- Title -->
+    <h2 class="text-3xl font-bold mb-1">Verify Phone</h2>
+
+    <!-- Description -->
+    <p class="text-[#666666] mb-6 text-lg mt-4">
+      Code has been sent to +xxxx-xxxx-2546
+    </p>
+
+    <!-- Label -->
+    <label class="block text-sm font-medium text-[#666666] mb-2">
+      Mobile No.
+    </label>
+
+    <!-- OTP Input Boxes -->
+    <div class="flex gap-3 mb-6">
+      <input
+        type="text"
+        maxlength="1"
+        value="0"
+        class="w-12 h-12 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg text-center text-sm font-medium value:text-sm focus:outline-none "
+      />
+      <input
+        type="text"
+        maxlength="1"
+        value="0"
+        class="w-12 h-12 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg text-center text-sm font-medium value:text-sm focus:outline-none "
+      />
+      <input
+        type="text"
+        maxlength="1"
+        value="0"
+        class="w-12 h-12 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg text-center text-sm font-medium value:text-sm focus:outline-none "
+      />
+      <input
+        type="text"
+        maxlength="1"
+        value="0"
+        class="w-12 h-12 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg text-center text-sm font-medium value:text-sm focus:outline-none "
+      />
+    </div>
+
+    <!-- Resend Code -->
+    <p class="text-sm text-gray-600 mb-6">
+      Didn’t get OTP Code?
+      <span class="text-[#20B486] font-medium cursor-pointer">Resend Code</span>
+    </p>
+
+    <!-- Verify Button -->
+    <button
+      class="w-full bg-[#20B486] text-white font-medium py-2.5 rounded-lg transition"
+    >
+      Verify
+    </button>
+  </div>
+</div>
+
+
+
+<!-- Sign In Modal -->
+<div
+  id="signinModal"
+  class="fixed inset-0 hidden flex items-center justify-center bg-black/50 z-50"
+>
+  <div
+    class="bg-white rounded-[20px] shadow-lg w-[90%] max-w-xl p-10 relative"
+  >
+    <!-- Close Button -->
+    <button
+      onclick="document.getElementById('signinModal').classList.add('hidden')"
+      class="absolute size-10 top-4 right-4 text-gray-500 bg-[#ECECEC] rounded-full p-2 hover:bg-gray-300 transition"
+      aria-label="Close modal"
+    >
+      ✕
+    </button>
+
+    <!-- Title -->
+    <h2 class="text-3xl font-bold mb-1">Sign in</h2>
+
+    <!-- Create Account -->
+    <p class="text-[#666666] mb-6 text-lg mt-4">
+      Don’t have an account?
+      <span class="text-[#20B486] font-medium cursor-pointer underline"
+        >Create now</span
+      >
+    </p>
+
+    <!-- Email Input -->
+    <label class="block text-sm font-medium text-[#666666] mb-2">E-mail</label>
+    <input
+      type="email"
+      placeholder="example@gmail.com"
+      class="w-full px-3 py-2 mb-4 border border-gray-300 rounded-lg bg-[#F7FAFC] text-gray-700 focus:outline-none "
+    />
+
+    <!-- Password Input -->
+    <label class="block text-sm font-medium text-[#666666] mb-2">Password</label>
+    <div class="relative mb-4 flex items-center">
+      <input
+        type="password"
+        placeholder="••••••••"
+        class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-[#F7FAFC] text-gray-700 focus:outline-none "
+      />
+      <span
+        class="absolute right-3 top-2.5 text-gray-400 cursor-pointer text-sm"
+        >👁️</span
+      >
+    </div>
+
+    <!-- Remember Me & Forgot Password -->
+    <div class="flex items-center justify-between mb-6 text-sm">
+      <label class="flex items-center gap-2 text-gray-600">
+        <input type="checkbox" class="w-4 h-4" /> Remember me
+      </label>
+      <a href="#" class="text-[#20B486] font-medium">Forgot Password?</a>
+    </div>
+
+    <!-- Sign In Button -->
+    <button
+      class="w-full bg-[#20B486] text-white font-medium py-2.5 rounded-lg mb-4 transition"
+    >
+      Sign in
+    </button>
+
+    <!-- OR Line -->
+    <div class="flex items-center my-4">
+      <div class="flex-grow h-px bg-gray-300"></div>
+      <span class="px-3 text-black text-sm">OR</span>
+      <div class="flex-grow h-px bg-gray-300"></div>
+    </div>
+
+    <!-- Social Buttons -->
+    <div class="flex flex-col gap-3">
+        <div class="flex gap-3">
+
+            <button
+              class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-2.5 w-full hover:bg-gray-50"
+            >
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="fb" class="w-5 h-5" />
+              Continue with Facebook
+            </button>
+      
+            <button
+              class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-2.5 w-full hover:bg-gray-50"
+            >
+              <img src="https://www.svgrepo.com/show/355037/google.svg" alt="google" class="w-5 h-5" />
+              Continue with Google
+            </button>
+        </div>
+
+      <button
+        class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-2.5 w-full hover:bg-gray-50"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_17620)">
+            <path d="M11.9998 24.0001C18.6272 24.0001 23.9998 18.6275 23.9998 12.0001C23.9998 5.3727 18.6272 0.00012207 11.9998 0.00012207C5.37234 0.00012207 -0.000244141 5.3727 -0.000244141 12.0001C-0.000244141 18.6275 5.37234 24.0001 11.9998 24.0001Z" fill="#50B748"/>
+            <path d="M11.9045 23.996C11.9363 23.9975 11.9682 23.9988 12 24C12.4001 24 12.7999 23.98 13.198 23.94C13.5961 23.9 13.9919 23.8401 14.384 23.7605C14.776 23.6811 15.1638 23.5822 15.546 23.464C15.9283 23.3457 16.3044 23.2084 16.673 23.0525C17.0415 22.897 17.4019 22.7231 17.753 22.5315C18.1041 22.3397 18.4453 22.1304 18.7755 21.9045C19.1058 21.6783 19.4245 21.4356 19.7305 21.1775C20.0366 20.92 20.3296 20.6473 20.6085 20.3605C20.8874 20.0734 21.1517 19.7725 21.4005 19.459C21.6489 19.1457 21.8816 18.8201 22.0975 18.4835C22.3137 18.147 22.513 17.7999 22.6945 17.4435C22.876 17.0869 23.0395 16.7215 23.1845 16.3485C23.3294 15.9756 23.4556 15.5956 23.5625 15.21C23.6694 14.8246 23.757 14.4342 23.825 14.04C23.8932 13.6455 23.9416 13.2479 23.97 12.8485C23.99 12.5661 24 12.2831 24 12C23.9952 11.795 23.9852 11.5901 23.97 11.3855L16.7955 4.21203L16.7885 4.20603C16.77 4.18803 16.7495 4.17303 16.729 4.15703C16.7155 4.14703 16.703 4.13453 16.689 4.12503L16.687 4.12403C16.6086 4.07142 16.5206 4.03489 16.428 4.01653C16.3796 4.00668 16.3304 4.00166 16.281 4.00153H8.211C7.8145 4.00153 7.495 4.31003 7.495 4.69253V19.3075C7.4951 19.3983 7.51346 19.488 7.549 19.5715C7.562 19.6015 7.579 19.63 7.5965 19.658C7.603 19.668 7.6075 19.679 7.6145 19.6885C7.628 19.7085 7.6435 19.726 7.6595 19.744C7.6715 19.759 7.682 19.7745 7.6955 19.788L7.704 19.797L11.9045 23.996Z" fill="#10A711"/>
+            <path d="M8.211 4.00148C7.8145 4.00148 7.495 4.30948 7.495 4.69148V19.308C7.495 19.6905 7.8145 19.9985 8.211 19.9985H16.281C16.6775 19.9985 16.996 19.6905 16.996 19.3085V4.69148C16.996 4.30898 16.6775 4.00098 16.281 4.00098H8.211V4.00148ZM8.743 4.49948C8.81014 4.49961 8.87449 4.526 8.92192 4.57287C8.96936 4.61974 8.996 4.68326 8.996 4.74948C8.996 4.8157 8.96936 4.87921 8.92192 4.92608C8.87449 4.97295 8.81014 4.99935 8.743 4.99948C8.67585 4.99935 8.6115 4.97295 8.56407 4.92608C8.51663 4.87921 8.48999 4.8157 8.49 4.74948C8.48999 4.68326 8.51663 4.61974 8.56407 4.57287C8.6115 4.526 8.67585 4.49961 8.743 4.49948ZM10.996 4.50648H12.996V4.99948H10.996V4.50648ZM8.496 5.49948H15.996V17.4995H8.496V5.49948ZM12.256 17.9995C12.4575 17.9996 12.6507 18.0787 12.7931 18.2193C12.9355 18.36 13.0155 18.5507 13.0155 18.7495C13.0155 18.9484 12.9354 19.1392 12.7929 19.2798C12.6504 19.4205 12.4571 19.4995 12.2555 19.4995C12.054 19.4993 11.8608 19.4203 11.7184 19.2796C11.576 19.139 11.496 18.9483 11.496 18.7495C11.496 18.5506 11.5761 18.3598 11.7186 18.2191C11.8611 18.0785 12.0544 17.9995 12.256 17.9995Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_17620">
+            <rect width="24" height="24" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+
+        Continue with Mobile Number
+      </button>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>

@@ -14,12 +14,12 @@ const PredictorItems = () => {
         <div className="max-w-7xl mx-auto lg:px-6 px-4 z-10">
           <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
             <div className="grid grid-cols-1 lg:gap-12 md:gap-8 gap-5 ">
-              <div className=" sm:max-w-sm w-full mx-auto md:border-[3px] border border-primary rounded-xl md:p-5 p-4 shadow-sm">
+              <div className=" sm:max-w-sm w-full mx-auto md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
                 {/* Content */}
                 <div className="flex items-start gap-3">
                   {/* Icon */}
                   <img
-                    src="/no-education_9030088 1.png"
+                    src="/neetug.png"
                     alt="icon"
                     className="w-8 h-8"
                   />
@@ -34,19 +34,19 @@ const PredictorItems = () => {
                     </p>
                     {/* Button */}
                     <div className="mt-5">
-                      <button className="bg-primary text-white text-xs font-medium px-5 py-2 rounded-[10px] hover:bg-[#1a8a68] transition">
+                      <button className="bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] text-white text-xs font-medium px-5 py-2 rounded-[10px] hover:bg-[#1a8a68] transition">
                         NEET UG Predictor
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" sm:max-w-sm w-full mx-auto md:border-[3px] border border-primary rounded-xl md:p-5 p-4 shadow-sm">
+              <div className=" sm:max-w-sm w-full mx-auto  md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
                 {/* Content */}
                 <div className="flex items-start gap-3">
                   {/* Icon */}
                   <img
-                    src="/no-education_9030088 1.png"
+                    src="/neetpg.png"
                     alt="icon"
                     className="w-8 h-8"
                   />
@@ -61,19 +61,19 @@ const PredictorItems = () => {
                     </p>
                     {/* Button */}
                     <div className="mt-5">
-                      <button className="bg-primary text-white text-xs font-medium px-5 py-2 rounded-[10px] hover:bg-[#1a8a68] transition">
+                      <button className="bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] text-white text-xs font-medium px-5 py-2 rounded-[10px] hover:bg-[#1a8a68] transition">
                         NEET PG Predictor
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" sm:max-w-sm w-full mx-auto md:border-[3px] border border-primary rounded-xl md:p-5 p-4 shadow-sm">
+              <div className=" sm:max-w-sm w-full mx-auto  md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
                 {/* Content */}
                 <div className="flex items-start gap-3">
                   {/* Icon */}
                   <img
-                    src="/no-education_9030088 1.png"
+                    src="/iit.png"
                     alt="icon"
                     className="w-8 h-8"
                   />
@@ -88,7 +88,7 @@ const PredictorItems = () => {
                     </p>
                     {/* Button */}
                     <div className="mt-5">
-                      <button className="bg-primary text-white text-xs font-medium px-5 py-2 rounded-[10px] hover:bg-[#1a8a68] transition">
+                      <button className="bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] text-white text-xs font-medium px-5 py-2 rounded-[10px] hover:bg-[#1a8a68] transition">
                         IIT Predictor
                       </button>
                     </div>
