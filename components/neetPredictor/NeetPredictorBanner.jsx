@@ -31,11 +31,11 @@ const NeetPredictorBanner = () => {
         ))}
       </div>
 
-      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-8 relative z-10">
+      <div className="max-w-6xl w-full flex flex-col pt-18 md:pt-0 md:flex-row items-center gap-8 relative z-10">
         {/* Left Content */}
         <div className="flex-1 text-white space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Step-by-Step Guide<br />to Your College
+            Step-by-Step Guide<br />to Your College 
           </h1>
           <p className="text-lg opacity-90 max-w-md">
             Fill out each step one by one and get accurate college predictions with ease.
@@ -129,7 +129,7 @@ const NeetPredictorBanner = () => {
               </div>
 
               {/* Navigation Buttons */}
-              <div className="flex items-center justify-between pt-4">
+              <div className="flex items-center justify-between pt-4 gap-4">
                 <button
                   onClick={handlePrevious}
                   disabled={step === 1}

@@ -43,14 +43,56 @@ const bundles = [
     viewDetailsUrl: "#",
     alt: "Combo plan illustration"
   },
+  {
+    id: 4,
+    title: "All India + State Combo Plan",
+    desc:
+      "Get both All India Quota and State Quota prediction in one bundle & maximize your chance with double insights.",
+    image:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=200&h=120&fit=crop",
+    price: 1499,
+    originalPrice: 7000,
+    discount: "78% off",
+    bestSeller: true,
+    viewDetailsUrl: "#",
+    alt: "Combo plan illustration"
+  },
+  {
+    id: 5,
+    title: "All India + State Combo Plan",
+    desc:
+      "Get both All India Quota and State Quota prediction in one bundle & maximize your chance with double insights.",
+    image:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=200&h=120&fit=crop",
+    price: 1499,
+    originalPrice: 7000,
+    discount: "78% off",
+    bestSeller: true,
+    viewDetailsUrl: "#",
+    alt: "Combo plan illustration"
+  },
+   {
+    id: 6,
+    title: "All India + State Combo Plan",
+    desc:
+      "Get both All India Quota and State Quota prediction in one bundle & maximize your chance with double insights.",
+    image:
+      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=200&h=120&fit=crop",
+    price: 1499,
+    originalPrice: 7000,
+    discount: "78% off",
+    bestSeller: true,
+    viewDetailsUrl: "#",
+    alt: "Combo plan illustration"
+  },
 ];
 
 const BundleCards = () => {
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="flex flex-col items-center text-center justify-center">
+      <div className="flex flex-col items-center text-center justify-center py-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-          Pricing <span className="text-teal-500">And Plans</span>
+          Pricing <span className="text-primary">And Plans</span>
         </h2>
         <p className="text-sm md:text-base text-gray-500">
           Choose the best plan tailored for your counselling journey.
@@ -66,7 +108,7 @@ const BundleCards = () => {
             <div className="relative h-40 flex items-center justify-between">
               {/* Best Seller Badge */}
               {bundle.bestSeller && (
-                <div className="absolute top-3 left-3 bg-teal-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                <div className="absolute top-3 left-3 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
                   Best Seller
                 </div>
               )}
@@ -93,7 +135,7 @@ const BundleCards = () => {
               {/* View Details Link */}
               <a
                 href={bundle.viewDetailsUrl}
-                className="text-teal-500 text-sm font-semibold hover:text-teal-600 inline-block mb-4"
+                className="text-primary text-sm font-semibold hover:text-primary inline-block mb-4"
               >
                 View Details
               </a>
@@ -106,13 +148,13 @@ const BundleCards = () => {
                 <span className="text-sm text-gray-400 line-through">
                   ₹{bundle.originalPrice}
                 </span>
-                <span className="text-sm font-semibold text-teal-500">
+                <span className="text-sm font-semibold text-primary">
                   ({bundle.discount})
                 </span>
               </div>
 
               {/* Buy Now Button */}
-              <button className="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
+              <button className="w-full bg-teal-500 hover:bg-primary text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
                 Buy Now
               </button>
             </div>

@@ -26,7 +26,7 @@ const HomePage = () => {
       <ChoiceFillingMaker />
       <StateCollege />
       <CtaSection />
-      <StuderVideo />
+      <StuderVideo /> 
       <Testimonial />
       <Counter />
       <WhyChoose />
