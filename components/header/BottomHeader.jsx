@@ -9,44 +9,24 @@ const BottomHeader = () => {
     <div>
            {/* Middle bar: logo, search, quick actions */}
       <div className="border-y border-black/5 bg-white">
-        <div className="max-w-7xl mx-auto flex flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:gap-8">
+        <div className="max-w-7xl mx-auto flex  gap-4 px-4 py-4 flex-row items-center gap-8">
           <div className="flex items-center justify-between gap-4">
             <img
               src="/Logo.png"
               alt="Visuti Career"
-              className="h-10 w-auto md:h-16"
+              className="h-10 w-auto lg:h-16 md:h-12 lg:max-w-40 max-w-20"
             />
-
-            <button
-              type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700 shadow-sm md:hidden"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 5.25h16.5m-16.5 6h16.5m-16.5 6h16.5"
-                />
-              </svg>
-            </button>
           </div>
 
-          <div className="hidden flex-1 md:flex md:items-center">
-            <div className="w-full max-md:hidden">
-                <div className="flex items-center bg-white rounded-[10px]  border border-[#226E49] h-[55px  ] overflow-hidden">
+          <div className=" flex-1 flex items-center">
+            <div className="w-full ">
+                <div className="max-sm:hidden  flex items-center bg-white rounded-[10px] md:mx-10 mx-2 border border-[#226E49] h-[55px  ] overflow-hidden">
                   {/* Left Icon */}
-                  <span className="pl-4 flex items-center">
+                  <span className="pl-4 min-w-4 flex items-center">
                     <img
                       src="/University.png"
                       alt="icon"
-                      className="w-5 h-5"
+                      className="w-5 h-5 min-w-5"
                     />
                   </span>
                   {/* Input Field */}
@@ -56,11 +36,11 @@ const BottomHeader = () => {
                     className="flex-1 px-4 py-3 text-gray-700 text-sm focus:outline-none"
                   />
                   {/* Search Button */}
-                  <button className="bg-primary text-white p-2 rounded-full transition m-1 size-8 flex items-center justify-center">
+                  <button className="bg-primary text-white p-2 rounded-full transition m-1 size-8 min-w-8 flex items-center justify-center">
                     <img
                       src="/search.png"
                       alt="search"
-                      className="size-full"
+                      className="size-full "
                     />
                   </button>
                 </div>
@@ -68,7 +48,7 @@ const BottomHeader = () => {
           </div>
 
           <div className="flex items-center gap-3 md:ml-auto">
-            <svg width="89" height="37" viewBox="0 0 89 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className='blink-text' width="89" height="37" viewBox="0 0 89 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_1_12746)">
                 <path d="M14.9019 29.9897C14.1898 29.7455 13.7031 29.4143 13.1089 28.7709C11.8607 27.4193 11.7922 27.0159 11.7922 21.0137C11.7922 15.2303 11.881 14.6857 13.0439 13.3277C14.6743 11.4243 18.4441 11.4806 20.0541 13.4323C21.1233 14.7286 21.2102 15.3058 21.2102 21.1025C21.2102 25.6902 21.1704 26.4549 20.8904 27.2576C20.461 28.4868 19.196 29.6761 17.9125 30.057C16.702 30.4162 16.1058 30.4031 14.9019 29.9895V29.9897ZM17.1151 27.2077C17.8419 26.9289 17.9228 26.3187 17.9228 21.1197C17.9228 17.8021 17.856 16.0003 17.722 15.7066C17.2724 14.7203 15.73 14.7203 15.2804 15.7066C15.1464 16.0003 15.0796 17.8021 15.0796 21.1197C15.0796 26.9205 15.1537 27.257 16.4422 27.3041C16.6542 27.3117 16.957 27.2682 17.1151 27.2077ZM25.0098 29.8924C24.7539 29.7535 24.3939 29.3369 24.2101 28.9672C23.9 28.3435 23.872 27.7056 23.8229 20.1702L23.7701 12.0457H27.1631V19.4824C27.1631 25.8475 27.2012 26.951 27.4274 27.1384C27.8212 27.465 28.4609 27.2259 29.1843 26.4819L29.8286 25.8189V12.0459H33.2049V29.9819H29.8286V28.1758L28.9846 28.9247C28.5204 29.3365 27.8832 29.7828 27.5686 29.9165C26.8355 30.2278 25.6063 30.2161 25.0098 29.8924ZM4.41532 25.0536L4.41266 20.1256L2.21683 13.111L0.0209961 6.09646L1.8051 6.04549C2.84944 6.01566 3.63416 6.06751 3.69777 6.17051C3.75766 6.2673 4.32398 8.30774 4.95624 10.7048C5.58885 13.1018 6.14647 15.0634 6.19605 15.0637C6.2458 15.0641 6.71173 13.4463 7.23168 11.4684C7.7518 9.49062 8.29645 7.45285 8.44234 6.93998L8.70765 6.00767H10.5799C12.1053 6.00767 12.4347 6.05348 12.3574 6.25451C12.3053 6.39018 11.2971 9.58332 10.1172 13.3502L7.9718 20.1991V29.9815H4.41781L4.41532 25.0536Z" fill="#010101"/>
                 <path d="M50.6424 36.899C41.9609 36.6093 39.6101 35.9919 38.0119 33.5803C37.3661 32.606 36.6413 30.4257 36.4105 28.7628C35.6002 22.9263 35.7992 10.7557 36.7732 6.56102C37.6553 2.76232 39.7295 0.901417 43.5135 0.513751C47.2306 0.132833 56.9205 -0.0745847 66.3457 0.0248624C76.5211 0.132123 81.3117 0.349664 83.045 0.783146C86.4355 1.63076 88.0803 4.1267 88.6537 9.29298C88.7621 10.2697 88.8954 13.6797 88.9498 16.8705C89.169 29.7516 88.1993 33.8493 84.5037 35.6587C83.1083 36.3421 82.1954 36.499 78.2514 36.7343C73.9678 36.9897 56.4868 37.0939 50.6424 36.899ZM54.9132 29.878C55.2128 29.723 55.8085 29.2735 56.2371 28.8782L57.0165 28.1608V29.9817H60.3928V12.2233H57.0165V25.7666L56.2403 26.5421C55.4072 27.3748 55.0703 27.4787 54.6303 27.039C54.3855 26.7942 54.351 25.8623 54.351 19.4916V12.2231H50.9747V19.9159C50.9747 28.4021 51.0445 29.0735 51.9997 29.786C52.6044 30.2369 54.1257 30.2848 54.9132 29.878ZM71.1638 29.8206C71.4739 29.6317 71.9036 29.105 72.1412 28.6226C72.5581 27.7766 72.5664 27.6601 72.6249 21.905C72.6889 15.5951 72.5872 14.4557 71.8455 13.1767C71.4334 12.466 70.4507 11.8679 69.6946 11.8679C68.9664 11.8679 67.923 12.3575 67.1274 13.0723L66.257 13.8542V6.18526H63.0584V29.9815H66.257V28.3421L66.9865 29.0007C67.3877 29.3628 67.9676 29.7686 68.2748 29.9021C69.0999 30.2612 70.5062 30.2216 71.1638 29.8206ZM66.9232 26.9239L66.2569 26.5378V15.6466L67.0455 15.2285C67.6854 14.8894 67.9283 14.8437 68.3338 14.986C69.21 15.2935 69.3044 15.9719 69.2436 21.5175L69.1889 26.4611L68.6903 26.8894C68.0799 27.414 67.7799 27.4199 66.9232 26.9239ZM81.8944 29.7892C83.6117 29.0112 84.385 27.6955 84.5203 25.3215L84.6091 23.7663H81.1834V24.8204C81.1834 26.1114 80.9832 26.6754 80.3861 27.0665C79.7131 27.5069 78.8767 27.227 78.474 26.4263C78.2308 25.9431 78.1631 25.3542 78.1631 23.7217L78.1625 21.6351H84.5597V19.0276C84.5597 15.7459 84.3029 14.6999 83.1957 13.4692C82.2173 12.3819 81.169 11.9489 79.5841 11.978C78.2704 12.002 77.3926 12.3293 76.4705 13.1384C74.9636 14.4609 74.7351 15.6391 74.8252 21.6352C74.8838 25.5313 74.9483 26.4805 75.2013 27.1505C75.6335 28.2945 76.4141 29.1655 77.4862 29.6995C78.6946 30.3008 80.6759 30.3413 81.8944 29.7892ZM78.1627 17.6336C78.1627 15.4248 78.7297 14.6711 80.1567 14.9844C80.873 15.1417 81.1838 15.943 81.1838 17.6337V18.9713H78.1629V17.6337L78.1627 17.6336ZM47.5984 19.7706V9.55953H51.5078V6.18543H40.3128V9.55953H44.0444V29.9817H47.5984V19.7706Z" fill="#D02726"/>
@@ -82,7 +62,7 @@ const BottomHeader = () => {
 
             <button
               type="button"
-              className="hidden h-12 w-12 items-center justify-center rounded-[10px] border border-[#DDDDDD]/20 bg-white md:flex "
+              className="hidden sm:h-12 sm:w-12 h-10 items-center justify-center rounded-[10px] border border-[#DDDDDD]/20 bg-white md:flex "
             >
              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="49" height="49" rx="5.5" stroke="#DDDDDD"/>
@@ -92,11 +72,11 @@ const BottomHeader = () => {
               </svg>
 
             </button>
-            <div className='h-12 px-2 flex gap-1 w-fill items-center justify-center rounded-[10px] border border-[#DDDDDD]/20 bg-white md:flex'>
+            <div className='sm:h-12 h-10 px-2 flex gap-1 w-fill items-center justify-center rounded-[10px] border border-[#DDDDDD]/20 bg-white md:flex'>
               <button
                  onClick={() => setOpen(true)}
                 type="button"
-                className="flex items-center justify-center "
+                className="flex items-center justify-center sm:size-7 size-6"
               >
                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.9998 30C10.8373 30 6.67484 29.0625 2.54515 27.1828C2.45909 27.1443 2.38738 27.0796 2.34024 26.998C2.29311 26.9163 2.27295 26.8219 2.28265 26.7281C2.66702 22.4906 5.24046 19.5563 9.71702 18.2484C11.0389 17.8641 11.5498 16.7859 11.742 15.9469C11.7983 15.7031 12.042 15.5484 12.2858 15.6047C12.5295 15.6609 12.6842 15.9047 12.628 16.1484C12.2764 17.6672 11.3295 18.7219 9.97015 19.1156C5.99515 20.2781 3.67015 22.8187 3.22015 26.4844C11.0389 29.9484 18.9608 29.9484 26.7842 26.4844C26.3295 22.8187 23.9998 20.2734 20.0295 19.1156C18.2952 18.6094 17.6248 17.2266 17.3717 16.1531C17.3448 16.0357 17.3652 15.9124 17.4283 15.8099C17.4914 15.7073 17.5923 15.6336 17.7092 15.6047C17.9483 15.5484 18.1967 15.6984 18.2577 15.9422C18.5483 17.1609 19.228 17.9344 20.2827 18.2391C24.7592 19.5469 27.3327 22.4766 27.7217 26.7187C27.7405 26.9109 27.6327 27.0937 27.4592 27.1734C23.3248 29.0625 19.1577 30 14.9998 30Z" fill="black"/>
@@ -106,15 +86,15 @@ const BottomHeader = () => {
 
                       <LoginWithOtpModal open={open} onClose={() => setOpen(false)} />
               </button>
-              <button
-                type="button"
-                className="flex items-center justify-center "
+              <label
+                htmlFor="sideToggle"
+                className="flex items-center justify-center size-8"
               >
                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.375 15.625H40.625V17.1875H9.375V15.625ZM9.375 25H40.625V26.5625H9.375V25ZM9.375 34.375H40.625V35.9375H9.375V34.375Z" fill="black"/>
                 </svg>
 
-              </button>
+              </label>
             </div>
           </div>
         </div>

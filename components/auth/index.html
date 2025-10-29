@@ -43,7 +43,7 @@
     <h2 class="text-3xl font-bold mb-1">Verify Phone</h2>
 
     <!-- Description -->
-    <p class="text-[#666666] mb-6 text-lg mt-4">
+    <p class="text-[#666666] sm:mb-4 m text-lg mt-4">
       Code has been sent to +xxxx-xxxx-2546
     </p>
 
@@ -53,7 +53,7 @@
     </label>
 
     <!-- OTP Input Boxes -->
-    <div class="flex gap-3 mb-6">
+    <div class="flex gap-3 sm:mb-4 m">
       <input
         type="text"
         maxlength="1"
@@ -81,7 +81,7 @@
     </div>
 
     <!-- Resend Code -->
-    <p class="text-sm text-gray-600 mb-6">
+    <p class="text-sm text-gray-600 sm:mb-4 m">
       Didn’t get OTP Code?
       <span class="text-[#20B486] font-medium cursor-pointer">Resend Code</span>
     </p>
@@ -103,7 +103,7 @@
   class="fixed inset-0 hidden flex items-center justify-center bg-black/50 z-50"
 >
   <div
-    class="bg-white rounded-[20px] shadow-lg w-[90%] max-w-xl p-10 relative"
+    class="bg-white rounded-[20px] shadow-lg w-[90%] max-w-xl sm:p-10 p-5 relative"
   >
     <!-- Close Button -->
     <button
@@ -115,97 +115,109 @@
     </button>
 
     <!-- Title -->
-    <h2 class="text-3xl font-bold mb-1">Sign in</h2>
+    <h2 class="sm:text-4xl text-2xl font-bold mb-1">Sign in</h2>
 
     <!-- Create Account -->
-    <p class="text-[#666666] mb-6 text-lg mt-4">
+    <p class="text-[#666666] sm:mb-4 m sm:text-lg text-sm sm:mt-4 mt-2">
       Don’t have an account?
       <span class="text-[#20B486] font-medium cursor-pointer underline"
         >Create now</span
       >
     </p>
 
-    <!-- Email Input -->
-    <label class="block text-sm font-medium text-[#666666] mb-2">E-mail</label>
-    <input
-      type="email"
-      placeholder="example@gmail.com"
-      class="w-full px-3 py-2 mb-4 border border-gray-300 rounded-lg bg-[#F7FAFC] text-gray-700 focus:outline-none "
-    />
+  <!-- Email Input -->
+<div class="sm:mb-4 m">
+  <label class="block text-sm font-medium text-[#666666] mb-2">E-mail</label>
+  <div class="flex items-center border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-3">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.6667 4.66667L8.67271 8.48467C8.4693 8.60281 8.23827 8.66504 8.00304 8.66504C7.76782 8.66504 7.53678 8.60281 7.33337 8.48467L1.33337 4.66667" stroke="#99A1AF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.3334 2.66667H2.66671C1.93033 2.66667 1.33337 3.26363 1.33337 4.00001V12C1.33337 12.7364 1.93033 13.3333 2.66671 13.3333H13.3334C14.0698 13.3333 14.6667 12.7364 14.6667 12V4.00001C14.6667 3.26363 14.0698 2.66667 13.3334 2.66667Z" stroke="#99A1AF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <input type="email" class="w-full py-3 px-4 bg-[#F7FAFC] border-none outline-none rounded-lg text-sm" placeholder="example@gmail.com" />
+  </div>
+</div>
 
-    <!-- Password Input -->
-    <label class="block text-sm font-medium text-[#666666] mb-2">Password</label>
-    <div class="relative mb-4 flex items-center">
-      <input
-        type="password"
-        placeholder="••••••••"
-        class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-[#F7FAFC] text-gray-700 focus:outline-none "
-      />
-      <span
-        class="absolute right-3 top-2.5 text-gray-400 cursor-pointer text-sm"
-        >👁️</span
-      >
-    </div>
+<!-- Password Input -->
+<div class="sm:mb-4 m">
+  <label class="block text-sm font-medium text-[#666666] mb-2">Password</label>
+  <div class="flex items-center border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-3">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.6667 7.33334H3.33333C2.59695 7.33334 2 7.9303 2 8.66668V13.3333C2 14.0697 2.59695 14.6667 3.33333 14.6667H12.6667C13.403 14.6667 14 14.0697 14 13.3333V8.66668C14 7.9303 13.403 7.33334 12.6667 7.33334Z" stroke="#99A1AF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4.66663 7.33334V4.66668C4.66663 3.78262 5.01782 2.93478 5.64294 2.30965C6.26806 1.68453 7.1159 1.33334 7.99996 1.33334C8.88401 1.33334 9.73186 1.68453 10.357 2.30965C10.9821 2.93478 11.3333 3.78262 11.3333 4.66668V7.33334" stroke="#99A1AF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <input type="password" class="w-full py-3 px-4 bg-[#F7FAFC] border-none outline-none rounded-lg text-sm" placeholder="••••••••" />
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer ml-2">
+      <path d="M9.28126 12C9.28126 12.6962 9.55783 13.3639 10.0501 13.8562C10.5424 14.3484 11.2101 14.625 11.9063 14.625C12.6025 14.625 13.2701 14.3484 13.7624 13.8562C14.2547 13.3639 14.5313 12.6962 14.5313 12C14.5313 11.3038 14.2547 10.6361 13.7624 10.1438C13.2701 9.65156 12.6025 9.375 11.9063 9.375C11.2101 9.375 10.5424 9.65156 10.0501 10.1438C9.55783 10.6361 9.28126 11.3038 9.28126 12ZM22.0828 11.3953C19.861 6.71484 16.5024 4.35938 12 4.35938C7.49533 4.35938 4.13908 6.71484 1.9172 11.3977C1.82808 11.5864 1.78186 11.7925 1.78186 12.0012C1.78186 12.2099 1.82808 12.416 1.9172 12.6047C4.13908 17.2852 7.49767 19.6406 12 19.6406C16.5047 19.6406 19.861 17.2852 22.0828 12.6023C22.2633 12.2227 22.2633 11.782 22.0828 11.3953ZM11.9063 16.125C9.62814 16.125 7.78126 14.2781 7.78126 12C7.78126 9.72188 9.62814 7.875 11.9063 7.875C14.1844 7.875 16.0313 9.72188 16.0313 12C16.0313 14.2781 14.1844 16.125 11.9063 16.125Z" fill="#666666"/>
+    </svg>
+  </div>
+</div>
 
-    <!-- Remember Me & Forgot Password -->
-    <div class="flex items-center justify-between mb-6 text-sm">
-      <label class="flex items-center gap-2 text-gray-600">
-        <input type="checkbox" class="w-4 h-4" /> Remember me
-      </label>
-      <a href="#" class="text-[#20B486] font-medium">Forgot Password?</a>
-    </div>
+<!-- Remember Me and Forgot Password -->
+<div class="flex items-center justify-between sm:mb-4 m">
+  <div class="flex items-center">
+    <input type="checkbox" id="remember" class="mr-2" />
+    <label for="remember" class="text-sm text-[#666666]">Remember me</label>
+  </div>
+  <a href="#" class="text-sm text-[#20B486] font-medium">Forgot Password?</a>
+</div>
 
-    <!-- Sign In Button -->
-    <button
-      class="w-full bg-[#20B486] text-white font-medium py-2.5 rounded-lg mb-4 transition"
-    >
-      Sign in
-    </button>
-
-    <!-- OR Line -->
-    <div class="flex items-center my-4">
-      <div class="flex-grow h-px bg-gray-300"></div>
-      <span class="px-3 text-black text-sm">OR</span>
-      <div class="flex-grow h-px bg-gray-300"></div>
-    </div>
-
-    <!-- Social Buttons -->
-    <div class="flex flex-col gap-3">
-        <div class="flex gap-3">
-
-            <button
-              class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-2.5 w-full hover:bg-gray-50"
-            >
-              <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="fb" class="w-5 h-5" />
-              Continue with Facebook
-            </button>
-      
-            <button
-              class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-2.5 w-full hover:bg-gray-50"
-            >
-              <img src="https://www.svgrepo.com/show/355037/google.svg" alt="google" class="w-5 h-5" />
-              Continue with Google
-            </button>
+<!-- Submit Button -->
+<button class="w-full bg-[#20B486] text-white font-medium py-2.5 rounded-lg transition">
+  Sign In
+</button>
+<!-- Or Section -->
+        <div class="flex items-center my-4">
+          <div class="flex-grow h-px bg-gray-300"></div>
+          <span class="px-3 text-black text-sm">OR</span>
+          <div class="flex-grow h-px bg-gray-300"></div>
         </div>
 
-      <button
-        class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-2.5 w-full hover:bg-gray-50"
-      >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1_17620)">
-            <path d="M11.9998 24.0001C18.6272 24.0001 23.9998 18.6275 23.9998 12.0001C23.9998 5.3727 18.6272 0.00012207 11.9998 0.00012207C5.37234 0.00012207 -0.000244141 5.3727 -0.000244141 12.0001C-0.000244141 18.6275 5.37234 24.0001 11.9998 24.0001Z" fill="#50B748"/>
-            <path d="M11.9045 23.996C11.9363 23.9975 11.9682 23.9988 12 24C12.4001 24 12.7999 23.98 13.198 23.94C13.5961 23.9 13.9919 23.8401 14.384 23.7605C14.776 23.6811 15.1638 23.5822 15.546 23.464C15.9283 23.3457 16.3044 23.2084 16.673 23.0525C17.0415 22.897 17.4019 22.7231 17.753 22.5315C18.1041 22.3397 18.4453 22.1304 18.7755 21.9045C19.1058 21.6783 19.4245 21.4356 19.7305 21.1775C20.0366 20.92 20.3296 20.6473 20.6085 20.3605C20.8874 20.0734 21.1517 19.7725 21.4005 19.459C21.6489 19.1457 21.8816 18.8201 22.0975 18.4835C22.3137 18.147 22.513 17.7999 22.6945 17.4435C22.876 17.0869 23.0395 16.7215 23.1845 16.3485C23.3294 15.9756 23.4556 15.5956 23.5625 15.21C23.6694 14.8246 23.757 14.4342 23.825 14.04C23.8932 13.6455 23.9416 13.2479 23.97 12.8485C23.99 12.5661 24 12.2831 24 12C23.9952 11.795 23.9852 11.5901 23.97 11.3855L16.7955 4.21203L16.7885 4.20603C16.77 4.18803 16.7495 4.17303 16.729 4.15703C16.7155 4.14703 16.703 4.13453 16.689 4.12503L16.687 4.12403C16.6086 4.07142 16.5206 4.03489 16.428 4.01653C16.3796 4.00668 16.3304 4.00166 16.281 4.00153H8.211C7.8145 4.00153 7.495 4.31003 7.495 4.69253V19.3075C7.4951 19.3983 7.51346 19.488 7.549 19.5715C7.562 19.6015 7.579 19.63 7.5965 19.658C7.603 19.668 7.6075 19.679 7.6145 19.6885C7.628 19.7085 7.6435 19.726 7.6595 19.744C7.6715 19.759 7.682 19.7745 7.6955 19.788L7.704 19.797L11.9045 23.996Z" fill="#10A711"/>
-            <path d="M8.211 4.00148C7.8145 4.00148 7.495 4.30948 7.495 4.69148V19.308C7.495 19.6905 7.8145 19.9985 8.211 19.9985H16.281C16.6775 19.9985 16.996 19.6905 16.996 19.3085V4.69148C16.996 4.30898 16.6775 4.00098 16.281 4.00098H8.211V4.00148ZM8.743 4.49948C8.81014 4.49961 8.87449 4.526 8.92192 4.57287C8.96936 4.61974 8.996 4.68326 8.996 4.74948C8.996 4.8157 8.96936 4.87921 8.92192 4.92608C8.87449 4.97295 8.81014 4.99935 8.743 4.99948C8.67585 4.99935 8.6115 4.97295 8.56407 4.92608C8.51663 4.87921 8.48999 4.8157 8.49 4.74948C8.48999 4.68326 8.51663 4.61974 8.56407 4.57287C8.6115 4.526 8.67585 4.49961 8.743 4.49948ZM10.996 4.50648H12.996V4.99948H10.996V4.50648ZM8.496 5.49948H15.996V17.4995H8.496V5.49948ZM12.256 17.9995C12.4575 17.9996 12.6507 18.0787 12.7931 18.2193C12.9355 18.36 13.0155 18.5507 13.0155 18.7495C13.0155 18.9484 12.9354 19.1392 12.7929 19.2798C12.6504 19.4205 12.4571 19.4995 12.2555 19.4995C12.054 19.4993 11.8608 19.4203 11.7184 19.2796C11.576 19.139 11.496 18.9483 11.496 18.7495C11.496 18.5506 11.5761 18.3598 11.7186 18.2191C11.8611 18.0785 12.0544 17.9995 12.256 17.9995Z" fill="white"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_1_17620">
-            <rect width="24" height="24" fill="white"/>
-            </clipPath>
-            </defs>
-            </svg>
+        <div class="flex items-center gap-3 flex-col sm:flex-row">
+        
+          <button class="flex items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 text-black sm:text-base text-sm font-medium hover:bg-gray-50 w-full sm:w-1/2">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1_17517)">
+          <path d="M21 0H3C1.3455 0 0 1.3455 0 3V21C0 22.6545 1.3455 24 3 24H21C22.6545 24 24 22.6545 24 21V3C24 1.3455 22.6545 0 21 0Z" fill="#1976D2"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 12H16.5V9C16.5 8.172 17.172 8.25 18 8.25H19.5V4.5H16.5C15.3065 4.5 14.1619 4.97411 13.318 5.81802C12.4741 6.66193 12 7.80653 12 9V12H9V15.75H12V24H16.5V15.75H18.75L20.25 12Z" fill="#FAFAFA"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_1_17517">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
 
-        Continue with Mobile Number
-      </button>
+            Continue with Facebook
+          </button>
+
+          <button class="flex items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5  text-black sm:text-base text-sm font-medium hover:bg-gray-50 w-full sm:w-1/2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_17523)">
+              <path d="M5.31891 14.5035L4.4835 17.6222L1.43011 17.6868C0.517594 15.9943 0 14.0578 0 12C0 10.0101 0.483938 8.13362 1.34175 6.48132H1.34241L4.06078 6.9797L5.25159 9.68176C5.00236 10.4084 4.86652 11.1884 4.86652 12C4.86661 12.8809 5.02617 13.7249 5.31891 14.5035Z" fill="#FBBB00"/>
+              <path d="M23.7903 9.75824C23.9282 10.4841 24 11.2338 24 12C24 12.8591 23.9097 13.6971 23.7376 14.5055C23.1535 17.2563 21.6271 19.6582 19.5126 21.358L19.5119 21.3574L16.088 21.1827L15.6034 18.1576C17.0065 17.3347 18.103 16.047 18.6805 14.5055H12.2638V9.75824H23.7903Z" fill="#518EF8"/>
+              <path d="M19.5119 21.3574L19.5125 21.358C17.4561 23.011 14.8437 24 12 24C7.43011 24 3.45694 21.4457 1.43011 17.6868L5.31891 14.5035C6.3323 17.2081 8.94132 19.1334 12 19.1334C13.3147 19.1334 14.5464 18.778 15.6033 18.1576L19.5119 21.3574Z" fill="#28B446"/>
+              <path d="M19.6595 2.76262L15.7721 5.94525C14.6782 5.26153 13.3852 4.86656 12 4.86656C8.87206 4.86656 6.21425 6.88017 5.25163 9.68175L1.34239 6.48131H1.34174C3.33889 2.63077 7.36217 0 12 0C14.9116 0 17.5813 1.03716 19.6595 2.76262Z" fill="#F14336"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1_17523">
+              <rect width="24" height="24" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+
+            Continue with Google
+          </button>
+
+        </div>
+        <button class="flex mt-2.5 items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 text-black sm:text-base text-sm font-medium hover:bg-gray-50 w-full">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.9998 24C18.6272 24 23.9998 18.6274 23.9998 12C23.9998 5.37258 18.6272 0 11.9998 0C5.37234 0 -0.000244141 5.37258 -0.000244141 12C-0.000244141 18.6274 5.37234 24 11.9998 24Z" fill="#50B748"/>
+        </svg>
+
+
+          Continue with Mobile Number
+        </button>
+
     </div>
   </div>
 </div>

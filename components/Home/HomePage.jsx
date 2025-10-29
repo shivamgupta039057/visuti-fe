@@ -13,6 +13,7 @@ import Counter from "./counter/Counter";
 import WhyChoose from "./WhychosseUs/WhyChoose";
 import MobileSection from "./mobileSection/MobileSection";
 import LatestandNotifications from "./LatestandNotifications/LatestandNotifications";
+import TrackYourChoicesMobile from "./TrackYourChoicesMobile";
 
 const HomePage = () => {
   return (
@@ -29,6 +30,7 @@ const HomePage = () => {
       <StuderVideo /> 
       <Testimonial />
       <Counter />
+      <TrackYourChoicesMobile/>
       <WhyChoose />
       <MobileSection />
     </>
