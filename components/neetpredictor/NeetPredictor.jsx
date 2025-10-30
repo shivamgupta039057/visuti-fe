@@ -12,6 +12,7 @@ import Services from '../Home/Services'
 import MobileSection from '../Home/mobileSection/MobileSection'
 import NewHeader from './NewHeader'
 
+
 const NeetPredictor = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const NeetPredictor = () => {
     <Testimonial />
     <Counter/>
     <Services/>
+    
     <MobileSection/>
     </>
   )

@@ -2,6 +2,7 @@
 
 import React from "react";
 import QuotaCards from "./QuotaCards";
+import FigmaMake from "./figmaMake/FigmaMake";
 
 export default function NEETUGPredictor() {
   return (
@@ -26,11 +27,7 @@ export default function NEETUGPredictor() {
         <div className="flex flex-col items-center lg:items-start sticky top-0">
           {/* Device Image */}
           <div className="w-full mb-6 ">
-            <img
-              src="/tabletneet.png"
-              alt="Tablet UI"
-              className="w-full mx-auto"
-            />
+           <FigmaMake />
           </div>
 
           {/* Counselling Card */}
