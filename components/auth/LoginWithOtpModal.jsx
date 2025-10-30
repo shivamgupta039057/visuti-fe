@@ -36,7 +36,7 @@ export default function LoginWithOtpModal({ open, onClose }) {
       {/* Modal Box: stopPropagation not required because we check target above,
           but you can keep it for extra safety */}
       <div
-        className="bg-white rounded-[20px] [box-shadow:0px_4px_30px_0px_#495F8E26] w-[90%] max-w-lg p-10 relative"
+        className="bg-white rounded-[20px] [box-shadow:0px_4px_30px_0px_#495F8E26] w-[90%] max-w-lg sm:p-10 p-5 relative"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -49,10 +49,10 @@ export default function LoginWithOtpModal({ open, onClose }) {
         </button>
 
         {/* Title */}
-        <h2 className="text-4xl text-left font-bold mb-1">Login with OTP</h2>
+        <h2 className="text-2xl sm:text-4xl text-left font-bold mb-1">Login with OTP</h2>
 
         {/* Create Account */}
-        <p className="text-[#666666] mb-6 text-lg mt-4 text-left">
+        <p className="text-[#666666] mb-6 text-sm sm:text-lg sm:mt-4 mt-2 text-left">
           Don’t have an account?{" "}
           <span className="text-primary font-medium cursor-pointer underline">
             Create now
@@ -81,7 +81,6 @@ export default function LoginWithOtpModal({ open, onClose }) {
           Send OTP
 
         </button>
-      <VerifyPhoneModal open={open} onClose={() => setOpen(false)} />
 
         {/* OR Line */}
         <div className="flex items-center my-4">
@@ -91,9 +90,9 @@ export default function LoginWithOtpModal({ open, onClose }) {
         </div>
 
         {/* Social Buttons */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-col sm:flex-row">
           {/* Facebook */}
-          <button className="flex items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 w-1/2 text-black text-base font-medium hover:bg-gray-50">
+          <button className="flex items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 w-1/2 text-black text-base font-medium hover:bg-gray-50 w-full sm:w-1/2">
            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_1_17517)">
           <path d="M21 0H3C1.3455 0 0 1.3455 0 3V21C0 22.6545 1.3455 24 3 24H21C22.6545 24 24 22.6545 24 21V3C24 1.3455 22.6545 0 21 0Z" fill="#1976D2"/>
@@ -110,7 +109,7 @@ export default function LoginWithOtpModal({ open, onClose }) {
           </button>
 
           {/* Google */}
-          <button className="flex items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 w-1/2 text-black text-base font-medium hover:bg-gray-50">
+          <button className="flex items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 w-1/2 text-black text-base font-medium hover:bg-gray-50 w-full sm:w-1/2">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1_17523)">
               <path d="M5.31891 14.5035L4.4835 17.6222L1.43011 17.6868C0.517594 15.9943 0 14.0578 0 12C0 10.0101 0.483938 8.13362 1.34175 6.48132H1.34241L4.06078 6.9797L5.25159 9.68176C5.00236 10.4084 4.86652 11.1884 4.86652 12C4.86661 12.8809 5.02617 13.7249 5.31891 14.5035Z" fill="#FBBB00"/>
@@ -129,6 +128,7 @@ export default function LoginWithOtpModal({ open, onClose }) {
           </button>
         </div>
       </div>
+   
     </div>
   );
 }

@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 const Banner = () => {
   return (
-    <section className="max-md:pt-[73px]">
+    <section className="max-md:pt-[73px] pt-44">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         // navigation

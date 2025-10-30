@@ -19,8 +19,8 @@ const NeetPredictorBanner = () => {
       {/* Decorative wave patterns */}
       <div className="absolute top-8 left-8 opacity-30">
         <svg width="80" height="40" viewBox="0 0 80 40" fill="none">
-          <path d="M0 20C10 10, 20 10, 30 20C40 30, 50 30, 60 20C70 10, 80 10, 80 20" stroke="white" strokeWidth="3" fill="none"/>
-          <path d="M0 30C10 20, 20 20, 30 30C40 40, 50 40, 60 30C70 20, 80 20, 80 30" stroke="white" strokeWidth="3" fill="none"/>
+          <path d="M0 20C10 10, 20 10, 30 20C40 30, 50 30, 60 20C70 10, 80 10, 80 20" stroke="white" stroke-width="3" fill="none"/>
+          <path d="M0 30C10 20, 20 20, 30 30C40 40, 50 40, 60 30C70 20, 80 20, 80 30" stroke="white" stroke-width="3" fill="none"/>
         </svg>
       </div>
 
@@ -31,7 +31,7 @@ const NeetPredictorBanner = () => {
         ))}
       </div>
 
-      <div className="max-w-6xl w-full flex flex-col pt-18 md:pt-0 md:flex-row items-center gap-8 relative z-10">
+      <div className="max-w-6xl w-full flex flex-col pt-18 md:pt-50 md:flex-row items-center gap-8 relative z-10">
         {/* Left Content */}
         <div className="flex-1 text-white space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">

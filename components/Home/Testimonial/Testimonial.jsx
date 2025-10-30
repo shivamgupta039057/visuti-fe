@@ -79,12 +79,12 @@ export default function SuccessStories() {
           {/* Keep your exact design for buttons */}
           <div className="flex gap-3 items-center justify-center pt-10 max-md:!hidden">
             <div ref={prevRef} className="swiper-button-prev !opacity-100 !inset-auto !pointer-events-auto !cursor-pointer !relative rounded-full flex items-center justify-center duration-300 bg-white !text-black p-2 border-4 border-gray-100 !size-12 *:!size-full" tabIndex={0}>
-              <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.28 5.22a.75.75 0 0 1 0 1.06L9.56 12l5.72 5.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.75.75 0 0 1 1.06 0Z"></path>
               </svg>
             </div>
             <div ref={nextRef} className="swiper-button-next after:hidden !opacity-100 !inset-auto !pointer-events-auto !cursor-pointer !relative rounded-full flex items-center justify-center duration-300 bg-white !text-black p-2 border-4 border-gray-100 !size-12 *:!size-full">
-              <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
               </svg>
             </div>

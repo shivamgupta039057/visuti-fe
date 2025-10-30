@@ -424,7 +424,7 @@ function FigmaMake() {
                                     points="20,48 60,35 100,25 140,30 180,20" 
                                     fill="none" 
                                     stroke="#10b981" 
-                                    strokeWidth="1.5"
+                                    stroke-width="1.5"
                                     strokeDasharray="2,2"
                                   />
                                   {/* Private Colleges Line */}
@@ -432,7 +432,7 @@ function FigmaMake() {
                                     points="20,35 60,15 100,10 140,12 180,8" 
                                     fill="none" 
                                     stroke="#f59e0b" 
-                                    strokeWidth="1.5"
+                                    stroke-width="1.5"
                                   />
                                   {/* Data points */}
                                   <circle cx="20" cy="48" r="1.5" fill="#10b981" />

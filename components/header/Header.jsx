@@ -1,27 +1,48 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import TopHeader from './TopHeader'
 import BottomHeader from './BottomHeader'
 import { Headphones } from 'lucide-react'
 
 const Header = () => {
   
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
     <>
-    {/* <div className="group/ns scrolled-check"> */}
-
-  
-
       <header
         id="mainHeader"
-        className="w-full z-[1010] bg-white transition-all duration-300 shadow-none  "
+        className={`w-full z-[1010] bg-white transition-all duration-300 fixed top-0 left-0 ${
+        isScrolled ? 'shadow-md' : 'shadow-none'
+      }`}
       >
-        <TopHeader/>
-        <BottomHeader/>
-      
+             <div
+        className={`overflow-hidden transition-all duration-300 ${
+          isScrolled ? 'max-h-0 opacity-0' : 'max-h-[100px] opacity-100'
+        }`}
+      >
+        <TopHeader />
+      </div>
+      <div className="border-t border-gray-200">
+        <BottomHeader />
+      </div>
         {/* bottom header  */}
-        <div className="bg-white border-b border-black/5 w-full">
+        <div className="bg-white border-b border-black/5 w-full max-lg:hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
+            <div className="flex justify-between items-center h-12">
             
               {/* Desktop Menu */}
               <nav className="hidden lg:flex space-x-3 font-medium">
@@ -529,7 +550,7 @@ const Header = () => {
                <div className="flex items-center space-x-2">
                 {/* Icon */}
                 <div className="text-black">
-                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <svg className='blink-text' width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M35.4375 17.9091V17.6794C35.4271 13.8608 33.9001 10.2027 31.1925 7.5099C28.485 4.81711 24.8186 3.31018 21 3.32063C17.1814 3.33107 13.5233 4.85802 10.8305 7.56558C8.13773 10.2731 6.63081 13.9395 6.64125 17.7581V17.8894C5.67512 18.1587 4.82371 18.7369 4.217 19.5356C3.6103 20.3342 3.28165 21.3095 3.28125 22.3125V23.625C3.28125 24.8433 3.76523 26.0118 4.62673 26.8733C5.48822 27.7348 6.65666 28.2188 7.875 28.2188H8.56406C8.72927 30.3601 9.69607 32.3604 11.2714 33.8202C12.8468 35.28 14.9148 36.0919 17.0625 36.0938H21C21.8702 36.0938 22.7048 35.7481 23.3202 35.1327C23.9355 34.5173 24.2812 33.6827 24.2812 32.8125V32.1563C24.2812 31.9822 24.2121 31.8153 24.089 31.6922C23.966 31.5691 23.799 31.5 23.625 31.5H18.375C18.201 31.5 18.034 31.5691 17.911 31.6922C17.7879 31.8153 17.7188 31.9822 17.7188 32.1563V34.7813H17.0625C15.148 34.7813 13.3119 34.0207 11.9581 32.6669C10.6043 31.3132 9.84375 29.477 9.84375 27.5625V18.375C9.84375 18.201 9.77461 18.034 9.65154 17.911C9.52847 17.7879 9.36155 17.7188 9.1875 17.7188H7.95375C7.94853 14.2482 9.32218 10.9178 11.7725 8.46005C14.2229 6.00233 17.5492 4.61866 21.0197 4.61344C24.4902 4.60822 27.8207 5.98187 30.2784 8.43221C32.7361 10.8825 34.1198 14.2089 34.125 17.6794V17.7188H32.8125C32.6385 17.7188 32.4715 17.7879 32.3485 17.911C32.2254 18.034 32.1562 18.201 32.1562 18.375V27.5625C32.1562 27.7365 32.2254 27.9035 32.3485 28.0265C32.4715 28.1496 32.6385 28.2188 32.8125 28.2188H34.125C34.7283 28.2188 35.3256 28.0999 35.8829 27.8691C36.4403 27.6382 36.9467 27.2998 37.3733 26.8733C37.7998 26.4467 38.1382 25.9403 38.3691 25.383C38.5999 24.8256 38.7188 24.2283 38.7188 23.625V22.3125C38.719 21.323 38.3998 20.3599 37.8085 19.5665C37.2173 18.7731 36.3857 18.1918 35.4375 17.9091ZM19.0312 32.8125H22.9688C22.9688 33.3346 22.7613 33.8354 22.3921 34.2046C22.0229 34.5738 21.5221 34.7813 21 34.7813H19.0312V32.8125ZM8.53125 26.9063H7.875C7.4441 26.9063 7.01742 26.8214 6.61932 26.6565C6.22122 26.4916 5.8595 26.2499 5.55481 25.9452C5.25011 25.6405 5.00842 25.2788 4.84352 24.8807C4.67862 24.4826 4.59375 24.0559 4.59375 23.625V22.3125C4.59375 21.4423 4.93945 20.6077 5.55481 19.9923C6.17016 19.377 7.00476 19.0313 7.875 19.0313H8.53125V26.9063ZM37.4062 23.625C37.4062 24.0559 37.3214 24.4826 37.1565 24.8807C36.9916 25.2788 36.7499 25.6405 36.4452 25.9452C36.1405 26.2499 35.7788 26.4916 35.3807 26.6565C34.9826 26.8214 34.5559 26.9063 34.125 26.9063H33.4688V19.0313H34.125C34.9952 19.0313 35.8298 19.377 36.4452 19.9923C37.0605 20.6077 37.4062 21.4423 37.4062 22.3125V23.625Z" fill="black"/>
                  </svg>
 
@@ -555,7 +576,7 @@ const Header = () => {
                   <svg
                     stroke="currentColor"
                     fill="black"
-                    strokeWidth={0}
+                    stroke-width={0}
                     viewBox="0 0 512 512"
                     height="25px"
                     width="25px"
@@ -609,7 +630,7 @@ const Header = () => {
           className="h-6 w-6 text-accent"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth="1.5"
+          stroke-width="1.5"
           stroke="currentColor"
           aria-hidden="true"
         >
@@ -633,7 +654,7 @@ const Header = () => {
                 Home
               </a>
               {/* our services  */}
-              <div className="relative flex flex-col gap-y-3 pt-3">
+              <div className="relative flex flex-col gap-y-3 pt-3  ">
                 <input
                   className="peer/mm hidden"
                   type="checkbox"
@@ -649,7 +670,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    strokeWidth={0}
+                    stroke-width={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -666,7 +687,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -689,7 +710,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -712,7 +733,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -736,7 +757,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -759,7 +780,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -782,7 +803,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -805,7 +826,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -828,7 +849,7 @@ const Header = () => {
                 </div>
               </div>
               {/* college predictor */}
-              <div className="relative flex flex-col gap-y-3 pt-3">
+              <div className="relative flex flex-col gap-y-3 pt-3 ">
                 <input
                   className="peer/mm hidden"
                   type="checkbox"
@@ -844,7 +865,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    strokeWidth={0}
+                    stroke-width={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -861,7 +882,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -884,7 +905,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -908,7 +929,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -931,7 +952,7 @@ const Header = () => {
                 </div>
               </div>
               {/* MBBS india */}
-              <div className="relative flex flex-col gap-y-3 pt-3">
+              <div className="relative flex flex-col gap-y-3 pt-3 ">
                 <input
                   className="peer/mm hidden"
                   type="checkbox"
@@ -947,7 +968,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    strokeWidth={0}
+                    stroke-width={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -964,7 +985,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -987,7 +1008,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1011,7 +1032,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1034,7 +1055,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1057,7 +1078,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1080,7 +1101,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1103,7 +1124,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1126,7 +1147,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1149,7 +1170,7 @@ const Header = () => {
                 </div>
               </div>
               {/* mBBS abroad */}
-              <div className="relative flex flex-col gap-y-3 pt-3">
+              <div className="relative flex flex-col gap-y-3 pt-3 ">
                 <input
                   className="peer/mm hidden"
                   type="checkbox"
@@ -1165,7 +1186,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    strokeWidth={0}
+                    stroke-width={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -1182,7 +1203,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1205,7 +1226,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1229,7 +1250,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1252,7 +1273,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1275,7 +1296,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1298,7 +1319,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1321,7 +1342,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1344,7 +1365,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1367,7 +1388,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1390,7 +1411,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1413,7 +1434,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1436,7 +1457,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1460,18 +1481,18 @@ const Header = () => {
               </div>
               <a
                 href="#"
-                className="lg:text-sm md:text-xs text-sm font-semibold text-accent active [.active]:text-primary pt-2"
+                className="lg:text-sm md:text-xs text-sm font-semibold text-accent  [.active]:text-primary pt-2"
               >
                 NRI quota
               </a>
               <a
                 href="#"
-                className="lg:text-sm md:text-xs text-sm font-semibold text-accent active [.active]:text-primary pt-2"
+                className="lg:text-sm md:text-xs text-sm font-semibold text-accent  [.active]:text-primary pt-2"
               >
                 counseling plans
               </a>
               {/* Others */}
-              <div className="relative flex flex-col gap-y-3 pt-3">
+              <div className="relative flex flex-col gap-y-3 pt-3 ">
                 <input
                   className="peer/mm hidden"
                   type="checkbox"
@@ -1487,7 +1508,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    strokeWidth={0}
+                    stroke-width={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -1504,7 +1525,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1527,7 +1548,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1551,7 +1572,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1574,7 +1595,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          strokeWidth={0}
+                          stroke-width={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
