@@ -576,7 +576,7 @@ const Header = () => {
                   <svg
                     stroke="currentColor"
                     fill="black"
-                    stroke-width={0}
+                    strokeWidth={0}
                     viewBox="0 0 512 512"
                     height="25px"
                     width="25px"
@@ -630,7 +630,7 @@ const Header = () => {
           className="h-6 w-6 text-accent"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           stroke="currentColor"
           aria-hidden="true"
         >
@@ -670,7 +670,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width={0}
+                    strokeWidth={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -687,7 +687,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -710,7 +710,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -733,7 +733,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -757,7 +757,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -780,7 +780,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -803,7 +803,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -826,7 +826,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -865,7 +865,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width={0}
+                    strokeWidth={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -882,7 +882,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -905,7 +905,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -929,7 +929,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -968,7 +968,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width={0}
+                    strokeWidth={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -985,7 +985,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1008,7 +1008,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1032,7 +1032,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1055,7 +1055,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1078,7 +1078,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1101,7 +1101,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1124,7 +1124,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1147,7 +1147,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1186,7 +1186,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width={0}
+                    strokeWidth={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -1203,7 +1203,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1226,7 +1226,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1250,7 +1250,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1273,7 +1273,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1296,7 +1296,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1319,7 +1319,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1342,7 +1342,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1365,7 +1365,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1388,7 +1388,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1411,7 +1411,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1434,7 +1434,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1457,7 +1457,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1508,7 +1508,7 @@ const Header = () => {
                     className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width={0}
+                    strokeWidth={0}
                     viewBox="0 0 448 512"
                     height="1em"
                     width="1em"
@@ -1525,7 +1525,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1548,7 +1548,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1572,7 +1572,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"
@@ -1595,7 +1595,7 @@ const Header = () => {
                           className="size-4 opacity-90 group-hover/db:opacity-80 shrink-0"
                           stroke="#1e2939"
                           fill="#1e2939"
-                          stroke-width={0}
+                          strokeWidth={0}
                           viewBox="0 0 1024 1024"
                           height="1em"
                           width="1em"

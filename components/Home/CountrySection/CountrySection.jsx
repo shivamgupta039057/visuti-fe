@@ -45,7 +45,7 @@ export default function CountrySection() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width={2}
+            strokeWidth={2}
             stroke={activeBtn === "prev" ? "#fff" : "#333"}
             className="w-5 h-5"
           >
@@ -72,7 +72,7 @@ export default function CountrySection() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width={2}
+            strokeWidth={2}
             stroke={activeBtn === "next" ? "#fff" : "#333"}
             className="w-5 h-5"
           >

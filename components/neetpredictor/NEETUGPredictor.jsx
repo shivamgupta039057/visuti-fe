@@ -2,7 +2,8 @@
 
 import React from "react";
 import QuotaCards from "./QuotaCards";
-import FigmaMake from "./figmaMake/FigmaMake";
+import FigmaMake from "../neetPredictor/figmaMake/FigmaMake";
+// import FigmaMake from "./figmaMake/FigmaMake";
 
 export default function NEETUGPredictor() {
   return (
@@ -24,7 +25,7 @@ export default function NEETUGPredictor() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         
         {/* Left Section (Tablet UI + Counselling Card) */}
-        <div className="flex flex-col items-center lg:items-start sticky top-0">
+        <div className="flex flex-col items-center lg:items-start lg:sticky top-0">
           {/* Device Image */}
           <div className="w-full mb-6 ">
            <FigmaMake />

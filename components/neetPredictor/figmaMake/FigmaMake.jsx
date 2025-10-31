@@ -105,16 +105,16 @@ function FigmaMake() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8 items-start ml-8">
+    <div className=" p-6">
+      <div className="mx-auto">
+        <div className="grid lg:grid-cols-1 gap-8 items-start ml-8">
           {/* Left Side - Tablet Device */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Tablet Frame */}
-              <div className="w-[600px] h-[800px] bg-gray-800 rounded-[50px] p-8 shadow-2xl ml-24 mr-auto">
+              <div className="w-[600px] scrollbar-hide h-[800px] bg-gray-800 rounded-[50px] p-8 shadow-2xl ml-24 mr-auto">
                 {/* Screen */}
-                <div className="w-full h-full bg-white rounded-[30px] overflow-hidden relative">
+                <div className="w-full scrollbar-hide h-full bg-white rounded-[30px] overflow-hidden relative">
                   {/* Status Bar */}
                   <div className="h-8 bg-blue-600 flex items-center justify-between px-6">
                     <div className="flex space-x-1">
@@ -127,7 +127,7 @@ function FigmaMake() {
                   </div>
 
                   {/* App Content */}
-                  <div className="h-full bg-white overflow-auto">
+                  <div className="h-full bg-white overflow-auto scrollbar-hide">
                     <div className="p-3">
                       {/* Student Profile Header */}
                       <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-4 mb-3 text-white">
@@ -424,7 +424,7 @@ function FigmaMake() {
                                     points="20,48 60,35 100,25 140,30 180,20" 
                                     fill="none" 
                                     stroke="#10b981" 
-                                    stroke-width="1.5"
+                                    strokeWidth="1.5"
                                     strokeDasharray="2,2"
                                   />
                                   {/* Private Colleges Line */}
@@ -432,7 +432,7 @@ function FigmaMake() {
                                     points="20,35 60,15 100,10 140,12 180,8" 
                                     fill="none" 
                                     stroke="#f59e0b" 
-                                    stroke-width="1.5"
+                                    strokeWidth="1.5"
                                   />
                                   {/* Data points */}
                                   <circle cx="20" cy="48" r="1.5" fill="#10b981" />
