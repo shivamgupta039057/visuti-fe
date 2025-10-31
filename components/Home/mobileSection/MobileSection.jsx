@@ -22,7 +22,7 @@ const MobileSection = () => {
       <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5 items-center">
         <div>
           <div>
-            <Image src="/mobileapp.png" alt="app mobile" width={640} height={640} />
+            <Image src="/mobileapp.png" alt="app mobile" width={440} height={440} />
           </div>
           <div className="md:text-3xl text-2xl font-light text-[#06241B] text-center">
             Download The <span className="font-bold">Visuti Career App</span>

@@ -105,14 +105,14 @@ function FigmaMake() {
   };
 
   return (
-    <div className=" p-6">
+    <div className=" sm:p-6 p-2">
       <div className="mx-auto">
-        <div className="grid lg:grid-cols-1 gap-8 items-start ml-8">
+        <div className="grid lg:grid-cols-1 gap-8 items-start lg:ml-8">
           {/* Left Side - Tablet Device */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Tablet Frame */}
-              <div className="w-[600px] scrollbar-hide h-[800px] bg-gray-800 rounded-[50px] p-8 shadow-2xl ml-24 mr-auto">
+              <div className="lg:w-[500px] w-full scrollbar-hide md:h-[800px] sm:h-[600px] h-[550px] bg-gray-800 rounded-[50px] md:p-8 p-4 shadow-2xl lg:ml-24 lg:mr-auto">
                 {/* Screen */}
                 <div className="w-full scrollbar-hide h-full bg-white rounded-[30px] overflow-hidden relative">
                   {/* Status Bar */}
@@ -738,7 +738,7 @@ function FigmaMake() {
                 </div>
               </div>
               {/* Device Labels */}
-              <div className="absolute -right-12 top-1/2 transform -translate-y-1/2">
+              <div className="absolute -right-12 top-1/2 transform -translate-y-1/2 max-sm:hidden">
                 <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg">
                   <p className="text-xs text-gray-600 font-medium">Live Results</p>
                 </div>

@@ -5,8 +5,11 @@ import ContactMaps from './ContactMaps'
 const ContactPage = () => {
   return (
    <>
+   <div className='mt-48'>
+
    <ContactForm />
    <ContactMaps />
+   </div>
    </>
   )
 }

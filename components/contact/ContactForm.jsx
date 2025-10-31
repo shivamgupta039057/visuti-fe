@@ -23,6 +23,9 @@ const ContactForm = () => {
   };
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+
+      {/* Main Content Grid */}
+      <div className="max-w-7xl mx-auto mb-12">
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
@@ -32,11 +35,10 @@ const ContactForm = () => {
           Reach out for personalized guidance and solutions
         </p>
       </div>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
 
-      {/* Main Content Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
         {/* Contact Information Card */}
-        <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl p-8 text-white relative overflow-hidden">
+        <div className="bg-[linear-gradient(180deg,_#00B96F_0%,_#066368_100%)] rounded-2xl p-8 text-white relative overflow-hidden">
           {/* Decorative circles */}
           <div className="absolute bottom-0 right-0 w-32 h-32 bg-teal-500 rounded-full opacity-20 transform translate-x-8 translate-y-8"></div>
           <div className="absolute top-1/2 right-8 w-24 h-24 bg-teal-500 rounded-full opacity-20"></div>
@@ -102,7 +104,7 @@ const ContactForm = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-sm">
+        <div className="lg:col-span-2 bg-white rounded-2xl p-8 [box-shadow:0px_3px_34px_0px_#00000026]">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name Fields */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -177,7 +179,7 @@ const ContactForm = () => {
                     onClick={() => setFormData({ ...formData, subject })}
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                       formData.subject === subject
-                        ? 'bg-teal-600 text-white'
+                        ? 'bg-primary text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
@@ -205,12 +207,13 @@ const ContactForm = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors"
+              className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors"
             >
               Send Message
             </button>
           </form>
         </div>
+      </div>
       </div>
 
       {/* Map Section */}

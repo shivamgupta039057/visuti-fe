@@ -11,7 +11,7 @@ const predictorOptions = [
 const PredictorFeatureneet = () => {
   return (
     <section className="relative">
-      <div className="relative border border-[#CDEAE3] bg-[#F4FFFC] shadow-[0_22px_45px_rgba(8,82,65,0.12)] lg:mt-48 sm:mt-32 mt-20">
+      <div className="relative border border-[#CDEAE3] bg-[#F4FFFC] shadow-[0_22px_45px_rgba(8,82,65,0.12)] lg:mt-40 sm:mt-32 mt-20">
         {/* Background image */}
         <div className="pointer-events-none absolute inset-0">
           <img

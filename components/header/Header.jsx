@@ -40,7 +40,9 @@ const Header = () => {
         <BottomHeader />
       </div>
         {/* bottom header  */}
-        <div className="bg-white border-b border-black/5 w-full max-lg:hidden">
+        <div className={`bg-white border-b border-black/5 w-full max-lg:hidden overflow-hidden transition-all duration-300 ${
+          isScrolled ? 'max-h-0 opacity-0' : 'max-h-[60px] opacity-100'
+        }`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-12">
             
@@ -88,7 +90,7 @@ const Header = () => {
                       </defs>
                     </svg>
                   </button>
-                  <div className="absolute left-52 -right-0 max-w-xl w-screen xl:top-[47px] group-hover/ns:xl:top-[49px] lg:top-[40px] group-hover/ns:lg:top-[45px] z-50 overflow-hidden bg-white/40 rounded-[10px] backdrop-[10px] transition ease-out duration-200 opacity-100 group-hover/dd:opacity-100 origin-top [transform:rotateX(90deg)_translateX(-50%)] group-hover/dd:[transform:rotateX(0deg)_translateX(-50%)]">
+                  <div className="absolute left-56 -right-0 max-w-xl w-screen xl:top-[47px] group-hover/ns:xl:top-[49px] lg:top-[40px] group-hover/ns:lg:top-[45px] z-50 overflow-hidden bg-white/40 rounded-[10px] backdrop-[10px] transition ease-out duration-200 opacity-100 group-hover/dd:opacity-100 origin-top [transform:rotateX(90deg)_translateX(-50%)] group-hover/dd:[transform:rotateX(0deg)_translateX(-50%)]">
                     <div className="grid grid-cols-1 flex-wrap w-full gap-4 p-1 items-stretch">
                       <div className="w-full flex flex-col overflow-hidden rounded-[10px] text-xs xl:text-sm leading-6 bg-white/70 backdrop-blur-lg shadow-lg ring-1 ring-gray-900/5">
                         <div className="p-4">
@@ -187,7 +189,7 @@ const Header = () => {
                       </defs>
                     </svg>
                   </button>
-                  <div className="absolute left-1/2 right-0 max-w-xl w-screen xl:top-[47px] group-hover/ns:xl:top-[49px] lg:top-[40px] group-hover/ns:lg:top-[45px] z-50 overflow-hidden bg-white/40 rounded-[10px] backdrop-[10px] transition ease-out duration-200 opacity-100 group-hover/dd:opacity-100 origin-top [transform:rotateX(90deg)_translateX(-50%)] group-hover/dd:[transform:rotateX(0deg)_translateX(-50%)]">
+                  <div className="absolute left-52 right-0 max-w-xl w-screen xl:top-[47px] group-hover/ns:xl:top-[49px] lg:top-[40px] group-hover/ns:lg:top-[45px] z-50 overflow-hidden bg-white/40 rounded-[10px] backdrop-[10px] transition ease-out duration-200 opacity-100 group-hover/dd:opacity-100 origin-top [transform:rotateX(90deg)_translateX(-50%)] group-hover/dd:[transform:rotateX(0deg)_translateX(-50%)]">
                     <div className="grid grid-cols-1 flex-wrap w-full gap-4 p-1 items-stretch">
                       <div className="w-full flex flex-col overflow-hidden rounded-[10px] text-xs xl:text-sm leading-6 bg-white/70 backdrop-blur-lg shadow-lg ring-1 ring-gray-900/5">
                         <div className="p-4">

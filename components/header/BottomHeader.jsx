@@ -9,18 +9,18 @@ const BottomHeader = () => {
     <div>
            {/* Middle bar: logo, search, quick actions */}
       <div className="border-y border-black/5 bg-white">
-        <div className="max-w-7xl mx-auto flex  gap-4 px-4 py-4 flex-row items-center gap-8">
+        <div className="max-w-7xl mx-auto flex  gap-4 px-4 py-2 flex-row items-center gap-8">
           <div className="flex items-center justify-between gap-4">
             <img
               src="/Logo.png"
               alt="Visuti Career"
-              className="h-10 w-auto lg:h-16 md:h-12 lg:max-w-40 max-w-20"
+              className="h-10 w-auto lg:h-14 md:h-12 lg:max-w-40 max-w-20"
             />
           </div>
 
           <div className=" flex-1 flex items-center">
             <div className="w-full ">
-                <div className="max-sm:hidden  flex items-center bg-white rounded-[10px] md:mx-10 mx-2 border border-[#226E49] h-[55px  ] overflow-hidden">
+                <div className="max-sm:hidden  flex items-center bg-white rounded-[10px] md:mx-10 mx-2 border border-[#226E49] h-[50px] overflow-hidden">
                   {/* Left Icon */}
                   <span className="pl-4 min-w-4 flex items-center">
                     <img
