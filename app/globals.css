@@ -88,3 +88,31 @@ body {
     opacity: 0;          /* Hidden */
   }
 }
+
+/* Dashboard Styles */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollable-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollable-items::-webkit-scrollbar-thumb {
+  background: #009245;
+  border-radius: 10px;
+}
+
+.scrollable-items::-webkit-scrollbar-thumb:hover {
+  background: #009245;
+}
