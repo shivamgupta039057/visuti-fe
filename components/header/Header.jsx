@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import TopHeader from './TopHeader'
 import BottomHeader from './BottomHeader'
 import { Headphones } from 'lucide-react'
+import Link from 'next/link'
 
 const Header = () => {
   
@@ -48,12 +49,12 @@ const Header = () => {
             
               {/* Desktop Menu */}
               <nav className="hidden lg:flex space-x-3 font-medium">
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="xl:text-sm lg:text-xs text-sm font-medium leading-6 text-primary"
                 >
                   Home
-                </a>
+                </Link>
                 <span className="hidden h-5 w-px bg-gray-200 last:hidden md:block" aria-hidden="true"></span>
                 {/* Dropdown our services*/}
                 <div className="relative group/dd">
@@ -559,6 +560,9 @@ const Header = () => {
                 </div>
 
                 {/* Text Section */}
+                <Link
+                      href="/contactUs"
+                      >
                 <div className="flex flex-col leading-tight">
                   <span className="text-primary font-semibold text-sm">
                     Call us now
@@ -567,6 +571,7 @@ const Header = () => {
                     +91 9145879646
                   </span>
                 </div>
+                </Link>
               </div>
               {/* Mobile Hamburger */}
               <div className="flex gap-2 lg:hidden">
@@ -649,12 +654,12 @@ const Header = () => {
         <div className="space-y-1 w-full">
           <div className="flex flex-col gap-5 items-center w-full">
             <div className="flex flex-col w-full gap-y-2 divide-y divide-grey-400">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="lg:text-sm md:text-xs text-sm font-semibold text-accent active [.active]:text-primary pt-2"
               >
                 Home
-              </a>
+              </Link>
               {/* our services  */}
               <div className="relative flex flex-col gap-y-3 pt-3  ">
                 <input

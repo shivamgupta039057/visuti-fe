@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function QuotaCards() {
@@ -86,11 +87,15 @@ export default function QuotaCards() {
               ))}
             </ul>
 
+            <Link 
+                      href="/neetPredictor"
+                      >
             <button
               className={`mt-6 px-6 py-3 rounded-lg font-medium text-white shadow-md bg-gradient-to-r ${card.gradient}`}
             >
-              Check Eligibility & Seats
+              Check Eligibility & Seatsdddd
             </button>
+            </Link>
           </div>
         </div>
       ))}

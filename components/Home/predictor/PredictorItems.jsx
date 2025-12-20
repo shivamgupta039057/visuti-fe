@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const PredictorItems = () => {
@@ -14,6 +15,9 @@ const PredictorItems = () => {
         <div className="max-w-7xl mx-auto lg:px-6 px-4 z-10">
           <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
             <div className="grid grid-cols-1 lg:gap-12 md:gap-8 gap-5 ">
+              <Link 
+                      href="/neet"
+                      >
               <div className=" sm:max-w-sm w-full mx-auto md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
                 {/* Content */}
                 <div className="flex items-start gap-3">
@@ -26,7 +30,8 @@ const PredictorItems = () => {
                   <div>
                     {/* Title */}
                     <h3 className="font-bold md:text-lg text-base text-black">
-                      For NEET UG Aspirants
+                      
+                        For NEET UG Aspirants
                     </h3>
                     {/* Description */}
                     <p className="md:text-sm text-xs   text-black mt-1 leading-relaxed">
@@ -41,6 +46,7 @@ const PredictorItems = () => {
                   </div>
                 </div>
               </div>
+              </Link>
               <div className=" sm:max-w-sm w-full mx-auto  md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
                 {/* Content */}
                 <div className="flex items-start gap-3">

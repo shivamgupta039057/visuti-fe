@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { X } from "lucide-react";
 import VerifyPhoneModal from "./VerifyPhoneModal";
+import OtpVerification from "./OtpVerification";
 
 export default function LoginWithOtpModal({ open, onClose }) {
 
@@ -27,6 +28,7 @@ export default function LoginWithOtpModal({ open, onClose }) {
   };
 
   return (
+    <>
     <div
       className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
       onClick={handleBackdropClick} // only fires close when e.target === e.currentTarget
@@ -77,7 +79,11 @@ export default function LoginWithOtpModal({ open, onClose }) {
         </div>
 
         {/* Send OTP Button */}
-        <button onClick={() => setOpen(true)} className="w-full bg-primary hover:bg-[#029e65] text-white font-medium py-2.5 rounded-lg mb-4 transition-all">
+        <button 
+        onClick={() => {
+          alert("OTP Sent!");
+          
+        }} className="w-full bg-primary hover:bg-[#029e65] text-white font-medium py-2.5 rounded-lg mb-4 transition-all">
           Send OTP
 
         </button>
@@ -130,5 +136,9 @@ export default function LoginWithOtpModal({ open, onClose }) {
       </div>
    
     </div>
+    <OtpVerification 
+    
+    />;
+    </>
   );
 }
