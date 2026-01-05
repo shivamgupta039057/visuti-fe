@@ -112,7 +112,7 @@ function FigmaMake() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Tablet Frame */}
-              <div className="lg:w-[500px] w-full scrollbar-hide md:h-[800px] sm:h-[600px] h-[550px] bg-gray-800 rounded-[50px] md:p-8 p-4 shadow-2xl lg:ml-24 lg:mr-auto">
+              <div className="lg:w-[580px] w-full scrollbar-hide md:h-[800px] sm:h-[600px] h-[550px] bg-gray-800 rounded-[50px] md:p-8 p-4 shadow-2xl lg:ml-24 lg:mr-auto">
                 {/* Screen */}
                 <div className="w-full scrollbar-hide h-full bg-white rounded-[30px] overflow-hidden relative">
                   {/* Status Bar */}

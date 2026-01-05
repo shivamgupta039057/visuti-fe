@@ -40,7 +40,7 @@ const Header = () => {
         <BottomHeader />
       </div>
         {/* bottom header  */}
-        <div className={`bg-white border-b border-black/5 w-full max-lg:hidden overflow-hidden transition-all duration-300 ${
+        <div className={`bg-white border-b border-black/5 w-full max-lg:hidden overflowhidden transition-all duration-300 ${
           isScrolled ? 'max-h-0 opacity-0' : 'max-h-[60px] opacity-100'
         }`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -480,14 +480,14 @@ const Header = () => {
                 <span className="hidden h-5 w-px bg-gray-200 last:hidden md:block" aria-hidden="true"></span>
                 <a
                   href="#"
-                  className="xl:text-sm lg:text-xs text-sm font-medium leading-6 text-accent duration-200 capitalize hover:lg:text-accent"
+                  className="xl:text-sm lg:text-xs text-sm font-medium leading-6 text-accent duration-200 capitalize hover:text-primary transition-colors"
                 >
                   NRI quota
                 </a>
                 <span className="hidden h-5 w-px bg-gray-200 last:hidden md:block" aria-hidden="true"></span>
                 <a
                   href="#"
-                  className="xl:text-sm lg:text-xs text-sm font-medium leading-6 text-accent duration-200 capitalize hover:lg:text-accent"
+                  className="xl:text-sm lg:text-xs text-sm font-medium leading-6 text-accent duration-200 capitalize hover:text-primary transition-colors"
                 >
                   counseling plans
                 </a>
@@ -609,9 +609,9 @@ const Header = () => {
   />
   <label
     htmlFor="sideToggle"
-    className="fixed inset-0 -z-[1011] backdrop-blur-xl bg-[#009245]/10 overflow-hidden peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"
+    className="fixed inset-0 -z-[1011] backdrop-blur-sm bg-black/30 overflow-hidden peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 transition-all duration-300 ease-out"
   />
-  <div className="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-white overflow-hidden backdrop-blur-lg select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-black/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
+  <div className="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-white overflow-hidden select-none text-white px-6 py-6 sm:max-w-sm shadow-2xl peer-checked/sideToggle:translate-x-0 translate-x-full transition-transform duration-500 ease-out">
     <div className="flex items-center justify-between border-b pb-3 border-b-[#DADADA]/70">
       <div className="h-10 flex">
         <a href="javascript:;" className="-ml-1.5 flex items-center">
@@ -644,14 +644,14 @@ const Header = () => {
         </svg>
       </label>
     </div>
-    <div className=" mt-1 grow flex flex-fill overflow-auto">
-      <div className=" divide-y divide-black w-full">
+    <div className="mt-1 grow flex flex-fill overflow-auto scrollbar-hide scroll-smooth">
+      <div className="divide-y divide-black/5 w-full">
         <div className="space-y-1 w-full">
           <div className="flex flex-col gap-5 items-center w-full">
-            <div className="flex flex-col w-full gap-y-2 divide-y divide-grey-400">
+            <div className="flex flex-col w-full gap-y-2 divide-y divide-gray-200">
               <a
                 href="#"
-                className="lg:text-sm md:text-xs text-sm font-semibold text-accent active [.active]:text-primary pt-2"
+                className="lg:text-sm md:text-xs text-sm font-semibold text-accent active [.active]:text-primary pt-2 hover:text-primary transition-colors duration-200 py-3"
               >
                 Home
               </a>
@@ -665,11 +665,11 @@ const Header = () => {
                 />
                 <label
                   htmlFor="ourservices"
-                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent"
+                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent cursor-pointer hover:text-primary transition-colors duration-200"
                 >
                   our services
                   <svg
-                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
+                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-300 ease-out peer-checked/mm:rotate-45"
                     stroke="currentColor"
                     fill="currentColor"
                     strokeWidth={0}
@@ -681,7 +681,7 @@ const Header = () => {
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                   </svg>
                 </label>
-                <div className="w-full peer-checked/mm:block hidden">
+                <div className="w-full peer-checked/mm:max-h-[1000px] peer-checked/mm:opacity-100 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="grid grid-cols-1 flex-wrap w-full gap-4">
                     <div className="w-full text-sm md:text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1.5 *:relative">
                       <div>
@@ -860,11 +860,11 @@ const Header = () => {
                 />
                 <label
                   htmlFor="collegepredictor"
-                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent"
+                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent cursor-pointer hover:text-primary transition-colors duration-200"
                 >
                   college predictor
                   <svg
-                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
+                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-300 ease-out peer-checked/mm:rotate-45"
                     stroke="currentColor"
                     fill="currentColor"
                     strokeWidth={0}
@@ -876,7 +876,7 @@ const Header = () => {
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                   </svg>
                 </label>
-                <div className="w-full peer-checked/mm:block hidden">
+                <div className="w-full peer-checked/mm:max-h-[800px] peer-checked/mm:opacity-100 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="grid grid-cols-1 flex-wrap w-full gap-4">
                     <div className="w-full text-sm md:text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1.5 *:relative">
                       <div>
@@ -963,11 +963,11 @@ const Header = () => {
                 />
                 <label
                   htmlFor="mbbsindia"
-                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent"
+                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent cursor-pointer hover:text-primary transition-colors duration-200"
                 >
                   MBBS india
                   <svg
-                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
+                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-300 ease-out peer-checked/mm:rotate-45"
                     stroke="currentColor"
                     fill="currentColor"
                     strokeWidth={0}
@@ -979,7 +979,7 @@ const Header = () => {
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                   </svg>
                 </label>
-                <div className="w-full peer-checked/mm:block hidden">
+                <div className="w-full peer-checked/mm:max-h-[1500px] peer-checked/mm:opacity-100 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="grid grid-cols-1 flex-wrap w-full gap-4">
                     <div className="w-full text-sm md:text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1.5 *:relative">
                       <div>
@@ -1181,11 +1181,11 @@ const Header = () => {
                 />
                 <label
                   htmlFor="mbbsabroad"
-                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent"
+                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent cursor-pointer hover:text-primary transition-colors duration-200"
                 >
                   mBBS abroad
                   <svg
-                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
+                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-300 ease-out peer-checked/mm:rotate-45"
                     stroke="currentColor"
                     fill="currentColor"
                     strokeWidth={0}
@@ -1197,7 +1197,7 @@ const Header = () => {
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                   </svg>
                 </label>
-                <div className="w-full peer-checked/mm:block hidden">
+                <div className="w-full peer-checked/mm:max-h-[2000px] peer-checked/mm:opacity-100 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="grid grid-cols-1 flex-wrap w-full gap-4">
                     <div className="w-full text-sm md:text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1.5 *:relative">
                       <div>
@@ -1483,13 +1483,13 @@ const Header = () => {
               </div>
               <a
                 href="#"
-                className="lg:text-sm md:text-xs text-sm font-semibold text-accent  [.active]:text-primary pt-2"
+                className="lg:text-sm md:text-xs text-sm font-semibold text-accent [.active]:text-primary pt-2 hover:text-primary transition-colors duration-200 py-3"
               >
                 NRI quota
               </a>
               <a
                 href="#"
-                className="lg:text-sm md:text-xs text-sm font-semibold text-accent  [.active]:text-primary pt-2"
+                className="lg:text-sm md:text-xs text-sm font-semibold text-accent [.active]:text-primary pt-2 hover:text-primary transition-colors duration-200 py-3"
               >
                 counseling plans
               </a>
@@ -1503,11 +1503,11 @@ const Header = () => {
                 />
                 <label
                   htmlFor="Others"
-                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent"
+                  className="flex capitalize items-center gap-x-0.5 lg:text-sm md:text-xs text-sm font-semibold text-accent cursor-pointer hover:text-primary transition-colors duration-200"
                 >
                   Others
                   <svg
-                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-500 group-hover/dd:[transform:rotateX(180deg)]"
+                    className="xl:size-5 lg:size-4 size-5 flex-none ml-auto transition-transform duration-300 ease-out peer-checked/mm:rotate-45"
                     stroke="currentColor"
                     fill="currentColor"
                     strokeWidth={0}
@@ -1519,7 +1519,7 @@ const Header = () => {
                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                   </svg>
                 </label>
-                <div className="w-full peer-checked/mm:block hidden">
+                <div className="w-full peer-checked/mm:max-h-[600px] peer-checked/mm:opacity-100 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="grid grid-cols-1 flex-wrap w-full gap-4">
                     <div className="w-full text-sm md:text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1.5 *:relative">
                       <div>

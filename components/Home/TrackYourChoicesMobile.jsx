@@ -6,13 +6,13 @@ const TrackYourChoicesMobile = () => {
     <section className="relative py-12 bg-white">
       <div className="max-w-7xl mx-auto lg:px-6 px-4">
         {/* Heading */}
-        <div className="text-secondary font-medium md:text-5xl sm:text-4xl text-3xl text-center capitalize">
+        <div className="text-secondary font-semibold  md:text-5xl sm:text-4xl text-3xl text-center capitalize">
           Track Your Choices in 5{" "}
           <span className="font-bold text-primary">Simple Steps</span>
         </div>
 
         {/* Paragraph */}
-        <div className="md:font-medium md:text-base sm:text-sm text-xs text-muted text-center md:mt-4 mt-2 max-w-2xl mx-auto leading-relaxed">
+        <div className="md:font-medium md:text-base sm:text-sm text-xs text-muted text-center sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
           Our intuitive tracker makes managing your NEET counseling choices effortless.
         </div>
 

@@ -87,11 +87,11 @@ export default function CounsellingCards() {
               <li key={i} className="flex items-start gap-2 sm:text-base text-xs">
                     <svg className='w-4 h-4 min-w-4' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="url(#paint0_linear_1_12992)"/>
-                    <path d="M6.5 10.5L8.5 12.5L13.5 7.5" stroke="white" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.5 10.5L8.5 12.5L13.5 7.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     <defs>
                     <linearGradient id="paint0_linear_1_12992" x1="0" y1="0" x2="20" y2="20" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#2B7FFF"/>
-                    <stop offset="1" stop-color="#00B8DB"/>
+                    <stop stopColor="#2B7FFF"/>
+                    <stop offset="1" stopColor="#00B8DB"/>
                     </linearGradient>
                     </defs>
                     </svg>

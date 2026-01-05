@@ -9,7 +9,7 @@ const BottomHeader = () => {
     <div>
            {/* Middle bar: logo, search, quick actions */}
       <div className="border-y border-black/5 bg-white">
-        <div className="max-w-7xl mx-auto flex  gap-4 px-4 py-2 flex-row items-center gap-8">
+        <div className="max-w-7xl mx-auto flex  gap-4 px-4 py-2 flex-row items-center sm:gap-8">
           <div className="flex items-center justify-between gap-4">
             <img
               src="/Logo.png"
