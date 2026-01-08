@@ -22,7 +22,7 @@ const TopHeader = () => {
             Get MBBS Abroad Free Counselling
             <span className="relative inline-flex ml-1">
               <a href="#" className="underline text-[#FF0000] font-semibold blink-text">Click Here</a>
-              <img src="/arrow.png" alt="arrow" className="w-5 h-5 absolute -bottom-3 right-0" />
+              <img src="/arrowheader.svg" alt="arrow" className="w-4 h-4 absolute -bottom-3 right-0" />
             </span>
           </p>
         </div>

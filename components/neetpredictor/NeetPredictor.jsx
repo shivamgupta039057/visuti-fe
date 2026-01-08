@@ -11,6 +11,9 @@ import Counter from '../Home/counter/Counter'
 import Services from '../Home/Services'
 import MobileSection from '../Home/mobileSection/MobileSection'
 import NewHeader from './NewHeader'
+import HowToUseTextSection from './HowToUseTextSection'
+import BundleCards from './BundleCards'
+import FAQSection from './FAQSection'
 
 
 const NeetPredictor = () => {
@@ -23,9 +26,14 @@ const NeetPredictor = () => {
     <CtaSection/>
     <HowToUseSection/>
     <AICollegePredictor/>
+    <HowToUseTextSection/>
+    <HowToUseTextSection/>
+    <HowToUseTextSection/>
+    <BundleCards/>
     <StuderVideo/>
     <Testimonial />
     <Counter/>
+    <FAQSection/>
     <Services/>
     
     <MobileSection/>

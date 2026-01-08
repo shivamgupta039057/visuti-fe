@@ -51,7 +51,7 @@ export default function LoginWithOtpModal({ open, onClose }) {
         </button>
 
         {/* Title */}
-        <h2 className="text-2xl sm:text-4xl text-left font-bold mb-1">Login with OTP</h2>
+        <h2 className="text-2xl sm:text-4xl text-left font-bold mb-1 text-black">Login with OTP</h2>
 
         {/* Create Account */}
         <p className="text-[#666666] mb-6 text-sm sm:text-lg sm:mt-4 mt-2 text-left">

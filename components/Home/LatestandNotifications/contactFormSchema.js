@@ -5,6 +5,7 @@ const phoneRegex = /^(?:\+\d{1,3}\s?)?(\d{10,})$/;
 export const contactFormSchema = yup.object({
   name: yup.string().required('Name is required'),
   email: yup.string().email('Invalid email address').required('Email is required'),
+  course: yup.string().required('Please select a course'),
   phone: yup
     .string()
     .matches(phoneRegex, 'Phone number is not valid')

@@ -70,7 +70,7 @@ const Services = () => {
           { img: "/collegeview.png", title: "Colleges View" },
           { img: "/Comparecollege.png", title: "Compare College" },
           { img: "/NEETPredictor.png", title: "NEET Predictor" },
-          { img: "/DocumentsBuilder.png", title: "Documents Builder" },
+          { img: "/DocumentsBuilder.png", title: "Choise Filling Maker" },
         ].map((service, idx) => (
           <SwiperSlide
             key={idx}

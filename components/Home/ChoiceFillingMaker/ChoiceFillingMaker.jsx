@@ -45,16 +45,16 @@ const ChoiceFillingMaker = () => {
                     />
                   </div>
                   <div className="md:text-3xl sm:text-2xl text-xl font-bold text-black capitalize">
-                    State Quota
+                    NEET UG
                   </div>
                   <div className="text-[10px] text-[#3C3C3C]">
-                    NEET UG/ NEET PG
+                    All India Quota & State Quota
                   </div>
                   <div className="text-base text-black mt-3">
                     Explore detailed state-wise NEET counseling rules, seat reservations, distribution, and State Quota admission procedures.
                   </div>
                   <button className="bg-primary text-xs font-semibold text-white mt-4 px-5 py-2.5 rounded-xl ">
-                    Check Eligibility &amp; Seats
+                    AI Choice Filling Maker 
                   </button>
                 </div>
                 <div className="bg-white [box-shadow:0px_1px_14px_0px_#00000026] p-4 rounded-xl">
@@ -66,16 +66,16 @@ const ChoiceFillingMaker = () => {
                     />
                   </div>
                   <div className="md:text-3xl sm:text-2xl text-xl font-bold text-black capitalize">
-                    all india quota
+                    NEET PG
                   </div>
                   <div className="text-[10px] text-[#3C3C3C]">
-                    NEET UG/ NEET PG
+                    All India Quota & State Quota
                   </div>
                   <div className="text-base text-black mt-3">
                     Explore All India Quota counseling rules, seat reservations, distribution, and admission procedures for NEET UG and PG.
                   </div>
                   <button className="bg-primary text-xs font-semibold text-white mt-4 px-5 py-2.5 rounded-xl ">
-                    Check Eligibility &amp; Seats
+                    AI Choice Filling Maker
                   </button>
                 </div>
               </div>

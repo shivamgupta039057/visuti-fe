@@ -35,11 +35,11 @@ const Banner = () => {
                     <br /> Counseling APP
                   </h1>
                   <p className="text-xl text-black font-semibold md:mt-5 mt-3">
-                    Neet Expert Counselor For Government &amp; Private College
+                    Expert Counselling For NEET UG / NEET PG / IIT Admissions
                   </p>
                   <div className="md:mb-12 md:mt-10 my-7">
-                    <button className="bg-primary text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
-                      Book Your Seat
+                    <button className="bg-[red] text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
+                      Get Free Counseling
                     </button>
                   </div>
                   <p className="text-sm text-black max-w-md italic">
@@ -90,11 +90,11 @@ const Banner = () => {
                     <br /> Counseling APP
                   </h1>
                   <p className="text-xl text-black font-semibold md:mt-5 mt-3">
-                    Neet Expert Counselor For Government &amp; Private College
+                    Expert Counselling For NEET UG / NEET PG / IIT Admissions
                   </p>
                   <div className="md:mb-12 md:mt-10 my-7">
-                    <button className="bg-primary text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
-                      Book Your Seat
+                    <button className="bg-[red] text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
+                      Get Free Counseling
                     </button>
                   </div>
                   <p className="text-sm text-black max-w-md italic">

@@ -14,6 +14,7 @@ import WhyChoose from "./WhychosseUs/WhyChoose";
 import MobileSection from "./mobileSection/MobileSection";
 import LatestandNotifications from "./LatestandNotifications/LatestandNotifications";
 import TrackYourChoicesMobile from "./TrackYourChoicesMobile";
+import PricingSection from "./PricingSection/PricingSection";
 
 const HomePage = () => {
   return (
@@ -31,7 +32,8 @@ const HomePage = () => {
       <Testimonial />
       <Counter />
       <TrackYourChoicesMobile/>
-      <WhyChoose />
+      {/* <WhyChoose /> */}
+      <PricingSection />
       <MobileSection />
     </>
   );

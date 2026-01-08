@@ -28,12 +28,12 @@ export default function SuccessStories() {
     <section className="bg-[#f5f8ff] size-full sm:pt-16 pt-7  sm:pb-10">
       <div className="max-w-7xl h-full px-4 sm:px-8 lg:px-4 mx-auto relative group">
       <div className="text-secondary font-semibold  md:text-5xl sm:text-4xl text-3xl text-center capitalize">
-      See what<span className="font-bold text-primary"> our students </span>{" "}
-      are saying
-        </div>
+          See what<span className="font-bold text-primary"> our students </span>{" "}
+          are saying
+      </div>
         {/* Paragraph */}
         <div className="md:font-medium md:text-base sm:text-sm text-xs text-muted text-center sm:mt-4 mt-1 max-w-2xl mx-auto leading-relaxed">
-        Hear from students who turned their dreams into reality with our expert guidance.
+           Hear from students who turned their dreams into reality with our expert guidance.
         </div>
 
         <div className=" md:px-10 lg:px-14 relative">
