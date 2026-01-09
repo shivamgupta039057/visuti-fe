@@ -15,39 +15,39 @@ const PredictorItems = () => {
         <div className="max-w-7xl mx-auto lg:px-6 px-4 z-10">
           <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
             <div className="grid grid-cols-1 lg:gap-12 md:gap-8 gap-5 ">
-              <Link 
-                      href="/neet"
-                      >
-              <div className=" sm:max-w-sm w-full mx-auto md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
-                {/* Content */}
-                <div className="flex items-start gap-3">
-                  {/* Icon */}
-                  <img
-                    src="/neetug.png"
-                    alt="icon"
-                    className="w-8 h-8"
-                  />
-                  <div>
-                    {/* Title */}
-                    <h3 className="font-bold md:text-lg text-base text-black">
-                      
+              <Link
+                href="/neet"
+              >
+                <div className=" sm:max-w-sm w-full mx-auto md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
+                  {/* Content */}
+                  <div className="flex items-start gap-3">
+                    {/* Icon */}
+                    <img
+                      src="/neetug.png"
+                      alt="icon"
+                      className="w-8 h-8"
+                    />
+                    <div>
+                      {/* Title */}
+                      <h3 className="font-bold  text-base text-black">
+
                         For NEET UG Aspirants
-                    </h3>
-                    {/* Description */}
-                    <p className="md:text-sm text-xs   text-black mt-1 leading-relaxed">
-                      Access personalized college predictions, state-wise reports, and round-wise cutoff trends to secure your best MBBS seat.
-                    </p>
-                    {/* Button */}
-                    <div className="mt-5">
-                      <button className="bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] text-white text-xs font-medium px-5 py-2 rounded-[10px] hover:bg-[#1a8a68] transition">
-                        NEET UG Predictor
-                      </button>
+                      </h3>
+                      {/* Description */}
+                      <p className="md:text-sm text-xs   text-black mt-1 leading-relaxed">
+                        Access personalized college predictions, state-wise reports, and round-wise cutoff trends to secure your best MBBS seat.
+                      </p>
+                      {/* Button */}
+                      <div className="mt-5">
+                        <button className="bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] text-white text-xs font-medium px-5 py-2 rounded-[10px] hover:bg-[#1a8a68] transition">
+                          NEET UG Predictor
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </Link>
-              <div className=" sm:max-w-sm w-full mx-auto  md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
+              <Link href="/neetPredictor" className=" sm:max-w-sm w-full mx-auto  md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
                 {/* Content */}
                 <div className="flex items-start gap-3">
                   {/* Icon */}
@@ -58,7 +58,7 @@ const PredictorItems = () => {
                   />
                   <div>
                     {/* Title */}
-                    <h3 className="font-bold md:text-lg text-base text-black">
+                    <h3 className="font-bold  text-base text-black">
                       For NEET PG Aspirants
                     </h3>
                     {/* Description */}
@@ -73,8 +73,8 @@ const PredictorItems = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className=" sm:max-w-sm w-full mx-auto  md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
+              </Link>
+              <Link href="#" className=" sm:max-w-sm w-full mx-auto  md:border-[2px] border border-primary rounded-2xl md:p-5 p-4 shadow-sm">
                 {/* Content */}
                 <div className="flex items-start gap-3">
                   {/* Icon */}
@@ -85,7 +85,7 @@ const PredictorItems = () => {
                   />
                   <div>
                     {/* Title */}
-                    <h3 className="font-bold md:text-lg text-base text-black">
+                    <h3 className="font-bold  text-base text-black">
                       For IIT Aspirants
                     </h3>
                     {/* Description */}
@@ -100,7 +100,7 @@ const PredictorItems = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="max-md:bg-primary p-4">
               <div className="text-white lg:text-[48px] md:text-4xl sm:text-3xl text-2xl/5 leading-snug font-semibold">

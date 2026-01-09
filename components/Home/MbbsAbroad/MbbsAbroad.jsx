@@ -102,7 +102,7 @@ const MbbsAbroad = () => {
               </div>
             </div>
           </div> */}
-          <CountrySection/>
+          <CountrySection />
           <div>
             <div className="capitalize text-2xl font-semibold text-secondary">
               explore universities and colleges in{" "}
@@ -296,7 +296,10 @@ const MbbsAbroad = () => {
               </div>
             </div>
           </div>
-          <button className="flex items-center justify-start gap-4 bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] rounded-[10px] p-2 mx-auto sm:mt-10 mt-7">
+          <a
+            href="tel:9145879646"
+            className="flex items-center max-w-[230px] justify-center gap-4 bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] rounded-[10px] p-2  mx-auto sm:mt-10 mt-7"
+          >
             <div className="shrink-0">
               <img
                 alt=""
@@ -313,7 +316,7 @@ const MbbsAbroad = () => {
                 +91 (914) 587-9646
               </span>
             </div>
-          </button>
+          </a>
         </div>
       </section>
     </>

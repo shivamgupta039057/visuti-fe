@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -21,10 +22,10 @@ const StuderVideo = () => {
               Expert counselling for affordable and globally recognized MBBS
               programs abroad
             </div>
-            <button className="bg-primary rounded-[10px] px-3.5 py-2.5 text-white text-sm underline lg:mt-12 md:mt-10 sm:mt-8 mt-5 flex items-center gap-3 capitalize">
+            <Link href="/coming-soon" className="bg-primary rounded-[10px] px-3.5 py-2.5 text-white text-sm underline lg:mt-12 md:mt-10 sm:mt-8 mt-5 inline-flex items-center gap-3 capitalize hover:bg-primary/90 transition-colors">
               more story
               <img src="/Arrowri.svg" alt="arrow" className="size-3" />
-            </button>
+            </Link>
           </div>
 
           {/* Right Swiper Section */}
@@ -39,9 +40,9 @@ const StuderVideo = () => {
               slidesPerView={5} // 👈 Show 5 slides
               breakpoints={{
                 320: { slidesPerView: 1.2 },
-                640: { slidesPerView: 2.2},
-                768: { slidesPerView: 3.2},
-                1024: { slidesPerView: 4-2 },
+                640: { slidesPerView: 2.2 },
+                768: { slidesPerView: 3.2 },
+                1024: { slidesPerView: 4 - 2 },
                 1280: { slidesPerView: 4.3 },
               }}
               className="ourstory"

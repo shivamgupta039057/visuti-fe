@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ChoiceFillingMaker = () => {
@@ -50,12 +51,12 @@ const ChoiceFillingMaker = () => {
                   <div className="text-[10px] text-[#3C3C3C]">
                     All India Quota & State Quota
                   </div>
-                  <div className="text-base text-black mt-3">
+                  <div className="text-base text-black my-3 ">
                     Explore detailed state-wise NEET counseling rules, seat reservations, distribution, and State Quota admission procedures.
                   </div>
-                  <button className="bg-primary text-xs font-semibold text-white mt-4 px-5 py-2.5 rounded-xl ">
-                    AI Choice Filling Maker 
-                  </button>
+                  <a href="/choicefillingmaker" className="bg-primary text-xs font-semibold text-white mt-4 px-5 py-2.5 rounded-xl ">
+                    AI Choice Filling Maker
+                  </a>
                 </div>
                 <div className="bg-white [box-shadow:0px_1px_14px_0px_#00000026] p-4 rounded-xl">
                   <div>
@@ -71,12 +72,12 @@ const ChoiceFillingMaker = () => {
                   <div className="text-[10px] text-[#3C3C3C]">
                     All India Quota & State Quota
                   </div>
-                  <div className="text-base text-black mt-3">
+                  <div className="text-base text-black my-3 lg:mb-9 ">
                     Explore All India Quota counseling rules, seat reservations, distribution, and admission procedures for NEET UG and PG.
                   </div>
-                  <button className="bg-primary text-xs font-semibold text-white mt-4 px-5 py-2.5 rounded-xl ">
+                  <Link href="/choicefillingmaker" className="bg-primary text-xs font-semibold text-white mt-4 px-5 py-2.5 rounded-xl ">
                     AI Choice Filling Maker
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-5 mt-5">

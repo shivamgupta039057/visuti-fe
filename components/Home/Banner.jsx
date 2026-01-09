@@ -6,6 +6,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -38,9 +39,9 @@ const Banner = () => {
                     Expert Counselling For NEET UG / NEET PG / IIT Admissions
                   </p>
                   <div className="md:mb-12 md:mt-10 my-7">
-                    <button className="bg-[red] text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
+                    <Link href="/contactUs" className="bg-[red] text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
                       Get Free Counseling
-                    </button>
+                    </Link>
                   </div>
                   <p className="text-sm text-black max-w-md italic">
                     Get expert guidance for NEET UG, NEET PG, and IIT admissions. Choose the right career path, best college, and best opportunities for your future success.
@@ -93,12 +94,12 @@ const Banner = () => {
                     Expert Counselling For NEET UG / NEET PG / IIT Admissions
                   </p>
                   <div className="md:mb-12 md:mt-10 my-7">
-                    <button className="bg-[red] text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
+                    <Link href="/contactUs" className="bg-[red] text-white font-semibold sm:px-7 px-5 py-3 rounded-[10px] md:text-xl sm:text-lg text-sm">
                       Get Free Counseling
-                    </button>
+                    </Link>
                   </div>
                   <p className="text-sm text-black max-w-md italic">
-                     Get expert guidance for NEET UG, NEET PG, and IIT admissions. Choose the right career path, best college, and best opportunities for your future success.
+                    Get expert guidance for NEET UG, NEET PG, and IIT admissions. Choose the right career path, best college, and best opportunities for your future success.
                   </p>
                 </div>
 

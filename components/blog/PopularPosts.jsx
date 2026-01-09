@@ -20,9 +20,9 @@ const PopularPosts = ({ posts }) => (
               className="object-cover"
             />
           </div>
-          <div className="flex-1 flex-wrap w-full">
+          <div className="flex-1 min-w-0">
             <p className="text-gray-500 text-xs mb-1 truncate">{post.category}</p>
-            <h4 className="text-secondary font-medium line-clamp-2 text-xs sm:text-base leading-snug truncate">{post.title}</h4>
+            <h4 className="text-secondary font-medium line-clamp-2 text-xs sm:text-base leading-snug">{post.title}</h4>
           </div>
         </Link>
       ))}

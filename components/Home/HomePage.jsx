@@ -15,6 +15,7 @@ import MobileSection from "./mobileSection/MobileSection";
 import LatestandNotifications from "./LatestandNotifications/LatestandNotifications";
 import TrackYourChoicesMobile from "./TrackYourChoicesMobile";
 import PricingSection from "./PricingSection/PricingSection";
+import LeadPopup from "./LeadPopup/LeadPopup";
 
 const HomePage = () => {
   return (
@@ -28,13 +29,14 @@ const HomePage = () => {
       <ChoiceFillingMaker />
       <StateCollege />
       <CtaSection />
-      <StuderVideo /> 
+      <StuderVideo />
       <Testimonial />
       <Counter />
-      <TrackYourChoicesMobile/>
+      <TrackYourChoicesMobile />
       {/* <WhyChoose /> */}
       <PricingSection />
       <MobileSection />
+      <LeadPopup />
     </>
   );
 };
