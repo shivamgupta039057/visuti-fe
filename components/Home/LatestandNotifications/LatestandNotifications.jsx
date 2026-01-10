@@ -60,8 +60,8 @@ const LatestandNotifications = () => {
   };
 
   return (
-    <section className="relative">
-      <div className="absolute inset-0 z-10 max-md:hidden ">
+    <section className="relative py-8 md:py-0">
+      <div className="absolute inset-0 z-10 max-md:hidden">
         <img
           src="/banner.png"
           alt="hero-banner"
@@ -69,45 +69,45 @@ const LatestandNotifications = () => {
         />
       </div>
       <div className="max-w-7xl mx-auto lg:px-6 px-4 z-15 relative">
-        <div className="grid md:grid-cols-2 grid-cols-1">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 md:gap-0">
           {/* LEFT NEWS */}
-          <div className="h-full flex flex-col bg-primary p-5 lg:mr-12">
-            <div className="mb-6 md:pt-10 pt-5">
-              <h2 className="md:text-3xl text-2xl font-semibold text-center text-white">
+          <div className="h-full flex flex-col bg-primary md:p-5 p-4 md:mr-12 rounded-lg md:rounded-none">
+            <div className="mb-4 md:mb-6 md:pt-10 pt-3">
+              <h2 className="md:text-3xl text-xl font-semibold text-center text-white">
                 Latest News &amp; Notifications
               </h2>
             </div>
 
             {/* Auto-scroll container */}
-            <div className="flex-1 relative w-full  overflow-hidden bg-white rounded-[10px] p-2">
+            <div className="flex-1 relative w-full overflow-hidden bg-white rounded-[10px] p-2 min-h-[300px] md:min-h-[400px]">
               <div
-                className="space-y-4 animate-scrollNews"
+                className="space-y-3 md:space-y-4 animate-scrollNews"
                 style={{
-                  animation: "scrollNews 20s linear infinite", // 20s loop, tum speed change kar sakte ho
+                  animation: "scrollNews 20s linear infinite",
                 }}
               >
                 {/* Repeatable News Items */}
-                {[1, 2, 3,].map((item) => (
+                {[1, 2, 3].map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-4 md:p-4 p-2 bg-[#FBFBFB] border border-[#F1F1F1] rounded-xl w-full"
+                    className="flex items-start md:items-center gap-3 md:gap-4 md:p-4 p-2 bg-[#FBFBFB] border border-[#F1F1F1] rounded-xl w-full"
                   >
                     <div className="shrink-0">
                       <img
                         src="/acedmy.png"
                         alt="Google Ads Training"
-                        className="md:w-[130px] w-24 h-20 shrink-0 rounded-md bg-gray-950/5 outline -outline-offset-1 outline-gray-950/10"
+                        className="md:w-[130px] w-20 md:h-20 h-16 shrink-0 rounded-md bg-gray-950/5 outline -outline-offset-1 outline-gray-950/10 object-cover"
                       />
                     </div>
-                    <div className="flex-1 flex-col truncate">
-                      <div className="text-sm/6 font-medium text-black flex gap-2 line-clamp-2">
-                        <span className="text-[#FF0000] underline sprinkle-text blink-text">Live</span>
-                        Google Ads Training 2021: Profit with Pay
+                    <div className="flex-1 flex flex-col min-w-0">
+                      <div className="text-xs md:text-sm font-medium text-black flex gap-2 line-clamp-2">
+                        <span className="text-[#FF0000] underline sprinkle-text blink-text shrink-0">Live</span>
+                        <span className="line-clamp-2">Google Ads Training 2021: Profit with Pay</span>
                       </div>
-                      <span className="truncate text-xs text-[#666666] line-clamp-2">
-                        Lorem Ipsum is simply dummy text of the printingLorem Ipsum is simply dummy text of the printing
+                      <span className="text-[10px] md:text-xs text-[#666666] line-clamp-2 mt-1">
+                        Lorem Ipsum is simply dummy text of the printing
                       </span>
-                      <div className="font-medium text-xs text-[#168B67] mt-5">
+                      <div className="font-medium text-[10px] md:text-xs text-[#168B67] mt-2 md:mt-3">
                         15 April, 2025
                       </div>
                     </div>
@@ -115,22 +115,27 @@ const LatestandNotifications = () => {
                 ))}
               </div>
             </div>
-            <Link href="/coming-soon" className="p-2 text-black font-semibold mx-auto lg:mt-20 mt-10 lg:mb-10 mb-5 capitalize bg-white rounded-[10px] text-center block hover:bg-gray-50 transition-colors">view all notifications</Link>
+            <Link
+              href="/coming-soon"
+              className="px-4 py-2 md:py-2.5 text-black font-semibold mx-auto md:mt-20 mt-6 md:mb-10 mb-3 capitalize bg-white rounded-[10px] text-center block hover:bg-gray-50 transition-colors text-sm md:text-base"
+            >
+              view all notifications
+            </Link>
           </div>
 
           {/* RIGHT FORM */}
-          <div className="w-full ">
-            <div className="md:p-6 h-full flex flex-col justify-center items-center ">
-              <div className="w-full bg-white rounded-lg md:p-8 p-4 shadow-sm ">
-                <h2 className="font-bold md:text-4xl sm:text-2xl text-xl text-black md:mb-8 mb-4">
+          <div className="w-full">
+            <div className="md:p-6 h-full flex flex-col justify-center items-center">
+              <div className="w-full bg-white rounded-lg md:p-8 p-5 shadow-sm">
+                <h2 className="font-bold md:text-4xl text-2xl text-black md:mb-8 mb-5">
                   Have A Question? Ask Us!
                 </h2>
-                <form onSubmit={handleSubmit(onSubmit)} className="md:space-y-5 space-y-3">
+                <form onSubmit={handleSubmit(onSubmit)} className="md:space-y-5 space-y-4">
                   {/* Name and Email - Side by side on desktop */}
-                  <div className="grid md:grid-cols-2 md:gap-4 gap-3">
+                  <div className="grid md:grid-cols-2 gap-4 md:gap-4">
                     {/* Name */}
                     <div>
-                      <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1">
+                      <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1.5">
                         Name
                       </label>
                       <input
@@ -148,7 +153,7 @@ const LatestandNotifications = () => {
 
                     {/* Email */}
                     <div>
-                      <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1">
+                      <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1.5">
                         Email Address
                       </label>
                       <input
@@ -167,7 +172,7 @@ const LatestandNotifications = () => {
 
                   {/* Courses Dropdown */}
                   <div>
-                    <label className="block text-black text-sm font-medium mb-2">
+                    <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1.5">
                       Courses
                     </label>
                     <div className="relative">
@@ -183,7 +188,7 @@ const LatestandNotifications = () => {
                         <option value="mbbs-abroad">MBBS Abroad</option>
                       </select>
                       <div className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
-                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="md:w-4 md:h-4 w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
@@ -201,17 +206,18 @@ const LatestandNotifications = () => {
                       </p>
                     )}
                   </div>
+
                   {/* Phone Number with Country Code */}
                   <div>
-                    <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1">
+                    <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1.5">
                       Phone Number
                     </label>
-                    <div className="flex md:gap-3 gap-2">
+                    <div className="flex gap-2 md:gap-3">
                       {/* Country Code Selector */}
-                      <div className="relative">
-                        <div className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                      <div className="relative shrink-0">
+                        <div className="absolute left-2.5 md:left-3 top-1/2 -translate-y-1/2 pointer-events-none">
                           {selectedCountry === "+1" && (
-                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm">
+                            <svg width="20" height="14" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm md:w-6 md:h-4">
                               <path d="M24 0H0V16.0002H24V0Z" fill="#F0F0F0" />
                               <path d="M24 1.99988H0V3.99971H24V1.99988ZM24 6.00005H0V7.99988H24V6.00005ZM24 9.99971H0V11.9995H24V9.99971ZM24 13.9999H0V15.9997H24V13.9999Z" fill="#D80027" />
                               <path d="M24 0H12V8.61548H24V0Z" fill="#2E52B2" />
@@ -219,7 +225,7 @@ const LatestandNotifications = () => {
                             </svg>
                           )}
                           {selectedCountry === "+91" && (
-                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm">
+                            <svg width="20" height="14" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm md:w-6 md:h-4">
                               <path d="M24 0H0V16H24V0Z" fill="#F0F0F0" />
                               <path d="M24 0H0V5.33333H24V0Z" fill="#FF9933" />
                               <path d="M24 10.6667H0V16H24V10.6667Z" fill="#138808" />
@@ -228,7 +234,7 @@ const LatestandNotifications = () => {
                             </svg>
                           )}
                           {selectedCountry === "+44" && (
-                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm">
+                            <svg width="20" height="14" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm md:w-6 md:h-4">
                               <path d="M24 0H0V16H24V0Z" fill="#012169" />
                               <path d="M0 0L24 16M24 0L0 16" stroke="#FFF" strokeWidth="3" />
                               <path d="M0 0L24 16M24 0L0 16" stroke="#C8102E" strokeWidth="2" />
@@ -237,7 +243,7 @@ const LatestandNotifications = () => {
                             </svg>
                           )}
                           {selectedCountry === "+86" && (
-                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm">
+                            <svg width="20" height="14" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm md:w-6 md:h-4">
                               <path d="M24 0H0V16H24V0Z" fill="#DE2910" />
                               <path d="M4 2L4.5 3.5H6L4.8 4.3L5.3 5.8L4 5L2.7 5.8L3.2 4.3L2 3.5H3.5L4 2Z" fill="#FFDE00" />
                               <path d="M8 1L8.2 1.5H8.7L8.3 1.8L8.5 2.3L8 2L7.5 2.3L7.7 1.8L7.3 1.5H7.8L8 1Z" fill="#FFDE00" />
@@ -247,7 +253,7 @@ const LatestandNotifications = () => {
                             </svg>
                           )}
                           {selectedCountry === "+81" && (
-                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm">
+                            <svg width="20" height="14" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-sm md:w-6 md:h-4">
                               <path d="M24 0H0V16H24V0Z" fill="#FFF" />
                               <circle cx="12" cy="8" r="4.8" fill="#BC002D" />
                             </svg>
@@ -256,7 +262,7 @@ const LatestandNotifications = () => {
                         <select
                           value={selectedCountry}
                           onChange={(e) => setSelectedCountry(e.target.value)}
-                          className="h-full border border-gray-300 rounded-lg md:pl-11 md:pr-9 pl-9 pr-7 md:py-2.5 py-2 md:text-sm text-xs appearance-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors bg-white cursor-pointer font-medium text-gray-700 md:min-w-[100px] min-w-[85px]"
+                          className="h-full border border-gray-300 rounded-lg md:pl-10 md:pr-8 pl-8 pr-6 md:py-2.5 py-2 md:text-sm text-xs appearance-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors bg-white cursor-pointer font-medium text-gray-700 w-[75px] md:w-[95px]"
                         >
                           <option value="+1">+1</option>
                           <option value="+91">+91</option>
@@ -264,8 +270,8 @@ const LatestandNotifications = () => {
                           <option value="+86">+86</option>
                           <option value="+81">+81</option>
                         </select>
-                        <div className="absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div className="absolute right-1.5 md:right-2 top-1/2 -translate-y-1/2 pointer-events-none">
+                          <svg className="w-3 h-3 md:w-4 md:h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                           </svg>
                         </div>
@@ -277,19 +283,19 @@ const LatestandNotifications = () => {
                         placeholder="1234567890"
                         value={phoneNumber}
                         onChange={(e) => {
-                          const value = e.target.value.replace(/\D/g, ''); // Only allow digits
+                          const value = e.target.value.replace(/\D/g, '');
                           if (value.length <= 10) {
                             setPhoneNumber(value);
                           }
                         }}
                         maxLength={10}
-                        className="flex-1 border border-gray-300 rounded-lg md:px-4 px-3 md:py-2.5 py-2 md:text-sm text-xs placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                        className="flex-1 min-w-0 border border-gray-300 rounded-lg md:px-4 px-3 md:py-2.5 py-2 md:text-sm text-xs placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                       />
                       {!otpSent && (
                         <button
                           type="button"
                           onClick={handleSendOtp}
-                          className="bg-primary text-white font-medium md:px-6 px-4 md:py-2.5 py-2 md:text-sm text-xs rounded-lg hover:opacity-90 transition-all whitespace-nowrap"
+                          className="bg-primary text-white font-medium md:px-5 px-3 md:py-2.5 py-2 md:text-sm text-xs rounded-lg hover:opacity-90 transition-all whitespace-nowrap shrink-0"
                         >
                           Send OTP
                         </button>
@@ -301,13 +307,14 @@ const LatestandNotifications = () => {
                       </p>
                     )}
                   </div>
+
                   {/* Enter OTP - Only show if OTP is sent */}
                   {otpSent && (
                     <div>
-                      <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1">
+                      <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1.5">
                         Enter OTP
                       </label>
-                      <div className="flex md:gap-2 gap-1.5 justify-start">
+                      <div className="flex gap-1.5 md:gap-2 justify-start">
                         {otp.map((digit, index) => (
                           <input
                             key={index}
@@ -334,7 +341,7 @@ const LatestandNotifications = () => {
 
                   {/* Query */}
                   <div>
-                    <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1">
+                    <label className="block text-black md:text-sm text-xs font-medium md:mb-2 mb-1.5">
                       Query
                     </label>
                     <textarea
@@ -354,7 +361,7 @@ const LatestandNotifications = () => {
                   <div className="text-center md:pt-2 pt-1">
                     <button
                       type="submit"
-                      className="bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] text-white font-semibold md:px-16 px-12 md:py-3 py-2.5 md:text-base text-sm rounded-lg hover:opacity-90 transition-all shadow-sm"
+                      className="bg-[linear-gradient(90deg,_#20DD8E_0%,_#098493_100%)] text-white font-semibold md:px-16 px-10 md:py-3 py-2.5 md:text-base text-sm rounded-lg hover:opacity-90 transition-all shadow-sm w-full md:w-auto"
                     >
                       Submit
                     </button>

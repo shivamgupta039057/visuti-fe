@@ -7,13 +7,14 @@ import Footer from "@/components/footer/Footer";
 export default function ConditionalLayout({ children }) {
   const pathname = usePathname();
   const isDashboard = pathname?.startsWith('/dashboard');
+  const isComingSoon = pathname === '/coming-soon';
 
   return (
     <>
-      {!isDashboard && <Header />}
+      {!isDashboard && !isComingSoon && <Header />}
       {children}
-      {!isDashboard && <Footer />}
-      {!isDashboard && (
+      {!isDashboard && !isComingSoon && <Footer />}
+      {!isDashboard && !isComingSoon && (
         <div className="fixed right-6 bottom-6 z-[999999]">
           <a
             href="https://wa.me/919145879646"

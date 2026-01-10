@@ -1,30 +1,46 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const ComingSoon = () => {
     const [email, setEmail] = useState('');
     const [isSubscribed, setIsSubscribed] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
 
     const handleSubscribe = (e) => {
         e.preventDefault();
         if (email && email.includes('@')) {
-            setIsSubscribed(true);
+            setIsLoading(true);
             setTimeout(() => {
-                setEmail('');
-                setIsSubscribed(false);
-            }, 3000);
+                setIsLoading(false);
+                setIsSubscribed(true);
+                setTimeout(() => {
+                    setEmail('');
+                    setIsSubscribed(false);
+                }, 3000);
+            }, 1000);
         }
     };
 
     return (
         <>
-            <div className="min-h-screen w-full relative overflow-hidden bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] flex flex-col items-center justify-center p-4 sm:p-8 mt-40">
+            <div className="min-h-screen w-full relative overflow-hidden bg-white flex flex-col items-center justify-center p-4 sm:p-8">
+                {/* Back to Home Button */}
+                <Link
+                    href="/"
+                    className="fixed top-6 left-6 z-50 group flex items-center gap-2 bg-gray-100 hover:bg-gray-200 border border-gray-300 px-4 py-2.5 rounded-full transition-all duration-300 hover:scale-105 active:scale-95"
+                >
+                    <svg className="w-5 h-5 text-gray-700 transition-transform group-hover:-translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    <span className="text-gray-700 font-medium text-sm">Go to Home Page</span>
+                </Link>
+
                 {/* Animated Background Orbs */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute -top-20 -left-20 w-[500px] h-[500px] bg-gradient-to-br from-purple-500 to-purple-700 rounded-full blur-[100px] opacity-40 animate-float"></div>
-                    <div className="absolute -bottom-20 -right-20 w-[400px] h-[400px] bg-gradient-to-br from-pink-500 to-red-500 rounded-full blur-[100px] opacity-40 animate-float-delayed"></div>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-full blur-[100px] opacity-30 animate-float-slow"></div>
+                    <div className="absolute -top-20 -left-20 w-[500px] h-[500px] bg-gradient-to-br from-primary/10 to-primary/5 rounded-full blur-[100px] animate-float"></div>
+                    <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-br from-[#20DD8E]/20 to-[#098493]/10 rounded-full blur-[120px] animate-float-slow"></div>
                 </div>
 
                 {/* Floating Particles */}
@@ -32,7 +48,7 @@ const ComingSoon = () => {
                     {[...Array(15)].map((_, i) => (
                         <div
                             key={i}
-                            className="absolute w-1 h-1 bg-white/50 rounded-full animate-rise"
+                            className="absolute w-1 h-1 bg-primary/30 rounded-full animate-rise"
                             style={{
                                 left: `${Math.random() * 100}%`,
                                 animationDelay: `${Math.random() * 5}s`,
@@ -45,66 +61,80 @@ const ComingSoon = () => {
                 {/* Main Content */}
                 <div className="relative z-10 max-w-5xl w-full text-center animate-fadeInUp">
                     {/* Brand Section */}
-                    <div className="mb-12 sm:mb-16">
+                    <div className="mb-8 sm:mb-12">
                         <div className="relative inline-block mb-4">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-purple-500/30 rounded-full blur-[60px] animate-pulse-slow"></div>
-                            <h1 className="relative text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent tracking-tight animate-shimmer">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary/10 rounded-full blur-[60px] animate-pulse-slow"></div>
+                            <h1 className="relative text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 bg-clip-text text-transparent tracking-tight animate-shimmer">
                                 Visuti
                             </h1>
                         </div>
-                        <p className="text-base sm:text-lg md:text-xl text-white/70 font-light tracking-[0.2em] uppercase">
+                        <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light tracking-[0.2em] uppercase">
                             Something Amazing is Coming
                         </p>
                     </div>
 
                     {/* Coming Soon Text */}
-                    <div className="mb-10 sm:mb-12">
+                    <div className="mb-8 sm:mb-10">
                         <div className="relative inline-block">
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary via-[#20DD8E] to-[#098493] blur-3xl opacity-30 animate-pulse-slow"></div>
-                            <h2 className="relative text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold bg-gradient-to-r from-primary via-[#20DD8E] to-[#098493] bg-clip-text text-transparent tracking-tight py-4">
+                            <div className="absolute inset-0 bg-gradient-to-r from-primary via-[#20DD8E] to-[#098493] blur-3xl opacity-20 animate-pulse-slow"></div>
+                            <h2 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-primary via-[#20DD8E] to-[#098493] bg-clip-text text-transparent tracking-tight py-4">
                                 COMING SOON
                             </h2>
                         </div>
                     </div>
 
                     {/* Description */}
-                    <div className="mb-8 sm:mb-10">
-                        <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed px-4">
+                    <div className="mb-6 sm:mb-8">
+                        <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
                             We're working hard to bring you an exceptional experience.
                             Subscribe to get notified when we launch!
                         </p>
                     </div>
 
                     {/* Email Subscription */}
-                    <div className="mb-10 sm:mb-12 px-4">
+                    <div className="mb-8 sm:mb-10 px-4">
                         {!isSubscribed ? (
                             <form onSubmit={handleSubscribe} className="max-w-2xl mx-auto">
-                                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl sm:rounded-full p-2 transition-all duration-300 focus-within:border-purple-500/50 focus-within:shadow-lg focus-within:shadow-purple-500/20">
+                                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 bg-gray-50 border border-gray-200 rounded-2xl sm:rounded-full p-2 transition-all duration-300 focus-within:border-primary/50 focus-within:shadow-lg focus-within:shadow-primary/10">
                                     <input
                                         type="email"
                                         placeholder="Enter your email address"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
-                                        className="flex-1 bg-transparent border-none outline-none px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg text-white placeholder:text-white/40"
+                                        className="flex-1 bg-transparent border-none outline-none px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base text-gray-800 placeholder:text-gray-400"
                                         required
+                                        disabled={isLoading}
                                     />
                                     <button
                                         type="submit"
-                                        className="group bg-gradient-to-r from-primary via-[#20DD8E] to-[#098493] hover:shadow-xl hover:shadow-primary/30 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-full transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 active:scale-95"
+                                        disabled={isLoading}
+                                        className="group bg-gradient-to-r from-primary via-[#20DD8E] to-[#098493] hover:shadow-xl hover:shadow-primary/30 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-full transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                                     >
-                                        <span className="text-base sm:text-lg">Notify Me</span>
-                                        <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                        </svg>
+                                        {isLoading ? (
+                                            <>
+                                                <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
+                                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                                </svg>
+                                                <span className="text-sm sm:text-base">Subscribing...</span>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <span className="text-sm sm:text-base">Notify Me</span>
+                                                <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                                </svg>
+                                            </>
+                                        )}
                                     </button>
                                 </div>
                             </form>
                         ) : (
                             <div className="max-w-2xl mx-auto bg-primary/10 border border-primary/30 rounded-2xl sm:rounded-full px-6 py-4 flex items-center justify-center gap-3 animate-slideIn">
-                                <svg className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3}>
+                                <svg className="w-6 h-6 text-primary animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span className="text-primary font-medium text-base sm:text-lg">
+                                <span className="text-primary font-medium text-sm sm:text-base">
                                     Thank you! We'll notify you when we launch.
                                 </span>
                             </div>
@@ -113,10 +143,10 @@ const ComingSoon = () => {
 
                     {/* Social Links */}
                     <div className="mb-8">
-                        <p className="text-xs sm:text-sm text-white/50 uppercase tracking-wider mb-4">
+                        <p className="text-xs sm:text-sm text-gray-500 uppercase tracking-wider mb-4">
                             Follow us on social media
                         </p>
-                        <div className="flex gap-3 sm:gap-4 justify-center items-center">
+                        <div className="flex gap-3 sm:gap-4 justify-center items-center flex-wrap">
                             {[
                                 {
                                     name: 'YouTube',
@@ -144,11 +174,11 @@ const ComingSoon = () => {
                                     href={social.href || '#'}
                                     target={social.href ? '_blank' : undefined}
                                     rel={social.href ? 'noopener noreferrer' : undefined}
-                                    className="group w-12 h-12 sm:w-14 sm:h-14 bg-white/5 backdrop-blur-md border border-white/10 rounded-full flex items-center justify-center text-white/70 transition-all duration-300 hover:-translate-y-2 hover:border-white/30 hover:shadow-lg hover:shadow-purple-500/20 relative overflow-hidden"
+                                    className="group w-12 h-12 sm:w-14 sm:h-14 bg-gray-50 border border-gray-200 rounded-full flex items-center justify-center text-gray-600 transition-all duration-300 hover:-translate-y-2 hover:border-primary hover:shadow-lg hover:shadow-primary/20 relative overflow-hidden"
                                     aria-label={social.name}
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    <svg className="w-5 h-5 sm:w-6 sm:h-6 relative z-10 transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-primary to-[#20DD8E] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <svg className="w-5 h-5 sm:w-6 sm:h-6 relative z-10 transition-all group-hover:scale-110 group-hover:text-white" viewBox="0 0 24 24" fill="currentColor">
                                         <path d={social.path} />
                                     </svg>
                                 </a>
@@ -159,7 +189,7 @@ const ComingSoon = () => {
 
                 {/* Footer */}
                 <div className="relative z-10 mt-auto pt-8">
-                    <p className="text-xs sm:text-sm text-white/40">
+                    <p className="text-xs sm:text-sm text-gray-400">
                         &copy; 2026 Visuti. All rights reserved.
                     </p>
                 </div>
@@ -211,7 +241,6 @@ const ComingSoon = () => {
         .animate-shimmer { animation: shimmer 3s ease-in-out infinite; }
         .animate-pulse-slow { animation: pulse-slow 3s ease-in-out infinite; }
         .animate-slideIn { animation: slideIn 0.5s ease-out; }
-        .perspective-1000 { perspective: 1000px; }
       `}</style>
         </>
     );

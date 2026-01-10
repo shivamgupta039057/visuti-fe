@@ -68,23 +68,23 @@ const LeadPopup = () => {
           </button>
 
           {/* Content */}
-          <div className="p-8 md:p-10">
+          <div className="p-5 sm:p-8 md:p-10">
             {/* Header */}
-            <div className="mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">
+            <div className="mb-5 sm:mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-1.5 sm:mb-2">
                 Get In Touch
               </h2>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-xs sm:text-sm">
                 Fill out the form below and we'll get back to you shortly
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-3.5 sm:space-y-5">
               {/* Name Input */}
               <div>
                 <label
                   htmlFor="popup-name"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1.5 sm:mb-2"
                 >
                   Full Name <span className="text-red-500">*</span>
                 </label>
@@ -96,7 +96,7 @@ const LeadPopup = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-gray-400 text-gray-900 hover:border-gray-400"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3.5 text-sm sm:text-base border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-gray-400 text-gray-900 hover:border-gray-400"
                 />
               </div>
 
@@ -104,7 +104,7 @@ const LeadPopup = () => {
               <div>
                 <label
                   htmlFor="popup-email"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1.5 sm:mb-2"
                 >
                   Email Address <span className="text-red-500">*</span>
                 </label>
@@ -116,7 +116,7 @@ const LeadPopup = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-gray-400 text-gray-900 hover:border-gray-400"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3.5 text-sm sm:text-base border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-gray-400 text-gray-900 hover:border-gray-400"
                 />
               </div>
 
@@ -124,12 +124,12 @@ const LeadPopup = () => {
               <div>
                 <label
                   htmlFor="popup-phone"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1.5 sm:mb-2"
                 >
                   Phone Number <span className="text-red-500">*</span>
                 </label>
                 <div className="relative">
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 font-medium">
+                  <div className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-gray-500 font-medium text-sm sm:text-base">
                     +91
                   </div>
                   <input
@@ -146,10 +146,10 @@ const LeadPopup = () => {
                     }}
                     maxLength={10}
                     required
-                    className="w-full pl-14 pr-4 py-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-gray-400 text-gray-900 hover:border-gray-400"
+                    className="w-full pl-12 sm:pl-14 pr-3 sm:pr-4 py-2.5 sm:py-3.5 text-sm sm:text-base border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-gray-400 text-gray-900 hover:border-gray-400"
                   />
                 </div>
-                <p className="text-xs text-gray-500 mt-1.5">
+                <p className="text-[10px] sm:text-xs text-gray-500 mt-1 sm:mt-1.5">
                   We'll never share your details with anyone else
                 </p>
               </div>
@@ -157,7 +157,7 @@ const LeadPopup = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-primary via-[#20DD8E] to-[#098493] hover:shadow-xl text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:scale-[1.02] active:scale-[0.98] mt-6"
+                className="w-full bg-gradient-to-r from-primary via-[#20DD8E] to-[#098493] hover:shadow-xl text-white font-semibold py-3 sm:py-4 px-4 sm:px-6 text-sm sm:text-base rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:scale-[1.02] active:scale-[0.98] mt-4 sm:mt-6"
               >
                 Submit Enquiry
                 <svg
@@ -180,13 +180,14 @@ const LeadPopup = () => {
             </form>
 
             {/* Trust Badge */}
-            <div className="mt-6 flex items-center justify-center gap-2 text-xs text-gray-500">
+            <div className="mt-4 sm:mt-6 flex items-center justify-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-gray-500">
               <svg
-                width="16"
-                height="16"
+                width="14"
+                height="14"
                 viewBox="0 0 16 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="sm:w-4 sm:h-4"
               >
                 <path
                   d="M8 1L10.5 6L16 6.75L12 10.5L13 16L8 13.25L3 16L4 10.5L0 6.75L5.5 6L8 1Z"
