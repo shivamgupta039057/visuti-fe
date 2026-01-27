@@ -115,6 +115,7 @@ const BottomHeader = () => {
                 type="button"
                 className="flex items-center justify-center sm:size-7 size-6"
               >
+              
                 <svg
                   width="30"
                   height="30"
@@ -159,7 +160,9 @@ const BottomHeader = () => {
           </div>
         </div>
       </div>
-      <LoginWithOtpModal open={open} onClose={() => setOpen(false)} />
+      <LoginWithOtpModal 
+      open={open}
+       onClose={() => setOpen(false)} />
     </div>
 
   );
