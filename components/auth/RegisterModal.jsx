@@ -1,0 +1,387 @@
+"use client";
+
+import React, { useState, useRef, useEffect } from 'react';
+
+const RegisterModal = ({ isOpen, onClose, onSwitchToLogin }) => {
+  const [selectedCountry, setSelectedCountry] = useState({
+    flag: "https://flagcdn.com/us.svg",
+    code: "+1",
+    name: "United States"
+  });
+  const [showCountryList, setShowCountryList] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const countries = [
+    { flag: "https://flagcdn.com/us.svg", code: "+1", name: "United States" },
+    { flag: "https://flagcdn.com/in.svg", code: "+91", name: "India" },
+    { flag: "https://flagcdn.com/gb.svg", code: "+44", name: "UK" },
+    { flag: "https://flagcdn.com/ca.svg", code: "+1", name: "Canada" },
+    { flag: "https://flagcdn.com/au.svg", code: "+61", name: "Australia" },
+    { flag: "https://flagcdn.com/de.svg", code: "+49", name: "Germany" }
+  ];
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setShowCountryList(false);
+      }
+    };
+
+    if (showCountryList) {
+      document.addEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [showCountryList]);
+
+  if (!isOpen) return null;
+
+  const handleCountrySelect = (country) => {
+    setSelectedCountry(country);
+    setShowCountryList(false);
+  };
+
+  return (
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-white/30"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div className="flex bg-white rounded-2xl shadow-2xl overflow-hidden w-[90%] max-w-6xl max-h-[90vh]">
+        {/* Left Section - Fixed position */}
+        <div className="lg:w-1/3 max-lg:hidden bg-[linear-gradient(135deg,_#00BC7D_0%,_#009689_100%)] p-6 text-white flex flex-col rounded-l-2xl">
+          <div className="mb-8">
+            <img src="/Logo.png" alt="Visuti Career" className="mb-6 w-32 brightness-0 invert" />
+            <h2 className="text-2xl font-semibold mb-2">How <span className="font-bold">Visuti Career</span></h2>
+            <p className="text-white/90 text-base">helps you in Admission</p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 flex-1 overflow-y-auto scrollbar-hide" style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+            <div className="bg-white/10 rounded-xl p-4 text-left flex flex-col gap-2">
+              <div className="bg-white/20 size-10 p-2.5 flex items-center justify-center rounded-[10px]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 3.12801C16.8578 3.35038 17.6174 3.85127 18.1597 4.55207C18.702 5.25287 18.9962 6.1139 18.9962 7.00001C18.9962 7.88612 18.702 8.74715 18.1597 9.44794C17.6174 10.1487 16.8578 10.6496 16 10.872" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="text-sm text-white">One-to-One Counseling</p>
+              <p className="text-xs text-white/80">Get personalized guidance</p>
+            </div>
+            
+            <div className="bg-white/10 rounded-xl p-4 text-left flex flex-col gap-2">
+              <div className="bg-white/20 size-10 p-2.5 flex items-center justify-center rounded-[10px]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 3.12801C16.8578 3.35038 17.6174 3.85127 18.1597 4.55207C18.702 5.25287 18.9962 6.1139 18.9962 7.00001C18.9962 7.88612 18.702 8.74715 18.1597 9.44794C17.6174 10.1487 16.8578 10.6496 16 10.872" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="text-sm text-white">One-to-One Counseling</p>
+              <p className="text-xs text-white/80">Get personalized guidance</p>
+            </div>
+            
+            <div className="bg-white/10 rounded-xl p-4 text-left flex flex-col gap-2">
+              <div className="bg-white/20 size-10 p-2.5 flex items-center justify-center rounded-[10px]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 3.12801C16.8578 3.35038 17.6174 3.85127 18.1597 4.55207C18.702 5.25287 18.9962 6.1139 18.9962 7.00001C18.9962 7.88612 18.702 8.74715 18.1597 9.44794C17.6174 10.1487 16.8578 10.6496 16 10.872" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="text-sm text-white">One-to-One Counseling</p>
+              <p className="text-xs text-white/80">Get personalized guidance</p>
+            </div>
+            
+            <div className="bg-white/10 rounded-xl p-4 text-left flex flex-col gap-2">
+              <div className="bg-white/20 size-10 p-2.5 flex items-center justify-center rounded-[10px]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 3.12801C16.8578 3.35038 17.6174 3.85127 18.1597 4.55207C18.702 5.25287 18.9962 6.1139 18.9962 7.00001C18.9962 7.88612 18.702 8.74715 18.1597 9.44794C17.6174 10.1487 16.8578 10.6496 16 10.872" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="text-sm text-white">One-to-One Counseling</p>
+              <p className="text-xs text-white/80">Get personalized guidance</p>
+            </div>
+            
+            <div className="bg-white/10 rounded-xl p-4 text-left flex flex-col gap-2">
+              <div className="bg-white/20 size-10 p-2.5 flex items-center justify-center rounded-[10px]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 3.12801C16.8578 3.35038 17.6174 3.85127 18.1597 4.55207C18.702 5.25287 18.9962 6.1139 18.9962 7.00001C18.9962 7.88612 18.702 8.74715 18.1597 9.44794C17.6174 10.1487 16.8578 10.6496 16 10.872" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="text-sm text-white">One-to-One Counseling</p>
+              <p className="text-xs text-white/80">Get personalized guidance</p>
+            </div>
+            
+            <div className="bg-white/10 rounded-xl p-4 text-left flex flex-col gap-2">
+              <div className="bg-white/20 size-10 p-2.5 flex items-center justify-center rounded-[10px]">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 3.12801C16.8578 3.35038 17.6174 3.85127 18.1597 4.55207C18.702 5.25287 18.9962 6.1139 18.9962 7.00001C18.9962 7.88612 18.702 8.74715 18.1597 9.44794C17.6174 10.1487 16.8578 10.6496 16 10.872" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="text-sm text-white">One-to-One Counseling</p>
+              <p className="text-xs text-white/80">Get personalized guidance</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section - Scrollable content */}
+        <div className="lg:w-2/3 w-full flex flex-col max-h-[90vh]">
+          <div className="flex-shrink-0 sm:p-10 p-5 !pb-0">
+            <div className="flex justify-between items-start">
+              <h2 className="text-3xl font-bold mb-2">Register Now</h2>
+              <button 
+                onClick={onClose}
+                className="text-gray-400 hover:text-gray-600 text-2xl"
+              >
+                &times;
+              </button>
+            </div>
+          <p className="text-gray-600 mb-6">
+            Already have an account?{" "}
+            <span 
+              onClick={() => {
+                console.log('Sign in clicked, onSwitchToLogin available:', !!onSwitchToLogin);
+                if (onSwitchToLogin) {
+                  onSwitchToLogin(); // Switch back to sign in modal (don't close register modal)
+                }
+              }}
+              className="text-green-600 font-medium hover:underline cursor-pointer transition-colors"
+            >
+              Sign in
+            </span>
+          </p>
+          </div>
+
+          <div className="overflow-y-auto flex-1 scrollbar-hide sm:px-10 px-5 pb-10" style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+            <form className="sm:space-y-4 space-y-2 pb-4">
+            <div className="grid md:gap-6 gap-2 md:grid-cols-2">
+              <div>
+                <label className="block text-sm font-medium text-[#666666] mb-2">Name</label>
+                <div className="relative flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                  <span className="text-slate-400">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 20.25a7.5 7.5 0 0 1 15 0" />
+                    </svg>
+                  </span>
+                  <input 
+                    type="text" 
+                    placeholder="Saloni Mangal" 
+                    className="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" 
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-[#666666] mb-2">E-mail</label>
+                <div className="relative flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                  <span className="text-slate-400">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25v13.5A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75V5.25Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m3 7.5 7.89 5.26a2.25 2.25 0 0 0 2.22 0L21 7.5" />
+                    </svg>
+                  </span>
+                  <input 
+                    type="email" 
+                    placeholder="example@gmail.com" 
+                    className="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" 
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full">
+              <label className="block text-sm font-medium text-[#666666] mb-2">Mobile No.</label>
+              
+              <div className="flex items-center border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg shadow-sm relative">
+                {/* Country Button */}
+                <button 
+                  ref={dropdownRef}
+                  type="button" 
+                  onClick={() => setShowCountryList(!showCountryList)}
+                  className="flex items-center gap-2 pl-4 pr-3 py-3 text-sm font-medium text-slate-700 border-r border-slate-200"
+                >
+                  <img 
+                    src={selectedCountry.flag} 
+                    alt="Flag" 
+                    className="w-6 h-6 rounded-full object-cover" 
+                  />
+                  <span className="text-slate-600">{selectedCountry.code}</span>
+                  <svg className="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+
+                {/* Input */}
+                <input 
+                  type="tel" 
+                  placeholder="1234567890" 
+                  className="flex-1 px-4 py-3 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" 
+                />
+
+                {/* Dropdown */}
+                {showCountryList && (
+                  <div className="absolute top-full left-0 bg-white border border-slate-200 shadow-md w-44 rounded-md mt-1 z-10">
+                    <ul>
+                      {countries.map((country, index) => (
+                        <li 
+                          key={index}
+                          onClick={() => handleCountrySelect(country)}
+                          className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                        >
+                          <img src={country.flag} className="w-6 h-6 rounded-full" alt={country.name} />
+                          {country.name} ({country.code})
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="grid md:gap-6 gap-2 md:grid-cols-2">
+              <div className="relative">
+                <label className="block text-sm font-medium text-[#666666] mb-2">Courses</label>
+                <div className="relative flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                  <span className="text-slate-400">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m12 6.75 7.5 3-7.5 3-7.5-3 7.5-3Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5V15c0 2.485 3.357 4.5 7.5 4.5s7.5-2.015 7.5-4.5v-4.5" />
+                    </svg>
+                  </span>
+                  <select className="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 appearance-none outline-none pr-6">
+                    <option value="">Select course</option>
+                  </select>
+                  <span className="pointer-events-none text-slate-400 absolute right-6 top-1/2 -translate-y-1/2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m6 9 6 6 6-6" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div className="relative">
+                <label className="block text-sm font-medium text-[#666666] mb-2">States</label>
+                <div className="relative flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                  <span className="text-slate-400">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.05-7.5 11.25-7.5 11.25S4.5 17.55 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                  </span>
+                  <select className="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 appearance-none outline-none pr-6">
+                    <option value="">Select state</option>
+                  </select>
+                  <span className="pointer-events-none text-slate-400 absolute right-6 top-1/2 -translate-y-1/2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m6 9 6 6 6-6" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:gap-6 gap-2 md:grid-cols-2">
+              <div>
+                <label className="block text-sm font-medium text-[#666666] mb-2">Password</label>
+                <div className="flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                  <span className="text-slate-400">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V7.125a4.5 4.5 0 0 0-9 0V10.5" />
+                      <rect width="15" height="11" x="4.5" y="10.5" rx="2" ry="2" fill="none" />
+                    </svg>
+                  </span>
+                  <input 
+                    type={showPassword ? "text" : "password"} 
+                    placeholder="••••••" 
+                    className="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" 
+                  />
+                  <button 
+                    type="button" 
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="text-slate-400 hover:text-slate-500"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 12s3.6-7.5 9-7.5S21 12 21 12s-3.6 7.5-9 7.5S3 12 3 12Z" />
+                      <circle cx="12" cy="12" r="2.25" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-[#666666] mb-2">Confirm Password</label>
+                <div className="flex items-center gap-3 border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-4 py-3 shadow-sm transition focus:outline-none">
+                  <span className="text-slate-400">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V7.125a4.5 4.5 0 0 0-9 0V10.5" />
+                      <rect width="15" height="11" x="4.5" y="10.5" rx="2" ry="2" fill="none" />
+                    </svg>
+                  </span>
+                  <input 
+                    type={showConfirmPassword ? "text" : "password"} 
+                    placeholder="••••••" 
+                    className="flex-1 bg-transparent text-sm text-slate-900 placeholder:text-slate-400 outline-none" 
+                  />
+                  <button 
+                    type="button" 
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                    className="text-slate-400 hover:text-slate-500"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 12s3.6-7.5 9-7.5S21 12 21 12s-3.6 7.5-9 7.5S3 12 3 12Z" />
+                      <circle cx="12" cy="12" r="2.25" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <input 
+                type="checkbox" 
+                id="terms" 
+                className="mt-1 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" 
+              />
+              <label htmlFor="terms" className="text-sm text-slate-500">
+                By submitting this form, you accept and agree to our{" "}
+                <a href="#" className="text-emerald-600 font-medium hover:underline">
+                  Terms of Use
+                </a>
+                .
+              </label>
+            </div>
+
+            <button 
+              type="submit" 
+              className="w-full rounded-[10px] bg-[#20B486] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-emerald-500/30 focus:outline-none hover:bg-[#1da178] transition-colors"
+            >
+              Create Account
+            </button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default RegisterModal;

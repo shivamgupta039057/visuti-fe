@@ -1,0 +1,165 @@
+"use client";
+
+import React, { useState } from 'react';
+import { X } from 'lucide-react';
+
+const SignInModal = ({ isOpen, onClose, onOpenMobileLogin, onOpenRegister }) => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  if (!isOpen) return null;
+
+  return (
+    <div 
+      className="fixed inset-0 flex items-center justify-center backdrop-blur-sm bg-white/30 z-50"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div className="bg-white rounded-[20px] shadow-lg w-[90%] max-w-xl sm:p-10 p-5 relative overflow-visible">
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute size-10 top-4 right-4 text-gray-500 bg-[#ECECEC] rounded-full p-2 hover:bg-gray-300 transition"
+          aria-label="Close modal"
+        >
+          <X className="w-5 h-5" />
+        </button>
+
+        {/* Title */}
+        <h2 className="sm:text-4xl text-2xl font-bold mb-1 text-left">Sign in</h2>
+
+        {/* Create Account */}
+        <p className="text-[#666666] sm:mb-4 m sm:text-lg text-sm sm:mt-4 mt-2 text-left">
+          Don't have an account?{" "}
+          <span 
+            onClick={() => {
+              if (onOpenRegister) {
+                onOpenRegister(); // Open register modal (don't close signin modal)
+              }
+            }}
+            className="text-[#20B486] font-medium cursor-pointer underline hover:text-[#029e65] transition-colors"
+          >
+            Create now
+          </span>
+        </p>
+
+        {/* Email Input */}
+        <div className="sm:mb-4 m">
+          <label className="block text-sm font-medium text-[#666666] mb-2 text-left">E-mail</label>
+          <div className="flex items-center border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-3">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.6667 4.66667L8.67271 8.48467C8.4693 8.60281 8.23827 8.66504 8.00304 8.66504C7.76782 8.66504 7.53678 8.60281 7.33337 8.48467L1.33337 4.66667" stroke="#99A1AF" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M13.3334 2.66667H2.66671C1.93033 2.66667 1.33337 3.26363 1.33337 4.00001V12C1.33337 12.7364 1.93033 13.3333 2.66671 13.3333H13.3334C14.0698 13.3333 14.6667 12.7364 14.6667 12V4.00001C14.6667 3.26363 14.0698 2.66667 13.3334 2.66667Z" stroke="#99A1AF" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <input 
+              type="email" 
+              className="w-full py-3 px-4 bg-[#F7FAFC] border-none outline-none rounded-lg text-sm" 
+              placeholder="example@gmail.com" 
+            />
+          </div>
+        </div>
+
+        {/* Password Input */}
+        <div className="sm:mb-4 m">
+          <label className="block text-sm font-medium text-[#666666] mb-2 text-left">Password</label>
+          <div className="flex items-center border border-[#CBD5E0] bg-[#F7FAFC] rounded-lg px-3">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.6667 7.33334H3.33333C2.59695 7.33334 2 7.9303 2 8.66668V13.3333C2 14.0697 2.59695 14.6667 3.33333 14.6667H12.6667C13.403 14.6667 14 14.0697 14 13.3333V8.66668C14 7.9303 13.403 7.33334 12.6667 7.33334Z" stroke="#99A1AF" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M4.66663 7.33334V4.66668C4.66663 3.78262 5.01782 2.93478 5.64294 2.30965C6.26806 1.68453 7.1159 1.33334 7.99996 1.33334C8.88401 1.33334 9.73186 1.68453 10.357 2.30965C10.9821 2.93478 11.3333 3.78262 11.3333 4.66668V7.33334" stroke="#99A1AF" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <input 
+              type={showPassword ? "text" : "password"} 
+              className="w-full py-3 px-4 bg-[#F7FAFC] border-none outline-none rounded-lg text-sm" 
+              placeholder="••••••••" 
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="cursor-pointer ml-2 text-[#666666] hover:text-[#333333] transition-colors"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.28126 12C9.28126 12.6962 9.55783 13.3639 10.0501 13.8562C10.5424 14.3484 11.2101 14.625 11.9063 14.625C12.6025 14.625 13.2701 14.3484 13.7624 13.8562C14.2547 13.3639 14.5313 12.6962 14.5313 12C14.5313 11.3038 14.2547 10.6361 13.7624 10.1438C13.2701 9.65156 12.6025 9.375 11.9063 9.375C11.2101 9.375 10.5424 9.65156 10.0501 10.1438C9.55783 10.6361 9.28126 11.3038 9.28126 12ZM22.0828 11.3953C19.861 6.71484 16.5024 4.35938 12 4.35938C7.49533 4.35938 4.13908 6.71484 1.9172 11.3977C1.82808 11.5864 1.78186 11.7925 1.78186 12.0012C1.78186 12.2099 1.82808 12.416 1.9172 12.6047C4.13908 17.2852 7.49767 19.6406 12 19.6406C16.5047 19.6406 19.861 17.2852 22.0828 12.6023C22.2633 12.2227 22.2633 11.782 22.0828 11.3953ZM11.9063 16.125C9.62814 16.125 7.78126 14.2781 7.78126 12C7.78126 9.72188 9.62814 7.875 11.9063 7.875C14.1844 7.875 16.0313 9.72188 16.0313 12C16.0313 14.2781 14.1844 16.125 11.9063 16.125Z" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Remember Me and Forgot Password */}
+        <div className="flex items-center justify-between sm:mb-4 m">
+          <div className="flex items-center">
+            <input type="checkbox" id="remember" className="mr-2" />
+            <label htmlFor="remember" className="text-sm text-[#666666] text-left">Remember me</label>
+          </div>
+          <a href="#" className="text-sm text-[#20B486] font-medium hover:underline">Forgot Password?</a>
+        </div>
+
+        {/* Submit Button */}
+        <button className="w-full bg-[#20B486] text-white font-medium py-2.5 rounded-lg transition hover:bg-[#1da178]">
+          Sign In
+        </button>
+
+        {/* Or Section */}
+        <div className="flex items-center my-4">
+          <div className="flex-grow h-px bg-gray-300"></div>
+          <span className="px-3 text-black text-sm">OR</span>
+          <div className="flex-grow h-px bg-gray-300"></div>
+        </div>
+
+        {/* Social Buttons */}
+        <div className="flex items-center gap-3 flex-col sm:flex-row">
+          <button className="flex items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 text-black sm:text-base text-sm font-medium hover:bg-gray-50 w-full sm:w-1/2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clipPath="url(#clip0_1_17517)">
+                <path d="M21 0H3C1.3455 0 0 1.3455 0 3V21C0 22.6545 1.3455 24 3 24H21C22.6545 24 24 22.6545 24 21V3C24 1.3455 22.6545 0 21 0Z" fill="#1976D2"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M20.25 12H16.5V9C16.5 8.172 17.172 8.25 18 8.25H19.5V4.5H16.5C15.3065 4.5 14.1619 4.97411 13.318 5.81802C12.4741 6.66193 12 7.80653 12 9V12H9V15.75H12V24H16.5V15.75H18.75L20.25 12Z" fill="#FAFAFA"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_17517">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            Continue with Facebook
+          </button>
+
+          <button className="flex items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 text-black sm:text-base text-sm font-medium hover:bg-gray-50 w-full sm:w-1/2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clipPath="url(#clip0_1_17523)">
+                <path d="M5.31891 14.5035L4.4835 17.6222L1.43011 17.6868C0.517594 15.9943 0 14.0578 0 12C0 10.0101 0.483938 8.13362 1.34175 6.48132H1.34241L4.06078 6.9797L5.25159 9.68176C5.00236 10.4084 4.86652 11.1884 4.86652 12C4.86661 12.8809 5.02617 13.7249 5.31891 14.5035Z" fill="#FBBB00"/>
+                <path d="M23.7903 9.75824C23.9282 10.4841 24 11.2338 24 12C24 12.8591 23.9097 13.6971 23.7376 14.5055C23.1535 17.2563 21.6271 19.6582 19.5126 21.358L19.5119 21.3574L16.088 21.1827L15.6034 18.1576C17.0065 17.3347 18.103 16.047 18.6805 14.5055H12.2638V9.75824H23.7903Z" fill="#518EF8"/>
+                <path d="M19.5119 21.3574L19.5125 21.358C17.4561 23.011 14.8437 24 12 24C7.43011 24 3.45694 21.4457 1.43011 17.6868L5.31891 14.5035C6.3323 17.2081 8.94132 19.1334 12 19.1334C13.3147 19.1334 14.5464 18.778 15.6033 18.1576L19.5119 21.3574Z" fill="#28B446"/>
+                <path d="M19.6595 2.76262L15.7721 5.94525C14.6782 5.26153 13.3852 4.86656 12 4.86656C8.87206 4.86656 6.21425 6.88017 5.25163 9.68175L1.34239 6.48131H1.34174C3.33889 2.63077 7.36217 0 12 0C14.9116 0 17.5813 1.03716 19.6595 2.76262Z" fill="#F14336"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_17523">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            Continue with Google
+          </button>
+        </div>
+
+        {/* Mobile Number Button */}
+        <button 
+          onClick={() => {
+            if (onOpenMobileLogin) {
+              onOpenMobileLogin(); // Open mobile login modal
+            }
+          }}
+          className="flex mt-2.5 items-center gap-2 justify-center border border-[#CCCCCC] bg-white rounded-lg py-2.5 text-black sm:text-base text-sm font-medium hover:bg-gray-50 w-full transition-colors"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z" stroke="#50B748" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 18H12.01" stroke="#50B748" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          Continue with Mobile Number
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default SignInModal;
